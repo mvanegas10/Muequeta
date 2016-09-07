@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A91694BB1D80914D00A8B64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91694BA1D80914D00A8B64B /* AppDelegate.swift */; };
+		A91694BD1D80914D00A8B64B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91694BC1D80914D00A8B64B /* ViewController.swift */; };
+		A91694C01D80914D00A8B64B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91694BE1D80914D00A8B64B /* Main.storyboard */; };
+		A91694C21D80914D00A8B64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91694C11D80914D00A8B64B /* Assets.xcassets */; };
+		A91694C51D80914D00A8B64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91694C31D80914D00A8B64B /* LaunchScreen.storyboard */; };
+		A91694D01D80914D00A8B64B /* MuequetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91694CF1D80914D00A8B64B /* MuequetaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A91694CC1D80914D00A8B64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A91694AF1D80914D00A8B64B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A91694B61D80914D00A8B64B;
+			remoteInfo = Muequeta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A91694B71D80914D00A8B64B /* Muequeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muequeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91694BA1D80914D00A8B64B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A91694BC1D80914D00A8B64B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A91694BF1D80914D00A8B64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A91694C11D80914D00A8B64B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A91694C41D80914D00A8B64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A91694C61D80914D00A8B64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A91694CB1D80914D00A8B64B /* MuequetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuequetaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91694CF1D80914D00A8B64B /* MuequetaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuequetaTests.swift; sourceTree = "<group>"; };
+		A91694D11D80914D00A8B64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A91694B41D80914D00A8B64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91694C81D80914D00A8B64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A91694AE1D80914D00A8B64B = {
+			isa = PBXGroup;
+			children = (
+				A91694B91D80914D00A8B64B /* Muequeta */,
+				A91694CE1D80914D00A8B64B /* MuequetaTests */,
+				A91694B81D80914D00A8B64B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A91694B81D80914D00A8B64B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A91694B71D80914D00A8B64B /* Muequeta.app */,
+				A91694CB1D80914D00A8B64B /* MuequetaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A91694B91D80914D00A8B64B /* Muequeta */ = {
+			isa = PBXGroup;
+			children = (
+				A91694BA1D80914D00A8B64B /* AppDelegate.swift */,
+				A91694BC1D80914D00A8B64B /* ViewController.swift */,
+				A91694BE1D80914D00A8B64B /* Main.storyboard */,
+				A91694C11D80914D00A8B64B /* Assets.xcassets */,
+				A91694C31D80914D00A8B64B /* LaunchScreen.storyboard */,
+				A91694C61D80914D00A8B64B /* Info.plist */,
+			);
+			path = Muequeta;
+			sourceTree = "<group>";
+		};
+		A91694CE1D80914D00A8B64B /* MuequetaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A91694CF1D80914D00A8B64B /* MuequetaTests.swift */,
+				A91694D11D80914D00A8B64B /* Info.plist */,
+			);
+			path = MuequetaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A91694B61D80914D00A8B64B /* Muequeta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91694D41D80914D00A8B64B /* Build configuration list for PBXNativeTarget "Muequeta" */;
+			buildPhases = (
+				A91694B31D80914D00A8B64B /* Sources */,
+				A91694B41D80914D00A8B64B /* Frameworks */,
+				A91694B51D80914D00A8B64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Muequeta;
+			productName = Muequeta;
+			productReference = A91694B71D80914D00A8B64B /* Muequeta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A91694CA1D80914D00A8B64B /* MuequetaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91694D71D80914D00A8B64B /* Build configuration list for PBXNativeTarget "MuequetaTests" */;
+			buildPhases = (
+				A91694C71D80914D00A8B64B /* Sources */,
+				A91694C81D80914D00A8B64B /* Frameworks */,
+				A91694C91D80914D00A8B64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A91694CD1D80914D00A8B64B /* PBXTargetDependency */,
+			);
+			name = MuequetaTests;
+			productName = MuequetaTests;
+			productReference = A91694CB1D80914D00A8B64B /* MuequetaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A91694AF1D80914D00A8B64B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Meili Vanegas Hernández";
+				TargetAttributes = {
+					A91694B61D80914D00A8B64B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A91694CA1D80914D00A8B64B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A91694B61D80914D00A8B64B;
+					};
+				};
+			};
+			buildConfigurationList = A91694B21D80914D00A8B64B /* Build configuration list for PBXProject "Muequeta" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A91694AE1D80914D00A8B64B;
+			productRefGroup = A91694B81D80914D00A8B64B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A91694B61D80914D00A8B64B /* Muequeta */,
+				A91694CA1D80914D00A8B64B /* MuequetaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A91694B51D80914D00A8B64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91694C51D80914D00A8B64B /* LaunchScreen.storyboard in Resources */,
+				A91694C21D80914D00A8B64B /* Assets.xcassets in Resources */,
+				A91694C01D80914D00A8B64B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91694C91D80914D00A8B64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A91694B31D80914D00A8B64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91694BD1D80914D00A8B64B /* ViewController.swift in Sources */,
+				A91694BB1D80914D00A8B64B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91694C71D80914D00A8B64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91694D01D80914D00A8B64B /* MuequetaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A91694CD1D80914D00A8B64B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A91694B61D80914D00A8B64B /* Muequeta */;
+			targetProxy = A91694CC1D80914D00A8B64B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A91694BE1D80914D00A8B64B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91694BF1D80914D00A8B64B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A91694C31D80914D00A8B64B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91694C41D80914D00A8B64B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A91694D21D80914D00A8B64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A91694D31D80914D00A8B64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A91694D51D80914D00A8B64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Muequeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mvanegas10.Muequeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A91694D61D80914D00A8B64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Muequeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mvanegas10.Muequeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A91694D81D80914D00A8B64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MuequetaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mvanegas10.MuequetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Muequeta.app/Muequeta";
+			};
+			name = Debug;
+		};
+		A91694D91D80914D00A8B64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MuequetaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mvanegas10.MuequetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Muequeta.app/Muequeta";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A91694B21D80914D00A8B64B /* Build configuration list for PBXProject "Muequeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91694D21D80914D00A8B64B /* Debug */,
+				A91694D31D80914D00A8B64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91694D41D80914D00A8B64B /* Build configuration list for PBXNativeTarget "Muequeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91694D51D80914D00A8B64B /* Debug */,
+				A91694D61D80914D00A8B64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A91694D71D80914D00A8B64B /* Build configuration list for PBXNativeTarget "MuequetaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91694D81D80914D00A8B64B /* Debug */,
+				A91694D91D80914D00A8B64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A91694AF1D80914D00A8B64B /* Project object */;
+}
