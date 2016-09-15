@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A91694BB1D80914D00A8B64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91694BA1D80914D00A8B64B /* AppDelegate.swift */; };
-		A91694BD1D80914D00A8B64B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91694BC1D80914D00A8B64B /* ViewController.swift */; };
 		A91694C01D80914D00A8B64B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91694BE1D80914D00A8B64B /* Main.storyboard */; };
 		A91694C21D80914D00A8B64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91694C11D80914D00A8B64B /* Assets.xcassets */; };
 		A91694C51D80914D00A8B64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91694C31D80914D00A8B64B /* LaunchScreen.storyboard */; };
 		A91694D01D80914D00A8B64B /* MuequetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91694CF1D80914D00A8B64B /* MuequetaTests.swift */; };
+		A94E9DA41D8A0ADE0043B155 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DA31D8A0ADE0043B155 /* ScannerViewController.swift */; };
+		A94E9DA61D8A0EB10043B155 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DA51D8A0EB10043B155 /* MainViewController.swift */; };
+		A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DAC1D8A141E0043B155 /* Lugar.swift */; };
+		A94E9DB21D8A2FBA0043B155 /* MuequetaSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DB11D8A2FBA0043B155 /* MuequetaSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,6 @@
 /* Begin PBXFileReference section */
 		A91694B71D80914D00A8B64B /* Muequeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muequeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91694BA1D80914D00A8B64B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A91694BC1D80914D00A8B64B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A91694BF1D80914D00A8B64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A91694C11D80914D00A8B64B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A91694C41D80914D00A8B64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		A91694CB1D80914D00A8B64B /* MuequetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuequetaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91694CF1D80914D00A8B64B /* MuequetaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuequetaTests.swift; sourceTree = "<group>"; };
 		A91694D11D80914D00A8B64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94E9DA31D8A0ADE0043B155 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		A94E9DA51D8A0EB10043B155 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A94E9DAC1D8A141E0043B155 /* Lugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
+		A94E9DB11D8A2FBA0043B155 /* MuequetaSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuequetaSingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +83,9 @@
 		A91694B91D80914D00A8B64B /* Muequeta */ = {
 			isa = PBXGroup;
 			children = (
+				A94E9DA71D8A11980043B155 /* Models */,
+				A94E9DA21D8A0A9D0043B155 /* Controllers */,
 				A91694BA1D80914D00A8B64B /* AppDelegate.swift */,
-				A91694BC1D80914D00A8B64B /* ViewController.swift */,
 				A91694BE1D80914D00A8B64B /* Main.storyboard */,
 				A91694C11D80914D00A8B64B /* Assets.xcassets */,
 				A91694C31D80914D00A8B64B /* LaunchScreen.storyboard */,
@@ -94,6 +101,24 @@
 				A91694D11D80914D00A8B64B /* Info.plist */,
 			);
 			path = MuequetaTests;
+			sourceTree = "<group>";
+		};
+		A94E9DA21D8A0A9D0043B155 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A94E9DA31D8A0ADE0043B155 /* ScannerViewController.swift */,
+				A94E9DA51D8A0EB10043B155 /* MainViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A94E9DA71D8A11980043B155 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A94E9DAC1D8A141E0043B155 /* Lugar.swift */,
+				A94E9DB11D8A2FBA0043B155 /* MuequetaSingleton.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,8 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A91694BD1D80914D00A8B64B /* ViewController.swift in Sources */,
+				A94E9DB21D8A2FBA0043B155 /* MuequetaSingleton.swift in Sources */,
+				A94E9DA61D8A0EB10043B155 /* MainViewController.swift in Sources */,
+				A94E9DA41D8A0ADE0043B155 /* ScannerViewController.swift in Sources */,
 				A91694BB1D80914D00A8B64B /* AppDelegate.swift in Sources */,
+				A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +425,7 @@
 				A91694D61D80914D00A8B64B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A91694D71D80914D00A8B64B /* Build configuration list for PBXNativeTarget "MuequetaTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +434,7 @@
 				A91694D91D80914D00A8B64B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

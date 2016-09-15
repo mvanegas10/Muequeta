@@ -1,0 +1,9 @@
+{
+    "lugares": [
+        {
+            "id": 1,
+            "nombre": "Plaza de Bolivar",
+            "descripcion": "La Plaza de Bolívar es la plaza principal de la ciudad de Bogotá y de Colombia. Está ubicada en el centro de la ciudad, entre las carreras 7.ª y 8.ª con calles 10.ª y 11.ª. A su alrededor se encuentran algunos de los principales edificios de la ciudad: al norte el Palacio de Justicia, al sur el Capitolio Nacional, al oriente la Catedral Primada de Colombia, la Casa del Cabildo Eclesiástico, la Capilla del Sagrario y el Palacio Arzobispal y al occidente el Palacio Liévano, sede de la Alcaldía Mayor de Bogotá, y al suroriente el Colegio Mayor de San Bartolomé (Bogotá) de los jesuitas. Fue propuesta como Monumento Nacional de Colombia por la resolución 51 del 26 de octubre de 1994 y declarada como tal por el decreto 1802 del 19 de octubre de 1995.1"
+        },
+    ]
+}
