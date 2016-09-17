@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6C-Cg-TVX" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="829" y="228"/>
+            <point key="canvasLocation" x="783" y="-122"/>
         </scene>
         <!--Lugar Detail View Controller-->
         <scene sceneID="qeu-51-pbo">
@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1mV-8y-15A">
-                                <rect key="frame" x="30" y="30" width="540" height="159"/>
+                                <rect key="frame" x="30" y="30" width="540" height="199"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k2-ZQ-8wE">
                                         <rect key="frame" x="0.0" y="0.0" width="62" height="21"/>
@@ -105,6 +105,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KL0-VW-lAB">
+                                        <rect key="frame" x="0.0" y="169" width="62" height="30"/>
+                                        <state key="normal" title="Regresar"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="BUG-dr-Azr"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -122,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISA-j6-BVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1522" y="228"/>
+            <point key="canvasLocation" x="783" y="642"/>
         </scene>
     </scenes>
     <resources>
