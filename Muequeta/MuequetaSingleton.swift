@@ -20,7 +20,7 @@ class MuequetaSingleton: NSObject {
     }
     
     var lugares = [Lugar]()
-    var idLugarNuevo = -1
+    var lugarSeleccionado: Lugar?
     
     override init() {
         lugares = [Lugar]()
@@ -31,9 +31,12 @@ class MuequetaSingleton: NSObject {
         lugares.append(lugar)
     }
     
-    func darIdLugarNuevo() -> Int {
-        idLugarNuevo = idLugarNuevo + 1
-        return idLugarNuevo
+    func darLugarSeleccionado() -> Lugar {
+        return lugarSeleccionado!
+    }
+    
+    func seleccionarLugar(lugar:Lugar) {
+        lugarSeleccionado = lugar
     }
     
     func buscarLugar(id:String) -> Lugar {

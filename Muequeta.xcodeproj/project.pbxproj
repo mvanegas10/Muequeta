@@ -12,6 +12,7 @@
 		A91694C21D80914D00A8B64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91694C11D80914D00A8B64B /* Assets.xcassets */; };
 		A91694C51D80914D00A8B64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91694C31D80914D00A8B64B /* LaunchScreen.storyboard */; };
 		A91694D01D80914D00A8B64B /* MuequetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91694CF1D80914D00A8B64B /* MuequetaTests.swift */; };
+		A93A5DEB1D8DA02800163168 /* LugarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93A5DEA1D8DA02800163168 /* LugarDetailViewController.swift */; };
 		A94E9DA41D8A0ADE0043B155 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DA31D8A0ADE0043B155 /* ScannerViewController.swift */; };
 		A94E9DA61D8A0EB10043B155 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DA51D8A0EB10043B155 /* MainViewController.swift */; };
 		A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DAC1D8A141E0043B155 /* Lugar.swift */; };
@@ -38,6 +39,7 @@
 		A91694CB1D80914D00A8B64B /* MuequetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuequetaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91694CF1D80914D00A8B64B /* MuequetaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuequetaTests.swift; sourceTree = "<group>"; };
 		A91694D11D80914D00A8B64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A93A5DEA1D8DA02800163168 /* LugarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugarDetailViewController.swift; sourceTree = "<group>"; };
 		A94E9DA31D8A0ADE0043B155 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		A94E9DA51D8A0EB10043B155 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A94E9DAC1D8A141E0043B155 /* Lugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				A94E9DA31D8A0ADE0043B155 /* ScannerViewController.swift */,
 				A94E9DA51D8A0EB10043B155 /* MainViewController.swift */,
+				A93A5DEA1D8DA02800163168 /* LugarDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				A94E9DB21D8A2FBA0043B155 /* MuequetaSingleton.swift in Sources */,
 				A94E9DA61D8A0EB10043B155 /* MainViewController.swift in Sources */,
 				A94E9DA41D8A0ADE0043B155 /* ScannerViewController.swift in Sources */,
+				A93A5DEB1D8DA02800163168 /* LugarDetailViewController.swift in Sources */,
 				A91694BB1D80914D00A8B64B /* AppDelegate.swift in Sources */,
 				A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */,
 			);

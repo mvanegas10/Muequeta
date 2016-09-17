@@ -12,27 +12,24 @@ class MainViewController: UIViewController {
     
     
     @IBOutlet weak var logotipo: UIButton!
-    var lugares = [Lugar]()
+    @IBOutlet weak var verNuevoLugarButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        lugares = MuequetaSingleton.sharedInstance.lugares
         
         do {
             let json = NSDataAsset(name: "lugares")!.data
             if let data = try NSJSONSerialization.JSONObjectWithData(json, options:[]) as? NSDictionary {
                 if let lugaresDict = data["lugares"] as? [NSDictionary] {
                     for info in lugaresDict {
+                        let idL = info["id"] as! Int
                         let nom = info["nombre"] as! String
                         let desc = info["descripcion"] as! String
-                        let lugar = Lugar(nombre: nom, descripcion: desc, id: MuequetaSingleton.sharedInstance.darIdLugarNuevo())
+                        let lugar = Lugar(nombre: nom, descripcion: desc, id: idL)
                         MuequetaSingleton.sharedInstance.agregarLugar(lugar)
                     }
                 }
@@ -41,11 +38,6 @@ class MainViewController: UIViewController {
         catch {
             print("Error: \(error)" + ": Cargando la información de lugares.json")
         }
-        
-        for lugar in lugares {
-            print(String(lugar.id) + " " + lugar.nombre)
-        }
-
     }
     
     override func viewWillDisappear(animated: Bool) {

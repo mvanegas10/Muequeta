@@ -75,7 +75,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        
+
         if (captureSession?.running == true) {
             captureSession.stopRunning();
         }
@@ -90,14 +90,23 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
             foundCode(readableObject.stringValue);
         }
-        
         dismissViewControllerAnimated(true, completion: nil)
+        performSegueWithIdentifier("detalleLugar", sender: self)
     }
     
     func foundCode(code: String) {
         var data = code.componentsSeparatedByString(",")
-        var lugar = MuequetaSingleton.sharedInstance.buscarLugar(data[0])
+        let lugar = MuequetaSingleton.sharedInstance.buscarLugar(data[0])
         print(lugar.nombre)
+        MuequetaSingleton.sharedInstance.seleccionarLugar(lugar)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
+        if segue!.identifier == "detalleLugar" {
+            let lugarDetail = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("LugarDetail") as UIViewController
+            let appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+            appDelegate.window?.rootViewController = lugarDetail
+        }
     }
     
     override func prefersStatusBarHidden() -> Bool {

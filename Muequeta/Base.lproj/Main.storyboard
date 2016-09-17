@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="V1A-82-OX9">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="V1A-82-OX9">
                                 <rect key="frame" x="40" y="50" width="520" height="331"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fa2-es-Kkc">
@@ -31,11 +31,11 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v29-jZ-Xwm">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v29-jZ-Xwm">
                                         <rect key="frame" x="0.0" y="301" width="520" height="30"/>
                                         <state key="normal" title="Escanear un código QR"/>
                                         <connections>
-                                            <segue destination="Qdr-Z1-3FS" kind="show" id="7Fr-cf-1W2"/>
+                                            <segue destination="Qdr-Z1-3FS" kind="show" id="i6t-kV-vxS"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -69,10 +69,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="xtG-S7-aMG" kind="show" identifier="detalleLugar" id="vnk-hF-uus"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6C-Cg-TVX" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="325" y="1161"/>
+            <point key="canvasLocation" x="829" y="228"/>
+        </scene>
+        <!--Lugar Detail View Controller-->
+        <scene sceneID="qeu-51-pbo">
+            <objects>
+                <viewController storyboardIdentifier="LugarDetail" id="xtG-S7-aMG" customClass="LugarDetailViewController" customModule="Muequeta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ogU-nH-fnL"/>
+                        <viewControllerLayoutGuide type="bottom" id="zX6-Fi-CUR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1zI-aM-C2u">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sirve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k2-ZQ-8wE">
+                                <rect key="frame" x="200" y="127" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISA-j6-BVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="228"/>
         </scene>
     </scenes>
     <resources>
