@@ -36,4 +36,14 @@ class MuequetaSingleton: NSObject {
         return idLugarNuevo
     }
     
+    func buscarLugar(id:String) -> Lugar {
+        var encontrado: Lugar!
+        for lugar in lugares{
+            if String(lugar.id) == id{
+                encontrado = lugar
+            }
+        }
+        return encontrado
+    }
+    
 }

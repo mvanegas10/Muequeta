@@ -95,8 +95,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
     
     func foundCode(code: String) {
-        var id = code["id"]
-        var
+        var data = code.componentsSeparatedByString(",")
+        var lugar = MuequetaSingleton.sharedInstance.buscarLugar(data[0])
+        print(lugar.nombre)
     }
     
     override func prefersStatusBarHidden() -> Bool {
