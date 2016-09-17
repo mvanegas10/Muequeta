@@ -10,8 +10,13 @@ import UIKit
 
 class LugarDetailViewController: UIViewController {
     
+    @IBOutlet weak var nombreLugarLabel: UILabel!
+    @IBOutlet weak var descripcionLugarLabel: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        nombreLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
+        descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion
     }
     
     override func viewWillAppear(animated: Bool) {
