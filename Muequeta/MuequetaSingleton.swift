@@ -22,6 +22,7 @@ class MuequetaSingleton: NSObject {
     var lugares = [Lugar]()
     var hechosSeleccionados = [Hecho]()
     var lugarSeleccionado: Lugar?
+    var horaDia: String?
     
     override init() {
         lugares = [Lugar]()
@@ -42,6 +43,10 @@ class MuequetaSingleton: NSObject {
     
     func darHechosSeleccionados() -> [Hecho] {
         return hechosSeleccionados
+    }
+    
+    func darHoraDia() -> String {
+        return horaDia!
     }
     
     func seleccionarLugar(lugar:Lugar) {
@@ -76,6 +81,15 @@ class MuequetaSingleton: NSObject {
                     hechosSeleccionados.append(hecho)
                 }
             }
+        }
+        if (hora <= 1200) {
+            horaDia = "mañana"
+        }
+        else if (hora <= 1900) {
+            horaDia = "tarde"
+        }
+        else {
+            horaDia = "noche"
         }
         return hechosSeleccionados
     }
