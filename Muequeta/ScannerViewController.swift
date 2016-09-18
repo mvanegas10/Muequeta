@@ -10,9 +10,14 @@ import AVFoundation
 import UIKit
 
 class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+    
+    // MARK: Properties
+    
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     var lugares = [Lugar]()
+    
+    // MARK: Did load
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +70,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         captureSession = nil
     }
     
+    // MARK: Will Appear
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -72,6 +79,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             captureSession.startRunning();
         }
     }
+    
+    // MARK: Will Disappear
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
@@ -105,6 +114,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             print (hecho.nombre)
         }
     }
+    
+    // MARK: Prepare for segue
     
     override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
         if segue!.identifier == "detalleLugar" {

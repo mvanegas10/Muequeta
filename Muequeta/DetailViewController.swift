@@ -10,12 +10,14 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    // MARK: Properties
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tituloLabel: UINavigationItem!
     @IBOutlet weak var descripcionTextView: UITextView!
-    
-    
     var foto: Foto?
+    
+    // MARK: Did load
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +29,13 @@ class DetailViewController: UIViewController {
         }
     }
     
+    // MARK: Did receive memory warning
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    // MARK: Prepare for segue
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "devolverseALugar") {

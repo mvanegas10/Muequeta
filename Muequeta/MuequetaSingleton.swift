@@ -11,7 +11,7 @@ import UIKit
 
 class MuequetaSingleton: NSObject {
     
-    //Creación de Singleton
+    // MARK: Creación de Singleton
     class var sharedInstance: MuequetaSingleton {
         struct Singleton {
             static let instance = MuequetaSingleton()
@@ -19,11 +19,15 @@ class MuequetaSingleton: NSObject {
         return Singleton.instance
     }
     
+    // MARK: Properties
+    
     var lugares = [Lugar]()
     var hechosSeleccionados = [Hecho]()
     var lugarSeleccionado: Lugar?
     var horaDia: String?
     var viendoHechos: Bool = false
+    
+    // MARK: Initialization
     
     override init() {
         lugares = [Lugar]()

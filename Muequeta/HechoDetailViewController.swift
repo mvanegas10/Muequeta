@@ -10,10 +10,14 @@ import UIKit
 
 class HechoDetailViewController: UIViewController {
     
+    // MARK: Properties
     
     @IBOutlet weak var horaDiaLabel: UILabel!
     @IBOutlet weak var tituloLugarText: UINavigationItem!
     @IBOutlet weak var descripcionHechoLabel: UITextView!
+    
+    // MARK: Did load
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if (MuequetaSingleton.sharedInstance.darHechosSeleccionados().count > 0) {
@@ -24,13 +28,19 @@ class HechoDetailViewController: UIViewController {
         }
     }
     
+    // MARK: Will appear
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
     }
     
+    // MARK: Will disappear
+    
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
     }
+    
+    // MARK: Prepare for segue
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "verImagenesHecho") {

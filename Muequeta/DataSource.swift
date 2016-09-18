@@ -10,8 +10,12 @@ import Foundation
 
 class DataSource {
     
+    // MARK: Properties
+    
     var fotos:[Foto]
     var groups:[String]
+    
+    // MARK: Initialization
     
     init(fotos:[Foto],groups:[String]) {
         self.fotos = fotos

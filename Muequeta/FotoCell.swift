@@ -10,6 +10,8 @@ import UIKit
 
 class FotoCell: UICollectionViewCell {
     
+    // MARK: Properties
+    
     @IBOutlet weak var caption: UILabel!
     @IBOutlet weak var imageView: UIImageView!
 }

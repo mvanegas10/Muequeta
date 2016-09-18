@@ -10,13 +10,18 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    // MARK: Properties
     
     @IBOutlet weak var logotipo: UIButton!
     @IBOutlet weak var verNuevoLugarButton: UIButton!
     
+    // MARK: Did load
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    // MARK: Will Appear
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -105,6 +110,8 @@ class MainViewController: UIViewController {
             print("Error: \(error)" + ": Cargando la información de hechos.json")
         }
     }
+    
+    // MARK: Will disappear
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)

@@ -10,6 +10,7 @@ import UIKit
 
 class FotosHeaderView: UICollectionReusableView {
     
+    // MARK: Properties
     @IBOutlet weak var sectionLabel: UILabel!
     
 }

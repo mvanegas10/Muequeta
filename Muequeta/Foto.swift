@@ -10,9 +10,13 @@ import Foundation
 
 class Foto: NSObject {
     
+    // MARK: Properties
+    
     var name: String
     var group: String
     var descripcion: String
+    
+    // MARK: Initialization
     
     init(name: String, group: String, descripcion: String) {
         self.name = name

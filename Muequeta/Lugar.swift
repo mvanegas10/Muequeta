@@ -9,6 +9,9 @@
 import UIKit
 
 class Lugar: NSObject {
+    
+    // MARK: Properties
+    
     var nombre: String
     var descripcion: String
     let id: Int
@@ -17,6 +20,8 @@ class Lugar: NSObject {
     let coordenadas:(Double, Double)
     var hechos = [Hecho]()
     var rating: Int
+    
+    // MARK: Initialization
     
     init(nombre: String, descripcion: String, id: Int, fotos: [Foto], videos: [String], coordenadas:(Double,Double)) {
         self.nombre = nombre

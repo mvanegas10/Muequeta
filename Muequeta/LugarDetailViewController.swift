@@ -10,13 +10,19 @@ import UIKit
 
 class LugarDetailViewController: UIViewController {
     
+    // MARK: Properties
+    
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var tituloLugarText: UINavigationItem!
     @IBOutlet weak var descripcionLugarLabel: UITextView!
     
+    // MARK: Actions
+    
     @IBAction func verVideosButton(sender: UIButton) {
         mostrarAlerta("¡Oops! No hay videos asociados a este lugar, deberías ayudarnos y agregar unos tú")
     }
+    
+    // MARK: Did load
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,14 +32,19 @@ class LugarDetailViewController: UIViewController {
         descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion
     }
     
+    // MARK: Will appear
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
     }
+    
+    // MARK: Will disappear
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
     }
     
+    // MARK: Prepare for segue
     
     override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
         if (segue!.identifier == "verHechos") {

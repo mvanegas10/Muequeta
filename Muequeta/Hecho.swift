@@ -9,6 +9,9 @@
 import UIKit
 
 class Hecho: NSObject {
+    
+    // MARK: Properties
+    
     var nombre: String
     var descripcion: String
     let idLugar: Int
@@ -16,6 +19,8 @@ class Hecho: NSObject {
     let horaFinal: Int
     var fotos = [Foto]()
     var videos = [String]()
+    
+    // MARK: Initialization
     
     init(nombre: String, descripcion: String, idLugar: Int, horaInicio: Int, horaFinal:  Int, fotos: [Foto], videos: [String]) {
         self.nombre = nombre

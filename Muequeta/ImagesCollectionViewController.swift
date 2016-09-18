@@ -10,14 +10,15 @@ import UIKit
 
 class ImagesCollectionViewController: UIViewController {
     
-    let identifier = "CellIdentifier"
-    let headerViewIdentifier = "HeaderView"
+    // MARK: Properties
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tituloLabel: UINavigationItem!
-    
-
+    let identifier = "CellIdentifier"
+    let headerViewIdentifier = "HeaderView"
     var dataSource: DataSource?
+    
+    // MARK: Did load
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,8 @@ class ImagesCollectionViewController: UIViewController {
         navigationItem.leftBarButtonItem = editButtonItem()
         
     }
+    
+    // MARK: Will appear
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
@@ -42,7 +45,7 @@ class ImagesCollectionViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    // MARK:- prepareForSegue
+    // MARK: Prepare for segue
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -57,13 +60,13 @@ class ImagesCollectionViewController: UIViewController {
         }
     }
     
-    // MARK:- Should Perform Segue
+    // MARK: Should Perform Segue
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
         return !editing
     }
     
-    // MARK:- Selected Cell IndexPath
+    // MARK: Selected Cell IndexPath
     
     func getIndexPathForSelectedCell() -> NSIndexPath? {
         
@@ -74,8 +77,8 @@ class ImagesCollectionViewController: UIViewController {
         }
         return indexPath
     }
-    
-    // MARK:- Highlight
+
+    // MARK: Highlight
     
     func highlightCell(indexPath : NSIndexPath, flag: Bool) {
         
@@ -88,14 +91,14 @@ class ImagesCollectionViewController: UIViewController {
         }
     }
     
-    // MARK:- Editing
+    // MARK: Editing
     
     override func setEditing(editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         collectionView?.allowsMultipleSelection = editing
     }
     
-    // MARK:- Add Cell
+    // MARK: Add Cell
     
     @IBAction func addNewItem(sender: AnyObject) {
         
@@ -127,7 +130,7 @@ class ImagesCollectionViewController: UIViewController {
     }
 }
 
-// MARK:- UICollectionView DataSource
+// MARK: UICollectionView DataSource
 
 extension ImagesCollectionViewController : UICollectionViewDataSource {
     
@@ -154,7 +157,7 @@ extension ImagesCollectionViewController : UICollectionViewDataSource {
     }
 }
 
-// MARK:- UICollectionViewDelegate Methods
+// MARK: UICollectionViewDelegate Methods
 
 extension ImagesCollectionViewController : UICollectionViewDelegate {
     
@@ -168,7 +171,7 @@ extension ImagesCollectionViewController : UICollectionViewDelegate {
 }
 
 extension ImagesCollectionViewController: UICollectionViewDelegateFlowLayout {
-    // MARK:- UICollectioViewDelegateFlowLayout methods
+    // MARK: UICollectioViewDelegateFlowLayout methods
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
     {
