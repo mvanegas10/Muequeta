@@ -15,6 +15,7 @@ class Lugar: NSObject {
     var fotos = [Foto]()
     var videos = [String]()
     let coordenadas:(Double, Double)
+    var hechos = [Hecho]()
     
     init(nombre: String, descripcion: String, id: Int, fotos: [Foto], videos: [String], coordenadas:(Double,Double)) {
         self.nombre = nombre
@@ -24,5 +25,9 @@ class Lugar: NSObject {
         self.fotos = fotos
         self.videos = videos
         super.init()
+    }
+    
+    func agregarHecho(hecho:Hecho){
+        self.hechos.append(hecho)
     }
 }

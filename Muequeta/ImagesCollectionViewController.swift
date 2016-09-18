@@ -14,7 +14,9 @@ class ImagesCollectionViewController: UIViewController {
     let headerViewIdentifier = "HeaderView"
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tituloLabel: UINavigationItem!
     
+
     let dataSource = DataSource()
     
     override func viewDidLoad() {
@@ -22,6 +24,7 @@ class ImagesCollectionViewController: UIViewController {
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        tituloLabel.title = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
         
         navigationItem.leftBarButtonItem = editButtonItem()
         
@@ -148,15 +151,6 @@ extension ImagesCollectionViewController : UICollectionViewDataSource {
         cell.caption.text = foto.descripcion
         
         return cell
-    }
-    
-    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        
-        let headerView: FotosHeaderView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: headerViewIdentifier, forIndexPath: indexPath) as! FotosHeaderView
-        
-        headerView.sectionLabel.text = dataSource.gettGroupLabelAtIndex(indexPath.section)
-        
-        return headerView
     }
 }
 

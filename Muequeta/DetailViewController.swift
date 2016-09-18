@@ -10,8 +10,10 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    @IBOutlet weak var tituloFoto: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var tituloLabel: UINavigationItem!
+    @IBOutlet weak var descripcionTextView: UITextView!
+    
     
     var foto: Foto?
     
@@ -19,8 +21,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         if let foto = foto {
-            tituloFoto.text = foto.descripcion
+            descripcionTextView.text = foto.descripcion
             imageView.image = UIImage(named: foto.name)
+            tituloLabel.title = foto.group
         }
     }
     

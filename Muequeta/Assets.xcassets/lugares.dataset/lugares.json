@@ -7,11 +7,11 @@
       "descripcion": "El primer palacio fue destruido en \"El bogotazo\", el 9 de abril de 1948. En 1961 se determina su construcción pero en el costado norte de la Plaza de Bolívar, antes estaba en la Carrera 6 con Calle 11, sin embargo no fue terminado totalmente. Lamentablemente el 6 de noviembre de 1985, miembros del entonces grupo insurgente M-19 se tomaron las instalaciones y la recuperación por parte de las Fuerzas Militares cobró la vida de 111 personas y la destrucción del edificio.",
       "imagenes": [
         {
-          "direccion": "palacio1",
+          "direccion": "lugarPalacio1",
           "descripcion": "Palacio de justicia en la actualidad"
         },
         {
-          "direccion": "palacio2",
+          "direccion": "lugarPalacio2",
           "descripcion": "Palacio de justicia en la actualidad"
         }
       ],
@@ -24,48 +24,52 @@
       "descripcion": "La Universidad de los Andes ocupa el puesto 283 del mundo y es la séptima mejor de América Latina, según escalafón de QS World University Rankings.",
       "imagenes": [
         {
-          "direccion": "Universidad_de_los_Andes_(3326108271)",
+          "direccion": "lugarUniAndes1",
           "descripcion": "Edificio Mario Laserna."
         },
         {
-          "direccion": "9a7ccf544fac370255e4d6cc004a5513",
+          "direccion": "lugarUniAndes2",
           "descripcion": "Prado de San Antonio Magno en la actualidad"
         },
         {
-          "direccion": "campito",
+          "direccion": "lugarUniAndes3",
           "descripcion": "Campito de San José en 1972"
         },
         {
-          "direccion": "tellez-7",
+          "direccion": "lugarUniAndes4",
           "descripcion": "Pasillos del campito de San José en 1972."
         },
         {
-          "direccion": "tellez-10",
+          "direccion": "lugarUniAndes5",
           "descripcion": "Villa Paulina en 1972."
         },
         {
-          "direccion": "avenida los pinos",
+          "direccion": "lugarUniAndes6",
           "descripcion": "Avenida de Los Pinos, uno de los principales corredores de la Universidad en sus inicios, ubicada junto al actual Prado de San Alberto Magno."
         },
         {
-          "direccion": "biblioteca-3",
+          "direccion": "lugarUniAndes7",
           "descripcion": "Biblioteca de la Universidad de los Andes en los años 60. En esa década se construyó también el edificio William McCarthy, actual Bloque J."
         },
         {
-          "direccion": "biblioteca-6",
-          "descripcion": ">En los años 50, luego de que la Universidad lograra equilibrar sus instalaciones disponibles y las necesarias, se emprendieron nuevas reformas y adiciones para ampliar el campus. En la foto se observa una sala de lectura y trabajo de la época."
+          "direccion": "lugarUniAndes8",
+          "descripcion": "En los años 50, luego de que la Universidad lograra equilibrar sus instalaciones disponibles y las necesarias, se emprendieron nuevas reformas y adiciones para ampliar el campus. En la foto se observa una sala de lectura y trabajo de la época."
         },
         {
-          "direccion": "bloque b-1",
+          "direccion": "lugarUniAndes9",
           "descripcion": "Bloque B, construido entre los siglos XVIII  y XX, fue utilizado como pabellón para la antigua cárcel del Buen Pastor. En 1976 tuvo un reacondicionamiento y en 1996 tuvo una intervención total debido a su avanzado deterioro"
         },
         {
-          "direccion": "bloque d",
+          "direccion": "lugarUniAndes10",
           "descripcion": "Bloque D, La Piscina, Cafetería Central y Bloque O (edificio Henry Yerly) durante los años 80."
         },
         {
-          "direccion": "bloque j",
+          "direccion": "lugarUniAndes11",
           "descripcion": "Bloque J, fue donado en los años 50 por William McCarthy y la Fundación Rockefeller a la Universidad. En 2004, debido a fallas estructurales, fue intervenido arquitectónicamente y adaptado para las necesidades del Departamento de Ciencias Biológicas."
+        },
+		{
+          "direccion": "lugarUniAndes12",
+          "descripcion": "Antigua cafetería central"
         }
       ],
       "videos": []
@@ -77,11 +81,11 @@
       "descripcion": "Una numerosa colección de obras donadas a Colombia por el artista Fernando Botero con la intención de difundir las artes y la cultura en su país natal. De las obras, 87 corresponden a su colección personal de arte universal y el resto, cerca de 123 piezas, fueron realizadas por el mismo artista.",
       "imagenes": [
         {
-          "direccion": "museoBotero_manzanaSur",
+          "direccion": "lugaresMuseoBotero1",
           "descripcion": "Vista sur de museo de Botero"
         },
         {
-          "direccion": "2013-colombia-bogota-museum-chubby-painting-gallery-e1377889178742",
+          "direccion": "lugaresMuseoBotero2",
           "descripcion": "Galeria de Arte del museo de Botero"
         }
       ],
@@ -94,17 +98,17 @@
       "descripcion": "El Museo del Oro del Banco de la República de Colombia es una institución abierta al público cuya finalidad es la adquisición, conservación y exposición de piezas de orfebrería y alfarería de culturas indígenas del periodo precolombino de la actual Colombia. Está ubicado en la esquina de la calle 16 con carrera 5ª, en el costado oriental del parque Santander, en el centro histórico de Bogotá.",
       "imagenes": [
         {
-          "direccion": "museoDelOro",
+          "direccion": "lugarMuseoDelOro1",
           "descripcion": "Vista frontal del museo del oro."
         },
         {
-          "direccion": "museo_del_oro_bogota_01",
+          "direccion": "lugarMuseoDelOro2",
           "descripcion": "Balsa muisca."
         }
       ],
       "videos": [
         {
-          "direccion": "MUSEO DEL ORO - PROJECTION - BOGOTA COLOMBIA - AUGUST 2016.mp4",
+          "direccion": "lugarMuseoDelOro3",
           "descripcion": "Vídeo de aficionado en una exposición."
         }
       ]
@@ -116,17 +120,17 @@
       "descripcion": "El Museo Nacional de Colombia es el museo más antiguo de Colombia. Su acervo se divide en cuatro colecciones: arte, historia, arqueología y etnografía. Su colección de arte colombiano, latinoamericano y europeo incluye pinturas, dibujos, grabados, esculturas, instalaciones y artes decorativas desde el período colonial hasta la actualidad. Su inmueble fue originalmente la penitenciaría del panoptico, siendo su arquitecto el danés Thomas Reed. Frente al museo se encuentra la estación subterránea de TransMilenio que lleva su mismo nombre \"Museo Nacional\".",
       "imagenes": [
         {
-          "direccion": "800px-Entrada_Principal_del_Museo_Nacional_de_Colombia",
+          "direccion": "lugarMuseoNacional1",
           "descripcion": "Fachada del museo nacional"
         },
         {
-          "direccion": "museo-nacional",
+          "direccion": "lugarMuseoNacional2",
           "descripcion": "Cañon en el museo nacional."
         }
       ],
       "videos": [
         {
-          "direccion": "11542904.mp4",
+          "direccion": "lugarMuseoNacional3",
           "descripcion": "Exposición tierra como recurso."
         }
       ]
@@ -138,21 +142,21 @@
       "descripcion": "El cerro de Monserrate es el más conocido de los cerros Orientales de Bogotá. Junto a Guadalupe es uno de los cerros tutelares de la ciudad. Monserrate tiene una altitud de 3152 msnm y se ubica sobre la cordillera oriental.1 Los cerros de Bogotá, de origen sedimentario, tienen por lo menos 16 millones de años de antigüedad, con rocas de edad cretácica pertenecientes al Grupo guadalupe, en lo que se refiere al aspecto geológico. Hasta mediados del siglo XVII fue conocido como cerro de Las Nieves. La basílica del Señor de Monserrate ha sido lugar de peregrinación religiosa desde la época colonial y se constituye en un atractivo natural, religioso, gastronómico de la ciudad. Se puede ascender al cerro por el sendero peatonal, por teleférico o por funicular.",
       "imagenes": [
         {
-          "direccion": "sube_al_cerro_de_monserrate",
+          "direccion": "lugarCerroMonserrate1",
           "descripcion": "Basílica del Señor de Monserrate."
         },
         {
-          "direccion": "9890d055b4c0fb8927949f1e43c3e767",
+          "direccion": "lugarCerroMonserrate2",
           "descripcion": "Peregrinos en la construcción de la Basílica del Señor de Monserrate en los años 20."
         },
         {
-          "direccion": "caminoCalvario",
+          "direccion": "lugarCerroMonserrate3",
           "descripcion": "Niños en camino Calvario, años 70."
         }
       ],
       "videos": [
         {
-          "direccion": "11542904.mp4",
+          "direccion": "lugarCerroMonserrate4",
           "descripcion": "Exposición tierra como recurso."
         }
       ]
@@ -164,25 +168,25 @@
       "descripcion": "La Torre Colpatria es un rascacielos situado en Bogotá, en el sector de San Diego, también hace parte del Centro Internacional de Bogotá. Con sus 50 pisos es el edificio más alto de Colombia en operación, el 27 de América Latina, así como uno de los íconos de la ciudad. Fue terminada en 1979 y tiene una altura de 196 m.1 En ella se encuentran las oficinas de diversas compañías, entre las cuales están las empresas del Grupo Colpatria, propietario de la torre. En su azotea hay un mirador para apreciar gran parte de la ciudad y de la sabana de Bogotá. En 1998 se instalaron treinta y seis luces de xenón, que a finales de 2012 se reemplazaron con luces de tecnología LED.",
       "imagenes": [
         {
-          "direccion": "Torre-Colpatira-Building-Bogota-Colombia",
+          "direccion": "lugarTorreColpatria1",
           "descripcion": "Torre colpatria en la noche mostrando la bandera de Colombia."
         },
         {
-          "direccion": "Torre_Colpatria",
+          "direccion": "lugarTorreColpatria2",
           "descripcion": "Vista lejana de la torre"
         },
         {
-          "direccion": "56a72cd1996abd9af2c6abaf72f1e40b",
+          "direccion": "lugarTorreColpatria3",
           "descripcion": "Construcción de la torre Colpatria."
         },
         {
-          "direccion": "Construcción-edificio-UGI-233x300",
+          "direccion": "lugarTorreColpatria4",
           "descripcion": "Construcción de la torre Colpatria."
         }
       ],
       "videos": [
         {
-          "direccion": "Torre Colpatria.mp4",
+          "direccion": "lugarTorreColpatria5",
           "descripcion": "Vídeo de aficionada"
         }
       ]
@@ -194,21 +198,21 @@
       "descripcion": "La Casa de Moneda de Colombia fue una ceca fundada por el ingeniero militar español Alonso Turrillo de Yebra en el siglo XVII. En la actualidad alberga la colección numismática y de arte del Banco de la República. Se encuentra en la calle 11 con carrera 4, en el barrio colonial de La Candelaria en el centro de Bogotá. En 1975 se la declaró monumento nacional",
       "imagenes": [
         {
-          "direccion": "blaa_entrada_y_corredores_0780",
+          "direccion": "lugarCasaMoneda1",
           "descripcion": "Casa de la moneda. Vista al patio"
         },
         {
-          "direccion": "280px-Casa_de_la_Moneda,_Bogotá",
+          "direccion": "lugarCasaMoneda2",
           "descripcion": "Fachada de la casa de la moneda"
         },
         {
-          "direccion": "casa-de-moneda_0",
+          "direccion": "lugarCasaMoneda3",
           "descripcion": "Exposición en la cada de moneda."
         }
       ],
       "videos": [
         {
-          "direccion": "Casa de Moneda - Bogota.mp4",
+          "direccion": "lugarCasaMoneda4",
           "descripcion": "Vídeo de aficionado"
         }
       ]
@@ -220,19 +224,19 @@
       "descripcion": "La Plaza de Bolívar es la plaza principal de la ciudad de Bogotá y de Colombia. Está ubicada en el centro de la ciudad, entre las carreras 7.ª y 8.ª con calles 10.ª y 11.ª. A su alrededor se encuentran algunos de los principales edificios de la ciudad: al norte el Palacio de Justicia, al sur el Capitolio Nacional, al oriente la Catedral Primada de Colombia, la Casa del Cabildo Eclesiástico, la Capilla del Sagrario y el Palacio Arzobispal y al occidente el Palacio Liévano, sede de la Alcaldía Mayor de Bogotá, y al suroriente el Colegio Mayor de San Bartolomé (Bogotá) de los jesuitas. Fue propuesta como Monumento Nacional de Colombia por la resolución 51 del 26 de octubre de 1994 y declarada como tal por el decreto 1802 del 19 de octubre de 1995.",
       "imagenes": [
         {
-          "direccion": "pzaboli.0",
+          "direccion": "lugarPlazaBolivar1",
           "descripcion": "Plaza de Bolívar en los 20"
         },
         {
-          "direccion": "plazaAntigua",
+          "direccion": "lugarPlazaBolivar2",
           "descripcion": "Antigua Plaza de Bolívar"
         },
         {
-          "direccion": "360px-Plaza_Mayor_de_Bogotá,_1846",
+          "direccion": "lugarPlazaBolivar3",
           "descripcion": "Plaza Mayor en 1846."
         },
         {
-          "direccion": "plaza-de-bolivar",
+          "direccion": "lugarPlazaBolivar4",
           "descripcion": "Plaza de Bolívar en los años 50."
         }
       ],
@@ -245,21 +249,21 @@
       "descripcion": "La carrera Séptima (avenida carrera 7), también llamada Transversal Eduardo Posada Flórez es una de las principales vías arterias que recorre la ciudad de Bogotá de norte a sur en su zona oriental. Es la vía más importante en los ámbitos histórico, cultural, económico y social de la ciudad.",
       "imagenes": [
         {
-          "direccion": "Bogotá_carrera_7_calle_22,_peatonaljpg",
+          "direccion": "lugarCarreraSeptima1",
           "descripcion": "Carrera séptima con calle 22"
         },
         {
-          "direccion": "septisto",
+          "direccion": "lugarCarreraSeptima2",
           "descripcion": "Paso del ferrocarril por la antigua carrera séptima."
         },
         {
-          "direccion": "CNtDv-vWwAEAN1T",
+          "direccion": "lugarCarreraSeptima3",
           "descripcion": "Paso del ferrocarril por la antigua carrera séptima, 1927."
         }
       ],
       "videos": [
         {
-          "direccion": "2016 - Bogotá - Carrera 7.mp4",
+          "direccion": "lugarCarreraSeptima4",
           "descripcion": "Vídeo de aficionado."
         }
       ]

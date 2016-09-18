@@ -11,12 +11,8 @@ import Foundation
 class DataSource {
     
     init() {
-        var a1 = Foto(name:"alfonsoReyes",group:"1",descripcion: "Palacio de Justicia")
-        var a2 = Foto(name:"palacio1",group:"1",descripcion: "Palacio de Justicia")
-        var a3 = Foto(name:"palacio2",group:"1",descripcion: "Palacio de Justicia")
-
-        fotos = [a1,a2,a3]
-        groups = ["1"]
+        fotos = MuequetaSingleton.sharedInstance.darLugarSeleccionado().fotos
+        groups = [MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre]
     }
     
     var fotos:[Foto] = []
@@ -49,7 +45,7 @@ class DataSource {
     
     func addAndGetIndexForNewItem() -> Int {
         
-        let foto = Foto(name: "palacio1", group: "1",descripcion: "Palacio de Justicia")
+        let foto = Foto(name: "palacio1", group: "Palacio de Justicia",descripcion: "Palacio de Justicia")
         
         let count = fotosInGroup(0).count
         

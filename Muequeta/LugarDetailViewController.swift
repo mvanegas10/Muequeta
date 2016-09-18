@@ -18,7 +18,6 @@ class LugarDetailViewController: UIViewController {
         super.viewDidLoad()
         nombreLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
         descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion
-//        coleccionImagenes.dataSource(MuequetaSingleton.sharedInstance.darLugarSeleccionado().fotos)
     }
     
     override func viewWillAppear(animated: Bool) {

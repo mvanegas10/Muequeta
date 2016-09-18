@@ -20,6 +20,7 @@ class MuequetaSingleton: NSObject {
     }
     
     var lugares = [Lugar]()
+    var hechosSeleccionados = [Hecho]()
     var lugarSeleccionado: Lugar?
     
     override init() {
@@ -29,11 +30,18 @@ class MuequetaSingleton: NSObject {
     
     func agregarLugar(lugar:Lugar) {
         lugares.append(lugar)
-        lugarSeleccionado = lugar
+    }
+    
+    func agregarHecho(lugar:Lugar, hecho:Hecho) {
+        lugar.agregarHecho(hecho)
     }
     
     func darLugarSeleccionado() -> Lugar {
         return lugarSeleccionado!
+    }
+    
+    func darHechosSeleccionados() -> [Hecho] {
+        return hechosSeleccionados
     }
     
     func seleccionarLugar(lugar:Lugar) {
@@ -48,6 +56,28 @@ class MuequetaSingleton: NSObject {
             }
         }
         return encontrado
+    }
+    
+    func buscarHecho(lugar:Lugar,nombre:String) -> Hecho {
+        var encontrado: Hecho!
+        for hecho in lugar.hechos{
+            if String(hecho.nombre) == nombre{
+                encontrado = hecho
+            }
+        }
+        return encontrado
+    }
+    
+    func seleccionarHechos (hora:Int) -> [Hecho] {
+        hechosSeleccionados = [Hecho]()
+        if (lugarSeleccionado != nil) {
+            for hecho in (lugarSeleccionado?.hechos)! {
+                if (hecho.horaInicio <= hora && hecho.horaFinal >= hora) {
+                    hechosSeleccionados.append(hecho)
+                }
+            }
+        }
+        return hechosSeleccionados
     }
     
 }
