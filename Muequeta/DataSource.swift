@@ -11,9 +11,9 @@ import Foundation
 class DataSource {
     
     init() {
-        var a1 = Foto(name:"alfonsoReyes",group:"1")
-        var a2 = Foto(name:"palacio1",group:"1")
-        var a3 = Foto(name:"palacio2",group:"1")
+        var a1 = Foto(name:"alfonsoReyes",group:"1",descripcion: "Palacio de Justicia")
+        var a2 = Foto(name:"palacio1",group:"1",descripcion: "Palacio de Justicia")
+        var a3 = Foto(name:"palacio2",group:"1",descripcion: "Palacio de Justicia")
 
         fotos = [a1,a2,a3]
         groups = ["1"]
@@ -35,27 +35,6 @@ class DataSource {
         return groups[index]
     }
     
-    // MARK:- Populate Data from plist
-    
-    func populateData() {
-        if let path = NSBundle.mainBundle().pathForResource("fotos", ofType: "plist") {
-            if let dictArray = NSArray(contentsOfFile: path) {
-                for item in dictArray {
-                    if let dict = item as? NSDictionary {
-                        let name = dict["name"] as! String
-                        let group = dict["group"] as! String
-                        
-                        let foto = Foto(name: name, group: group)
-                        if !groups.contains(group){
-                            groups.append(group)
-                        }
-                        fotos.append(foto)
-                    }
-                }
-            }
-        }
-    }
-    
     // MARK:- fotosForEachGroup
     
     func fotosInGroup(index: Int) -> [Foto] {
@@ -70,7 +49,7 @@ class DataSource {
     
     func addAndGetIndexForNewItem() -> Int {
         
-        let foto = Foto(name: "palacio1", group: "1")
+        let foto = Foto(name: "palacio1", group: "1",descripcion: "Palacio de Justicia")
         
         let count = fotosInGroup(0).count
         

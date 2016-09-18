@@ -12,10 +12,12 @@ class Foto: NSObject {
     
     var name: String
     var group: String
+    var descripcion: String
     
-    init(name: String, group: String) {
+    init(name: String, group: String, descripcion: String) {
         self.name = name
         self.group = group
+        self.descripcion = descripcion
         super.init()
     }
 }

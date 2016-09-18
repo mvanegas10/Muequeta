@@ -40,7 +40,8 @@ class MainViewController: UIViewController {
                         if let imagenes = info["imagenes"] as? [NSDictionary] {
                             for imagen in imagenes {
                                 let direccion = imagen["direccion"] as! String
-                                let foto = Foto(name: direccion, group: String(idL))
+                                let descripcion = imagen["descripcion"] as! String
+                                let foto = Foto(name: direccion, group: nom,descripcion: descripcion)
                                 fot.append(foto)
                             }
                         }

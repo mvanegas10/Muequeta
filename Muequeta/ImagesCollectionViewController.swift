@@ -144,8 +144,8 @@ extension ImagesCollectionViewController : UICollectionViewDataSource {
         
         let name = foto.name
         
-        cell.imageView.image = UIImage(named: name.lowercaseString)
-        cell.caption.text = name.capitalizedString
+        cell.imageView.image = UIImage(named: name)
+        cell.caption.text = foto.descripcion
         
         return cell
     }
