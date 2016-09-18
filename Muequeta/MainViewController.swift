@@ -29,7 +29,25 @@ class MainViewController: UIViewController {
                         let idL = info["id"] as! Int
                         let nom = info["nombre"] as! String
                         let desc = info["descripcion"] as! String
-                        let lugar = Lugar(nombre: nom, descripcion: desc, id: idL)
+                        var coord = (info["coordenadas"] as! String).componentsSeparatedByString(",")
+                        var lat:Double
+                        var lon:Double
+                        lat = Double(coord[0])!
+                        lon = Double(coord[1])!
+                        let coorFinales = (lat, lon)
+                        var fot = [String]()
+                        var vid = [String]()
+                        if let imagenes = info["imagenes"] as? [NSDictionary] {
+                            for imagen in imagenes {
+                                fot.append(imagen["direccion"] as! String)
+                            }
+                        }
+                        if let videos = info["videos"] as? [NSDictionary] {
+                            for video in videos {
+                                vid.append(video["direccion"] as! String)
+                            }
+                        }
+                        let lugar = Lugar(nombre: nom, descripcion: desc, id: idL,fotos: fot, videos: vid,coordenadas: coorFinales)
                         MuequetaSingleton.sharedInstance.agregarLugar(lugar)
                     }
                 }

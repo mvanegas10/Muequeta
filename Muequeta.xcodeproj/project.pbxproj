@@ -13,6 +13,12 @@
 		A91694C51D80914D00A8B64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91694C31D80914D00A8B64B /* LaunchScreen.storyboard */; };
 		A91694D01D80914D00A8B64B /* MuequetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91694CF1D80914D00A8B64B /* MuequetaTests.swift */; };
 		A93A5DEB1D8DA02800163168 /* LugarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93A5DEA1D8DA02800163168 /* LugarDetailViewController.swift */; };
+		A93A5DED1D8E128100163168 /* ImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93A5DEC1D8E128100163168 /* ImagesCollectionViewController.swift */; };
+		A93A5DEF1D8E141E00163168 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93A5DEE1D8E141E00163168 /* DataSource.swift */; };
+		A93A5DF11D8E153100163168 /* Foto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93A5DF01D8E153100163168 /* Foto.swift */; };
+		A93A5DF31D8E15FB00163168 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93A5DF21D8E15FB00163168 /* DetailViewController.swift */; };
+		A93A5DF71D8E176800163168 /* FotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93A5DF61D8E176800163168 /* FotoCell.swift */; };
+		A93A5DFB1D8E17EF00163168 /* FotosHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93A5DFA1D8E17EF00163168 /* FotosHeaderView.swift */; };
 		A94E9DA41D8A0ADE0043B155 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DA31D8A0ADE0043B155 /* ScannerViewController.swift */; };
 		A94E9DA61D8A0EB10043B155 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DA51D8A0EB10043B155 /* MainViewController.swift */; };
 		A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DAC1D8A141E0043B155 /* Lugar.swift */; };
@@ -40,6 +46,12 @@
 		A91694CF1D80914D00A8B64B /* MuequetaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuequetaTests.swift; sourceTree = "<group>"; };
 		A91694D11D80914D00A8B64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A93A5DEA1D8DA02800163168 /* LugarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugarDetailViewController.swift; sourceTree = "<group>"; };
+		A93A5DEC1D8E128100163168 /* ImagesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewController.swift; sourceTree = "<group>"; };
+		A93A5DEE1D8E141E00163168 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		A93A5DF01D8E153100163168 /* Foto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foto.swift; sourceTree = "<group>"; };
+		A93A5DF21D8E15FB00163168 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A93A5DF61D8E176800163168 /* FotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotoCell.swift; sourceTree = "<group>"; };
+		A93A5DFA1D8E17EF00163168 /* FotosHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotosHeaderView.swift; sourceTree = "<group>"; };
 		A94E9DA31D8A0ADE0043B155 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		A94E9DA51D8A0EB10043B155 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A94E9DAC1D8A141E0043B155 /* Lugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
@@ -85,6 +97,8 @@
 		A91694B91D80914D00A8B64B /* Muequeta */ = {
 			isa = PBXGroup;
 			children = (
+				A93A5DF51D8E175000163168 /* View */,
+				A93A5DF41D8E173700163168 /* DataSource */,
 				A94E9DA71D8A11980043B155 /* Models */,
 				A94E9DA21D8A0A9D0043B155 /* Controllers */,
 				A91694BA1D80914D00A8B64B /* AppDelegate.swift */,
@@ -105,12 +119,31 @@
 			path = MuequetaTests;
 			sourceTree = "<group>";
 		};
+		A93A5DF41D8E173700163168 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A93A5DEE1D8E141E00163168 /* DataSource.swift */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		A93A5DF51D8E175000163168 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A93A5DF61D8E176800163168 /* FotoCell.swift */,
+				A93A5DFA1D8E17EF00163168 /* FotosHeaderView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		A94E9DA21D8A0A9D0043B155 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				A94E9DA31D8A0ADE0043B155 /* ScannerViewController.swift */,
 				A94E9DA51D8A0EB10043B155 /* MainViewController.swift */,
 				A93A5DEA1D8DA02800163168 /* LugarDetailViewController.swift */,
+				A93A5DEC1D8E128100163168 /* ImagesCollectionViewController.swift */,
+				A93A5DF21D8E15FB00163168 /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -120,6 +153,7 @@
 			children = (
 				A94E9DAC1D8A141E0043B155 /* Lugar.swift */,
 				A94E9DB11D8A2FBA0043B155 /* MuequetaSingleton.swift */,
+				A93A5DF01D8E153100163168 /* Foto.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -229,9 +263,15 @@
 				A94E9DB21D8A2FBA0043B155 /* MuequetaSingleton.swift in Sources */,
 				A94E9DA61D8A0EB10043B155 /* MainViewController.swift in Sources */,
 				A94E9DA41D8A0ADE0043B155 /* ScannerViewController.swift in Sources */,
+				A93A5DF71D8E176800163168 /* FotoCell.swift in Sources */,
 				A93A5DEB1D8DA02800163168 /* LugarDetailViewController.swift in Sources */,
+				A93A5DED1D8E128100163168 /* ImagesCollectionViewController.swift in Sources */,
+				A93A5DF11D8E153100163168 /* Foto.swift in Sources */,
 				A91694BB1D80914D00A8B64B /* AppDelegate.swift in Sources */,
+				A93A5DF31D8E15FB00163168 /* DetailViewController.swift in Sources */,
+				A93A5DEF1D8E141E00163168 /* DataSource.swift in Sources */,
 				A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */,
+				A93A5DFB1D8E17EF00163168 /* FotosHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
