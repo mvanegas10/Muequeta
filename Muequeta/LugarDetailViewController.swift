@@ -10,6 +10,7 @@ import UIKit
 
 class LugarDetailViewController: UIViewController {
     
+    @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var tituloLugarText: UINavigationItem!
     @IBOutlet weak var descripcionLugarLabel: UITextView!
     
@@ -20,6 +21,7 @@ class LugarDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ratingControl.rating = MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating
         tituloLugarText.title = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
         descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion
     }
@@ -34,10 +36,20 @@ class LugarDetailViewController: UIViewController {
     
     
     override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
-        if segue!.identifier == "verHechos" {
+        if (segue!.identifier == "verHechos") {
             if (MuequetaSingleton.sharedInstance.darHechosSeleccionados().count == 0) {
                 mostrarAlerta("Oops, al parecer no tenemos hechos asociadas a este lugar. ¡Sé el protagonista de nuestra primera anécdota!")
             }
+            else {
+                MuequetaSingleton.sharedInstance.verHechos()
+                MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating = ratingControl.rating
+            }
+        }
+        else if (segue!.identifier == "verImagenesLugar") {
+            MuequetaSingleton.sharedInstance.noVerHechos()
+            MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating = ratingControl.rating
+            let viewController:ImagesCollectionViewController = segue!.destinationViewController as! ImagesCollectionViewController
+            viewController.dataSource = DataSource(fotos: MuequetaSingleton.sharedInstance.darLugarSeleccionado().fotos,groups: [MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre])
         }
     }
     

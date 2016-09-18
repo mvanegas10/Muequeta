@@ -30,4 +30,17 @@ class DetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "devolverseALugar") {
+            let viewController:ImagesCollectionViewController = segue.destinationViewController as! ImagesCollectionViewController
+            if (MuequetaSingleton.sharedInstance.estaViendoHechos()) {
+                viewController.dataSource = DataSource(fotos: MuequetaSingleton.sharedInstance.darHechosSeleccionados()[0].fotos,groups: [MuequetaSingleton.sharedInstance.darHechosSeleccionados()[0].nombre])
+            }
+            else {
+                viewController.dataSource = DataSource(fotos: MuequetaSingleton.sharedInstance.darLugarSeleccionado().fotos,groups: [MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre])
+            }
+        }
+    }
 }

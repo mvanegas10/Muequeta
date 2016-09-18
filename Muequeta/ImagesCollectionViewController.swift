@@ -17,7 +17,7 @@ class ImagesCollectionViewController: UIViewController {
     @IBOutlet weak var tituloLabel: UINavigationItem!
     
 
-    let dataSource = DataSource()
+    var dataSource: DataSource?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +50,7 @@ class ImagesCollectionViewController: UIViewController {
         
         if let indexPath = getIndexPathForSelectedCell() {
             
-            let Foto = dataSource.fotosInGroup(indexPath.section)[indexPath.row]
+            let Foto = dataSource!.fotosInGroup(indexPath.section)[indexPath.row]
             
             let detailViewController = segue.destinationViewController as! DetailViewController
             detailViewController.foto = Foto
@@ -99,7 +99,7 @@ class ImagesCollectionViewController: UIViewController {
     
     @IBAction func addNewItem(sender: AnyObject) {
         
-        let index = dataSource.addAndGetIndexForNewItem()
+        let index = dataSource!.addAndGetIndexForNewItem()
         let indexPath = NSIndexPath(forItem: index, inSection: 0)
         collectionView.insertItemsAtIndexPaths([indexPath])
     }
@@ -116,11 +116,11 @@ class ImagesCollectionViewController: UIViewController {
             for item  in indexpaths {
                 collectionView?.deselectItemAtIndexPath((item), animated: true)
                 // Fotos for section
-                let sectionFotos = dataSource.fotosInGroup(item.section)
+                let sectionFotos = dataSource!.fotosInGroup(item.section)
                 deletedFotos.append(sectionFotos[item.row])
             }
             
-            dataSource.deleteItems(deletedFotos)
+            dataSource!.deleteItems(deletedFotos)
             
             collectionView?.deleteItemsAtIndexPaths(indexpaths)
         }
@@ -132,17 +132,17 @@ class ImagesCollectionViewController: UIViewController {
 extension ImagesCollectionViewController : UICollectionViewDataSource {
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return dataSource.groups.count
+        return dataSource!.groups.count
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSource.numbeOfRowsInEachGroup(section)
+        return dataSource!.numbeOfRowsInEachGroup(section)
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier,forIndexPath:indexPath) as! FotoCell
         
-        let fotos: [Foto] = dataSource.fotosInGroup(indexPath.section)
+        let fotos: [Foto] = dataSource!.fotosInGroup(indexPath.section)
         let foto = fotos[indexPath.row]
         
         let name = foto.name
@@ -172,8 +172,6 @@ extension ImagesCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
     {
-        // http://stackoverflow.com/questions/28872001/uicollectionview-cell-spacing-based-on-device-sceen-size
-        
         let length = (UIScreen.mainScreen().bounds.width-15)/2
         return CGSizeMake(length,length);
     }

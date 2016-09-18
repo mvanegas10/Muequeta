@@ -10,14 +10,13 @@ import Foundation
 
 class DataSource {
     
-    init() {
-        fotos = MuequetaSingleton.sharedInstance.darLugarSeleccionado().fotos
-        groups = [MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre]
+    var fotos:[Foto]
+    var groups:[String]
+    
+    init(fotos:[Foto],groups:[String]) {
+        self.fotos = fotos
+        self.groups = groups
     }
-    
-    var fotos:[Foto] = []
-    var groups:[String] = []
-    
     
     func numbeOfRowsInEachGroup(index: Int) -> Int {
         return fotosInGroup(index).count

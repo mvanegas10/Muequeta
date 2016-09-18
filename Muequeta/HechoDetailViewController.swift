@@ -31,5 +31,19 @@ class HechoDetailViewController: UIViewController {
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "verImagenesHecho") {
+            MuequetaSingleton.sharedInstance.verHechos()
+            var hecho = MuequetaSingleton.sharedInstance.darHechosSeleccionados()[0]
+            if (hecho.fotos.count > 0) {
+                let viewController:ImagesCollectionViewController = segue.destinationViewController as! ImagesCollectionViewController
+                viewController.dataSource = DataSource(fotos: hecho.fotos,groups: [hecho.nombre])
+            }
+        }
+        else if (segue.identifier == "volverALugar") {
+            MuequetaSingleton.sharedInstance.noVerHechos()
+        }
+    }
 }
 

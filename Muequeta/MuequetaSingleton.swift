@@ -23,10 +23,23 @@ class MuequetaSingleton: NSObject {
     var hechosSeleccionados = [Hecho]()
     var lugarSeleccionado: Lugar?
     var horaDia: String?
+    var viendoHechos: Bool = false
     
     override init() {
         lugares = [Lugar]()
         super.init()
+    }
+    
+    func estaViendoHechos() -> Bool {
+        return viendoHechos
+    }
+    
+    func verHechos() {
+        viendoHechos = true
+    }
+    
+    func noVerHechos() {
+        viendoHechos = false
     }
     
     func agregarLugar(lugar:Lugar) {
@@ -50,6 +63,7 @@ class MuequetaSingleton: NSObject {
     }
     
     func seleccionarLugar(lugar:Lugar) {
+        viendoHechos = false
         lugarSeleccionado = lugar
     }
     

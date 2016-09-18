@@ -16,6 +16,7 @@ class Lugar: NSObject {
     var videos = [String]()
     let coordenadas:(Double, Double)
     var hechos = [Hecho]()
+    var rating: Int
     
     init(nombre: String, descripcion: String, id: Int, fotos: [Foto], videos: [String], coordenadas:(Double,Double)) {
         self.nombre = nombre
@@ -24,6 +25,7 @@ class Lugar: NSObject {
         self.coordenadas = coordenadas
         self.fotos = fotos
         self.videos = videos
+        self.rating = 0
         super.init()
     }
     
