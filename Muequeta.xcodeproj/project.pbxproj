@@ -24,6 +24,7 @@
 		A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DAC1D8A141E0043B155 /* Lugar.swift */; };
 		A94E9DB21D8A2FBA0043B155 /* MuequetaSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DB11D8A2FBA0043B155 /* MuequetaSingleton.swift */; };
 		A9A7B4A91D8EFB0C00FF755A /* Hecho.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4A81D8EFB0C00FF755A /* Hecho.swift */; };
+		A9A7B4AB1D8F32DE00FF755A /* HechoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4AA1D8F32DE00FF755A /* HechoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		A94E9DAC1D8A141E0043B155 /* Lugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
 		A94E9DB11D8A2FBA0043B155 /* MuequetaSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuequetaSingleton.swift; sourceTree = "<group>"; };
 		A9A7B4A81D8EFB0C00FF755A /* Hecho.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hecho.swift; sourceTree = "<group>"; };
+		A9A7B4AA1D8F32DE00FF755A /* HechoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HechoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				A93A5DEA1D8DA02800163168 /* LugarDetailViewController.swift */,
 				A93A5DEC1D8E128100163168 /* ImagesCollectionViewController.swift */,
 				A93A5DF21D8E15FB00163168 /* DetailViewController.swift */,
+				A9A7B4AA1D8F32DE00FF755A /* HechoDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				A91694BB1D80914D00A8B64B /* AppDelegate.swift in Sources */,
 				A93A5DF31D8E15FB00163168 /* DetailViewController.swift in Sources */,
 				A93A5DEF1D8E141E00163168 /* DataSource.swift in Sources */,
+				A9A7B4AB1D8F32DE00FF755A /* HechoDetailViewController.swift in Sources */,
 				A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */,
 				A93A5DFB1D8E17EF00163168 /* FotosHeaderView.swift in Sources */,
 			);

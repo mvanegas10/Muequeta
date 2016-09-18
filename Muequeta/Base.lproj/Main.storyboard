@@ -90,53 +90,144 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1mV-8y-15A">
-                                <rect key="frame" x="30" y="30" width="540" height="380"/>
+                                <rect key="frame" x="20" y="30" width="560" height="443"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k2-ZQ-8wE">
-                                        <rect key="frame" x="0.0" y="0.0" width="62" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYW-eh-bOw">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
+                                        <items>
+                                            <navigationItem title="Titulo lugar" id="PWF-2l-b27">
+                                                <barButtonItem key="leftBarButtonItem" title="Regresar" id="uXW-vE-Sxu">
+                                                    <connections>
+                                                        <segue destination="BYZ-38-t0r" kind="show" id="ngm-6p-m5f"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="jI4-t2-Ktk">
-                                        <rect key="frame" x="0.0" y="31" width="540" height="269"/>
+                                        <rect key="frame" x="0.0" y="54" width="560" height="269"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCE-PG-GHp">
-                                        <rect key="frame" x="0.0" y="310" width="93" height="30"/>
+                                        <rect key="frame" x="0.0" y="333" width="93" height="30"/>
                                         <state key="normal" title="Ver imágenes"/>
                                         <connections>
                                             <segue destination="aXG-NL-tZb" kind="show" id="pCC-5j-589"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KL0-VW-lAB">
-                                        <rect key="frame" x="0.0" y="350" width="62" height="30"/>
-                                        <state key="normal" title="Regresar"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rk-F0-l5h">
+                                        <rect key="frame" x="0.0" y="373" width="72" height="30"/>
+                                        <state key="normal" title="Ver videos"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="BUG-dr-Azr"/>
+                                            <action selector="verVideosButton:" destination="xtG-S7-aMG" eventType="touchUpInside" id="l6V-I5-Tka"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cps-Qe-wrh">
+                                        <rect key="frame" x="0.0" y="413" width="458" height="30"/>
+                                        <state key="normal" title="Conoce la historia: ¿qué ha pasado aquí mismo a esta misma hora?"/>
+                                        <connections>
+                                            <segue destination="cdK-ZZ-gbD" kind="show" id="DuJ-2c-kRn"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="dYW-eh-bOw" firstAttribute="leading" secondItem="1mV-8y-15A" secondAttribute="leading" id="Kna-6g-qPB"/>
+                                    <constraint firstAttribute="trailing" secondItem="dYW-eh-bOw" secondAttribute="trailing" id="Loc-7H-07d"/>
+                                    <constraint firstItem="dYW-eh-bOw" firstAttribute="top" secondItem="1mV-8y-15A" secondAttribute="top" id="eXJ-Ld-BhL"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1mV-8y-15A" firstAttribute="leading" secondItem="1zI-aM-C2u" secondAttribute="leadingMargin" constant="10" id="DqL-Qk-5Hs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1mV-8y-15A" secondAttribute="trailing" constant="10" id="UW1-2G-KMT"/>
+                            <constraint firstItem="1mV-8y-15A" firstAttribute="leading" secondItem="1zI-aM-C2u" secondAttribute="leadingMargin" id="DqL-Qk-5Hs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1mV-8y-15A" secondAttribute="trailing" id="UW1-2G-KMT"/>
                             <constraint firstItem="1mV-8y-15A" firstAttribute="top" secondItem="ogU-nH-fnL" secondAttribute="bottom" constant="10" id="liB-50-fAk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="descripcionLugarLabel" destination="jI4-t2-Ktk" id="Fjw-pA-7RV"/>
-                        <outlet property="nombreLugarLabel" destination="0k2-ZQ-8wE" id="Jci-CW-2Lu"/>
+                        <outlet property="tituloLugarText" destination="PWF-2l-b27" id="oEX-aQ-LXi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISA-j6-BVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="867" y="658"/>
+        </scene>
+        <!--Hecho Detail View Controller-->
+        <scene sceneID="Zuo-kj-ulQ">
+            <objects>
+                <viewController id="cdK-ZZ-gbD" customClass="HechoDetailViewController" customModule="Muequeta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9jg-XV-HgG"/>
+                        <viewControllerLayoutGuide type="bottom" id="DFf-oJ-7iW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uIb-fy-3vf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oX2-VN-luH">
+                                <rect key="frame" x="20" y="10" width="560" height="443"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kq-dL-fgh">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
+                                        <items>
+                                            <navigationItem title="Titulo lugar" id="ylK-mK-A2M">
+                                                <barButtonItem key="leftBarButtonItem" title="Regresar" id="UgB-9i-7p8">
+                                                    <connections>
+                                                        <segue destination="xtG-S7-aMG" kind="show" id="yV4-N8-M5n"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="oft-qR-Asi">
+                                        <rect key="frame" x="0.0" y="54" width="560" height="269"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwq-vV-uGE">
+                                        <rect key="frame" x="0.0" y="333" width="93" height="30"/>
+                                        <state key="normal" title="Ver imágenes"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvG-Jd-7vh">
+                                        <rect key="frame" x="0.0" y="373" width="72" height="30"/>
+                                        <state key="normal" title="Ver videos"/>
+                                        <connections>
+                                            <action selector="verVideosButton:" destination="xtG-S7-aMG" eventType="touchUpInside" id="AX5-LX-bST"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTq-u5-fDC">
+                                        <rect key="frame" x="0.0" y="413" width="458" height="30"/>
+                                        <state key="normal" title="Conoce la historia: ¿qué ha pasado aquí mismo a esta misma hora?"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1kq-dL-fgh" firstAttribute="top" secondItem="oX2-VN-luH" secondAttribute="top" id="PdI-LH-b7Z"/>
+                                    <constraint firstItem="1kq-dL-fgh" firstAttribute="leading" secondItem="oX2-VN-luH" secondAttribute="leading" id="cdT-p1-Qn7"/>
+                                    <constraint firstAttribute="trailing" secondItem="1kq-dL-fgh" secondAttribute="trailing" id="qQR-EQ-MIk"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="oX2-VN-luH" secondAttribute="trailing" id="cox-KA-VIu"/>
+                            <constraint firstItem="oX2-VN-luH" firstAttribute="top" secondItem="uIb-fy-3vf" secondAttribute="topMargin" constant="10" id="swP-u6-kxO"/>
+                            <constraint firstItem="oX2-VN-luH" firstAttribute="leading" secondItem="uIb-fy-3vf" secondAttribute="leadingMargin" id="vvh-lQ-kdk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descripcionHechoLabel" destination="oft-qR-Asi" id="WkX-DM-GCm"/>
+                        <outlet property="tituloLugarText" destination="ylK-mK-A2M" id="GT8-1S-2NN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcm-Is-vj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867" y="1474"/>
         </scene>
         <!--Images Collection View Controller-->
         <scene sceneID="p5u-iA-8oK">
@@ -270,7 +361,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="wKn-DH-WGb">
                                 <rect key="frame" x="20" y="80" width="560" height="156"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -308,7 +399,7 @@
         <image name="logotipo" width="191" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mbN-RL-Jis"/>
-        <segue reference="vnk-hF-uus"/>
+        <segue reference="pCC-5j-589"/>
+        <segue reference="yV4-N8-M5n"/>
     </inferredMetricsTieBreakers>
 </document>

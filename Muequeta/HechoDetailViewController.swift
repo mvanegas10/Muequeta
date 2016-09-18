@@ -1,26 +1,29 @@
 //
-//  LugarDetailViewController.swift
+//  HechoDetailViewController.swift
 //  Muequeta
 //
-//  Created by Meili Vanegas Hernández on 9/17/16.
+//  Created by Meili Vanegas Hernández on 9/18/16.
 //  Copyright © 2016 Meili Vanegas Hernández. All rights reserved.
 //
 
 import UIKit
 
-class LugarDetailViewController: UIViewController {
+class HechoDetailViewController: UIViewController {
+    
     
     @IBOutlet weak var tituloLugarText: UINavigationItem!
-    @IBOutlet weak var descripcionLugarLabel: UITextView!
-    
-    @IBAction func verVideosButton(sender: UIButton) {
-        mostrarAlerta("¡Oops! No hay videos asociados a este lugar, deberías ayudarnos y agregar unos tú")
-    }
-    
+    @IBOutlet weak var descripcionHechoLabel: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tituloLugarText.title = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
-        descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion
+        if (MuequetaSingleton.sharedInstance.darHechosSeleccionados().count > 0) {
+            let hecho = MuequetaSingleton.sharedInstance.darHechosSeleccionados()[0]
+            tituloLugarText.title = hecho.nombre
+            descripcionHechoLabel.text = hecho.descripcion
+        }
+        else {
+            mostrarAlerta("Oops, al parecer no tenemos hechos asociadas a este lugar. ¡Sé el protagonista de nuestra primera anécdota!")
+        }
+
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -37,5 +40,6 @@ class LugarDetailViewController: UIViewController {
         self.presentViewController(alert, animated: true, completion: nil)
         
     }
-
+    
 }
+
