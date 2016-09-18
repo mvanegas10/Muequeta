@@ -11,7 +11,12 @@ import Foundation
 class DataSource {
     
     init() {
-        populateData()
+        var a1 = Foto(name:"alfonsoReyes",group:"1")
+        var a2 = Foto(name:"palacio1",group:"1")
+        var a3 = Foto(name:"palacio2",group:"1")
+
+        fotos = [a1,a2,a3]
+        groups = ["1"]
     }
     
     var fotos:[Foto] = []
@@ -65,7 +70,7 @@ class DataSource {
     
     func addAndGetIndexForNewItem() -> Int {
         
-        let foto = Foto(name: "SugarApple", group: "Morning")
+        let foto = Foto(name: "palacio1", group: "1")
         
         let count = fotosInGroup(0).count
         

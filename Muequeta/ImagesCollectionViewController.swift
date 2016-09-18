@@ -8,14 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ImagesCollectionViewController: UIViewController {
     
     let identifier = "CellIdentifier"
     let headerViewIdentifier = "HeaderView"
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    @IBOutlet weak var toolBar: UIToolbar!
     
     let dataSource = DataSource()
     
@@ -26,7 +24,6 @@ class ViewController: UIViewController {
         collectionView.delegate = self
         
         navigationItem.leftBarButtonItem = editButtonItem()
-        toolBar.hidden = true
         
     }
     
@@ -82,7 +79,7 @@ class ViewController: UIViewController {
         let cell = collectionView.cellForItemAtIndexPath(indexPath)
         
         if flag {
-            cell?.contentView.backgroundColor = UIColor.magentaColor()
+            cell?.contentView.backgroundColor = UIColor.darkGrayColor()
         } else {
             cell?.contentView.backgroundColor = nil
         }
@@ -93,7 +90,6 @@ class ViewController: UIViewController {
     override func setEditing(editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         collectionView?.allowsMultipleSelection = editing
-        toolBar.hidden = !editing
     }
     
     // MARK:- Add Cell
@@ -130,7 +126,7 @@ class ViewController: UIViewController {
 
 // MARK:- UICollectionView DataSource
 
-extension ViewController : UICollectionViewDataSource {
+extension ImagesCollectionViewController : UICollectionViewDataSource {
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return dataSource.groups.count
@@ -166,7 +162,7 @@ extension ViewController : UICollectionViewDataSource {
 
 // MARK:- UICollectionViewDelegate Methods
 
-extension ViewController : UICollectionViewDelegate {
+extension ImagesCollectionViewController : UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         highlightCell(indexPath, flag: true)
@@ -177,7 +173,7 @@ extension ViewController : UICollectionViewDelegate {
     }
 }
 
-extension ViewController: UICollectionViewDelegateFlowLayout {
+extension ImagesCollectionViewController: UICollectionViewDelegateFlowLayout {
     // MARK:- UICollectioViewDelegateFlowLayout methods
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize

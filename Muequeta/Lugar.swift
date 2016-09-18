@@ -12,11 +12,11 @@ class Lugar: NSObject {
     var nombre: String
     var descripcion: String
     let id: Int
-    var fotos = [String]()
+    var fotos = [Foto]()
     var videos = [String]()
     let coordenadas:(Double, Double)
     
-    init(nombre: String, descripcion: String, id: Int, fotos: [String], videos: [String], coordenadas:(Double,Double)) {
+    init(nombre: String, descripcion: String, id: Int, fotos: [Foto], videos: [String], coordenadas:(Double,Double)) {
         self.nombre = nombre
         self.descripcion = descripcion
         self.id = id

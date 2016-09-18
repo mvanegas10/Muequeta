@@ -29,6 +29,7 @@ class MuequetaSingleton: NSObject {
     
     func agregarLugar(lugar:Lugar) {
         lugares.append(lugar)
+        lugarSeleccionado = lugar
     }
     
     func darLugarSeleccionado() -> Lugar {

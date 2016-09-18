@@ -35,11 +35,13 @@ class MainViewController: UIViewController {
                         lat = Double(coord[0])!
                         lon = Double(coord[1])!
                         let coorFinales = (lat, lon)
-                        var fot = [String]()
+                        var fot = [Foto]()
                         var vid = [String]()
                         if let imagenes = info["imagenes"] as? [NSDictionary] {
                             for imagen in imagenes {
-                                fot.append(imagen["direccion"] as! String)
+                                let direccion = imagen["direccion"] as! String
+                                let foto = Foto(name: direccion, group: String(idL))
+                                fot.append(foto)
                             }
                         }
                         if let videos = info["videos"] as? [NSDictionary] {

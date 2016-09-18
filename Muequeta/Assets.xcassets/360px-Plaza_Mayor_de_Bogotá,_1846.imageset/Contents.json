@@ -4,6 +4,14 @@
       "idiom" : "universal",
       "filename" : "360px-Plaza_Mayor_de_Bogotá,_1846.JPG",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

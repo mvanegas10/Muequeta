@@ -18,8 +18,8 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         if let foto = foto {
-            navigationItem.title = foto.name.capitalizedString
-            imageView.image = UIImage(named: foto.name.lowercaseString)
+            navigationItem.title = foto.name
+            imageView.image = UIImage(named: foto.name)
         }
     }
     
