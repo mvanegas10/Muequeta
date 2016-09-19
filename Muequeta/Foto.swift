@@ -6,7 +6,7 @@
 //  Copyright © 2016 Meili Vanegas Hernández. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Foto: NSObject {
     

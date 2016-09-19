@@ -26,8 +26,8 @@ class LugarDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        ratingControl.rating = MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating
+        
+        ratingControl.rating = MuequetaSingleton.sharedInstance.darRating(MuequetaSingleton.sharedInstance.darLugarSeleccionado().id).rating
         tituloLugarText.title = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
         descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion
     }
@@ -53,12 +53,14 @@ class LugarDetailViewController: UIViewController {
             }
             else {
                 MuequetaSingleton.sharedInstance.verHechos()
-                MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating = ratingControl.rating
+                MuequetaSingleton.sharedInstance.cambiarRating(MuequetaSingleton.sharedInstance.darLugarSeleccionado().id, rating: ratingControl.rating)
+                MuequetaSingleton.sharedInstance.guardarRatings()
             }
         }
         else if (segue!.identifier == "verImagenesLugar") {
             MuequetaSingleton.sharedInstance.noVerHechos()
-            MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating = ratingControl.rating
+            MuequetaSingleton.sharedInstance.cambiarRating(MuequetaSingleton.sharedInstance.darLugarSeleccionado().id, rating: ratingControl.rating)
+            MuequetaSingleton.sharedInstance.guardarRatings()
             let viewController:ImagesCollectionViewController = segue!.destinationViewController as! ImagesCollectionViewController
             viewController.dataSource = DataSource(fotos: MuequetaSingleton.sharedInstance.darLugarSeleccionado().fotos,groups: [MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre])
         }

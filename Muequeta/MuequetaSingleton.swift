@@ -22,6 +22,7 @@ class MuequetaSingleton: NSObject {
     // MARK: Properties
     
     var lugares = [Lugar]()
+    var ratings = [Rating]()
     var hechosSeleccionados = [Hecho]()
     var lugarSeleccionado: Lugar?
     var horaDia: String?
@@ -54,12 +55,43 @@ class MuequetaSingleton: NSObject {
         lugar.agregarHecho(hecho)
     }
     
+    func agregarRating(rating:Rating) {
+        ratings.append(rating)
+    }
+    
     func darLugarSeleccionado() -> Lugar {
         return lugarSeleccionado!
     }
     
     func darHechosSeleccionados() -> [Hecho] {
         return hechosSeleccionados
+    }
+    
+    func darRatings() -> [Rating] {
+        return ratings
+    }
+    
+    func darRating(idLugar: Int) -> Rating {
+        var encontrado: Rating!
+        print(ratings.count)
+        for rating in ratings {
+            print(String(rating.id) + " " + String(rating.rating))
+            if (idLugar == rating.id) {
+                encontrado = rating
+            }
+        }
+        return encontrado
+    }
+    
+    func cambiarRating(idLugar: Int,rating:Int) -> Rating {
+        var encontrado: Rating!
+        for ratingObject in ratings {
+            if (idLugar == ratingObject.id) {
+                ratingObject.rating = rating
+                encontrado = ratingObject
+            }
+        }
+        return encontrado
     }
     
     func darHoraDia() -> String {
@@ -110,6 +142,21 @@ class MuequetaSingleton: NSObject {
             horaDia = "noche"
         }
         return hechosSeleccionados
+    }
+    
+    // MARK: Encoding process
+    
+    func guardarRatings() {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(ratings, toFile: Rating.ArchiveURL.path! + dia)
+        if !isSuccessfulSave {
+            print("Error guardando ratings")
+        }
+    }
+    
+    func cargarRatings() -> [Rating]? {
+        ratings = (NSKeyedUnarchiver.unarchiveObjectWithFile(Rating.ArchiveURL.path!) as? [Rating])!
+        return ratings
+
     }
     
 }

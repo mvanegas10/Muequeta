@@ -19,7 +19,6 @@ class Lugar: NSObject {
     var videos = [String]()
     let coordenadas:(Double, Double)
     var hechos = [Hecho]()
-    var rating: Int
     
     // MARK: Initialization
     
@@ -29,8 +28,7 @@ class Lugar: NSObject {
         self.id = id
         self.coordenadas = coordenadas
         self.fotos = fotos
-        self.videos = videos
-        self.rating = 0
+        self.videos = videos        
         super.init()
     }
     

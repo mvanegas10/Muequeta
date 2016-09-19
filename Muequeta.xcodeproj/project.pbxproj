@@ -26,6 +26,7 @@
 		A9A7B4A91D8EFB0C00FF755A /* Hecho.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4A81D8EFB0C00FF755A /* Hecho.swift */; };
 		A9A7B4AB1D8F32DE00FF755A /* HechoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4AA1D8F32DE00FF755A /* HechoDetailViewController.swift */; };
 		A9A7B4AF1D8F5A0300FF755A /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4AE1D8F5A0300FF755A /* RatingControl.swift */; };
+		A9A7B4B11D8F65BC00FF755A /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4B01D8F65BC00FF755A /* Rating.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		A9A7B4A81D8EFB0C00FF755A /* Hecho.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hecho.swift; sourceTree = "<group>"; };
 		A9A7B4AA1D8F32DE00FF755A /* HechoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HechoDetailViewController.swift; sourceTree = "<group>"; };
 		A9A7B4AE1D8F5A0300FF755A /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		A9A7B4B01D8F65BC00FF755A /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				A94E9DB11D8A2FBA0043B155 /* MuequetaSingleton.swift */,
 				A93A5DF01D8E153100163168 /* Foto.swift */,
 				A9A7B4A81D8EFB0C00FF755A /* Hecho.swift */,
+				A9A7B4B01D8F65BC00FF755A /* Rating.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				A93A5DF31D8E15FB00163168 /* DetailViewController.swift in Sources */,
 				A93A5DEF1D8E141E00163168 /* DataSource.swift in Sources */,
 				A9A7B4AB1D8F32DE00FF755A /* HechoDetailViewController.swift in Sources */,
+				A9A7B4B11D8F65BC00FF755A /* Rating.swift in Sources */,
 				A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */,
 				A9A7B4AF1D8F5A0300FF755A /* RatingControl.swift in Sources */,
 				A93A5DFB1D8E17EF00163168 /* FotosHeaderView.swift in Sources */,

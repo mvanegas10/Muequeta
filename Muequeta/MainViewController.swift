@@ -25,6 +25,11 @@ class MainViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        let ratings:[Rating]!
+        
+        
+        // MARK: Use in case a new place is added
+//        ratings = MuequetaSingleton.sharedInstance.cargarRatings()
         
         do {
             let json = NSDataAsset(name: "lugares")!.data
@@ -55,7 +60,20 @@ class MainViewController: UIViewController {
                                 vid.append(video["direccion"] as! String)
                             }
                         }
-                        let lugar = Lugar(nombre: nom, descripcion: desc, id: idL,fotos: fot, videos: vid,coordenadas: coorFinales)
+                        let lugar: Lugar
+//                        var encontrado:Rating!
+//                        for rating in ratings! {
+//                            if (rating.id == idL){
+//                                encontrado = rating
+//                            }
+//                        }
+//                        if (encontrado == nil) {
+//                            encontrado = Rating(id: idL, rating: 0)
+//                            MuequetaSingleton.sharedInstance.agregarRating(encontrado)
+//                        }
+                        
+                        lugar = Lugar(nombre: nom, descripcion: desc, id: idL,fotos: fot, videos: vid,coordenadas: coorFinales)
+//                        MuequetaSingleton.sharedInstance.guardarRatings()
                         MuequetaSingleton.sharedInstance.agregarLugar(lugar)
                     }
                 }
