@@ -27,7 +27,7 @@ class LugarDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ratingControl.rating = MuequetaSingleton.sharedInstance.darRating(MuequetaSingleton.sharedInstance.darLugarSeleccionado().id).rating
+        ratingControl.rating = MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating.rating
         tituloLugarText.title = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
         descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion
     }
@@ -53,14 +53,14 @@ class LugarDetailViewController: UIViewController {
             }
             else {
                 MuequetaSingleton.sharedInstance.verHechos()
-                MuequetaSingleton.sharedInstance.cambiarRating(MuequetaSingleton.sharedInstance.darLugarSeleccionado().id, rating: ratingControl.rating)
-                MuequetaSingleton.sharedInstance.guardarRatings()
+                MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating.rating = ratingControl.rating
+                MuequetaSingleton.sharedInstance.guardarRating(MuequetaSingleton.sharedInstance.darLugarSeleccionado())
             }
         }
         else if (segue!.identifier == "verImagenesLugar") {
             MuequetaSingleton.sharedInstance.noVerHechos()
-            MuequetaSingleton.sharedInstance.cambiarRating(MuequetaSingleton.sharedInstance.darLugarSeleccionado().id, rating: ratingControl.rating)
-            MuequetaSingleton.sharedInstance.guardarRatings()
+            MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating.rating = ratingControl.rating
+            MuequetaSingleton.sharedInstance.guardarRating(MuequetaSingleton.sharedInstance.darLugarSeleccionado())
             let viewController:ImagesCollectionViewController = segue!.destinationViewController as! ImagesCollectionViewController
             viewController.dataSource = DataSource(fotos: MuequetaSingleton.sharedInstance.darLugarSeleccionado().fotos,groups: [MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre])
         }

@@ -18,33 +18,28 @@ class Rating: NSObject {
     // MARK: Estruct for encoding
     
     struct RatingKey {
-        static let idKey = "id"
         static let ratingKey = "rating"
     }
     
     // MARK: Properties
     
-    var id: Int
     var rating: Int
     
     // MARK: Initialization
     
-    init(id: Int, rating: Int) {
-        self.id = id
+    init(rating: Int) {
         self.rating = rating
         super.init()
     }
     
     //MARK: Encoding process
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeInteger(id, forKey: RatingKey.idKey)
         aCoder.encodeInteger(rating, forKey: RatingKey.ratingKey)
     }
     
     required convenience init?(coder aDecoder: NSCoder) {
-        let id = aDecoder.decodeIntegerForKey(RatingKey.idKey)
         let rating = aDecoder.decodeIntegerForKey(RatingKey.ratingKey)
         
-        self.init(id: id, rating: rating)
+        self.init(rating: rating)
     }
 }

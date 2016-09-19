@@ -22,7 +22,7 @@ class MuequetaSingleton: NSObject {
     // MARK: Properties
     
     var lugares = [Lugar]()
-    var ratings = [Rating]()
+    let lugaresTotales = 10
     var hechosSeleccionados = [Hecho]()
     var lugarSeleccionado: Lugar?
     var horaDia: String?
@@ -55,43 +55,12 @@ class MuequetaSingleton: NSObject {
         lugar.agregarHecho(hecho)
     }
     
-    func agregarRating(rating:Rating) {
-        ratings.append(rating)
-    }
-    
     func darLugarSeleccionado() -> Lugar {
         return lugarSeleccionado!
     }
     
     func darHechosSeleccionados() -> [Hecho] {
         return hechosSeleccionados
-    }
-    
-    func darRatings() -> [Rating] {
-        return ratings
-    }
-    
-    func darRating(idLugar: Int) -> Rating {
-        var encontrado: Rating!
-        print(ratings.count)
-        for rating in ratings {
-            print(String(rating.id) + " " + String(rating.rating))
-            if (idLugar == rating.id) {
-                encontrado = rating
-            }
-        }
-        return encontrado
-    }
-    
-    func cambiarRating(idLugar: Int,rating:Int) -> Rating {
-        var encontrado: Rating!
-        for ratingObject in ratings {
-            if (idLugar == ratingObject.id) {
-                ratingObject.rating = rating
-                encontrado = ratingObject
-            }
-        }
-        return encontrado
     }
     
     func darHoraDia() -> String {
@@ -146,17 +115,26 @@ class MuequetaSingleton: NSObject {
     
     // MARK: Encoding process
     
-    func guardarRatings() {
-        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(ratings, toFile: Rating.ArchiveURL.path! + dia)
+    func guardarRating(lugar:Lugar) {
+        print("Al guardar")
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(lugar.rating, toFile: Rating.ArchiveURL.path! + "l" +  String(lugar.id))
         if !isSuccessfulSave {
             print("Error guardando ratings")
         }
+        else {
+            print("Se guardó el rating " + String(lugar.rating.rating) + " del lugar" + lugar.nombre + " exitosamente")
+        }
     }
     
-    func cargarRatings() -> [Rating]? {
-        ratings = (NSKeyedUnarchiver.unarchiveObjectWithFile(Rating.ArchiveURL.path!) as? [Rating])!
-        return ratings
-
+    func cargarRatings() {
+        print("Al cargar")
+        for i in 1...lugaresTotales {
+            let path = Rating.ArchiveURL.path! + "l" +  String(i)
+            let nskeyed = NSKeyedUnarchiver.self
+            let rating = (nskeyed.unarchiveObjectWithFile(path) as? Rating)
+            let lugar = buscarLugar(String(i))
+            lugar.rating = rating!
+            print("Se cargó el rating " + String(rating!.rating) + " del lugar" + lugar.nombre + " exitosamente")
+        }
     }
-    
 }

@@ -19,16 +19,18 @@ class Lugar: NSObject {
     var videos = [String]()
     let coordenadas:(Double, Double)
     var hechos = [Hecho]()
+    var rating: Rating
     
     // MARK: Initialization
     
-    init(nombre: String, descripcion: String, id: Int, fotos: [Foto], videos: [String], coordenadas:(Double,Double)) {
+    init(nombre: String, descripcion: String, id: Int, fotos: [Foto], videos: [String], coordenadas:(Double,Double), rating:Rating) {
         self.nombre = nombre
         self.descripcion = descripcion
         self.id = id
         self.coordenadas = coordenadas
         self.fotos = fotos
-        self.videos = videos        
+        self.videos = videos
+        self.rating = rating
         super.init()
     }
     
