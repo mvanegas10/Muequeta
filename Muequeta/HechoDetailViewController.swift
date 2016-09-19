@@ -16,6 +16,12 @@ class HechoDetailViewController: UIViewController {
     @IBOutlet weak var tituloLugarText: UINavigationItem!
     @IBOutlet weak var descripcionHechoLabel: UITextView!
     
+    // MARK: Action
+    
+    @IBAction func verVideosButton(sender: UIButton) {
+        mostrarAlerta("¡Oops! No hay videos asociados a este hecho, deberías ayudarnos y agregar unos tú")
+    }
+    
     // MARK: Did load
     
     override func viewDidLoad() {
@@ -54,6 +60,13 @@ class HechoDetailViewController: UIViewController {
         else if (segue.identifier == "volverALugar") {
             MuequetaSingleton.sharedInstance.noVerHechos()
         }
+    }
+    
+    func mostrarAlerta(mensaje: String){
+        let alert = UIAlertController(title: "Mensaje", message: mensaje, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
     }
 }
 

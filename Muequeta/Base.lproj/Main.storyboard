@@ -18,21 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="V1A-82-OX9">
-                                <rect key="frame" x="40" y="50" width="520" height="331"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="V1A-82-OX9">
+                                <rect key="frame" x="40" y="50" width="520" height="298"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fa2-es-Kkc">
                                         <rect key="frame" x="0.0" y="0.0" width="520" height="40"/>
                                         <state key="normal" image="logotipo"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esta aplicación te permite descubrir tu ciudad, su historia y cultura." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOG-Rm-Rbf">
-                                        <rect key="frame" x="0.0" y="160" width="520" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v29-jZ-Xwm">
-                                        <rect key="frame" x="0.0" y="301" width="520" height="30"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="jxx-io-8re">
+                                        <rect key="frame" x="0.0" y="90" width="520" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Te invitamos a involucrarte con la cultura y la historia de nuestra ciudad. ¡Encuentra nuestros códigos QR en los sitios que recorres a diario y descubre lo que esconden los muros de tu ciudad!</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v29-jZ-Xwm">
+                                        <rect key="frame" x="0.0" y="268" width="520" height="30"/>
                                         <state key="normal" title="Escanear un código QR"/>
                                         <connections>
                                             <segue destination="Qdr-Z1-3FS" kind="show" id="i6t-kV-vxS"/>
@@ -130,8 +131,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cps-Qe-wrh">
-                                        <rect key="frame" x="115" y="348" width="330" height="30"/>
-                                        <state key="normal" title="¿Qué ha pasado aquí mismo a esta misma hora?"/>
+                                        <rect key="frame" x="154" y="348" width="252" height="30"/>
+                                        <state key="normal" title="¿Qué pasó aquí mismo en esta hora?"/>
                                         <connections>
                                             <segue destination="cdK-ZZ-gbD" kind="show" identifier="verHechos" id="ejS-vY-aip"/>
                                         </connections>
@@ -173,7 +174,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oX2-VN-luH">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oX2-VN-luH">
                                 <rect key="frame" x="20" y="30" width="560" height="434"/>
                                 <subviews>
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kq-dL-fgh">
@@ -213,6 +214,7 @@
                                         <state key="normal" title="Ver videos"/>
                                         <connections>
                                             <action selector="verVideosButton:" destination="xtG-S7-aMG" eventType="touchUpInside" id="AX5-LX-bST"/>
+                                            <action selector="verVideosButton:" destination="cdK-ZZ-gbD" eventType="touchUpInside" id="n9m-QG-ezb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -410,7 +412,7 @@
         <image name="logotipo" width="191" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="rJ8-hg-7y3"/>
         <segue reference="yV4-N8-M5n"/>
-        <segue reference="pCC-5j-589"/>
     </inferredMetricsTieBreakers>
 </document>
