@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90BDE6B1D9C3E1B00A66294 /* PhotoImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90BDE6A1D9C3E1B00A66294 /* PhotoImageViewController.swift */; };
 		A91694BB1D80914D00A8B64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91694BA1D80914D00A8B64B /* AppDelegate.swift */; };
 		A91694C01D80914D00A8B64B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91694BE1D80914D00A8B64B /* Main.storyboard */; };
 		A91694C21D80914D00A8B64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91694C11D80914D00A8B64B /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90BDE6A1D9C3E1B00A66294 /* PhotoImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoImageViewController.swift; sourceTree = "<group>"; };
 		A91694B71D80914D00A8B64B /* Muequeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muequeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91694BA1D80914D00A8B64B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A91694BF1D80914D00A8B64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				A93A5DEC1D8E128100163168 /* ImagesCollectionViewController.swift */,
 				A93A5DF21D8E15FB00163168 /* DetailViewController.swift */,
 				A9A7B4AA1D8F32DE00FF755A /* HechoDetailViewController.swift */,
+				A90BDE6A1D9C3E1B00A66294 /* PhotoImageViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				A93A5DEB1D8DA02800163168 /* LugarDetailViewController.swift in Sources */,
 				A93A5DED1D8E128100163168 /* ImagesCollectionViewController.swift in Sources */,
 				A93A5DF11D8E153100163168 /* Foto.swift in Sources */,
+				A90BDE6B1D9C3E1B00A66294 /* PhotoImageViewController.swift in Sources */,
 				A9A7B4A91D8EFB0C00FF755A /* Hecho.swift in Sources */,
 				A91694BB1D80914D00A8B64B /* AppDelegate.swift in Sources */,
 				A93A5DF31D8E15FB00163168 /* DetailViewController.swift in Sources */,
