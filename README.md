@@ -10,7 +10,7 @@ This is an iOS application that aims to discover Bogota, its culture, history an
 
 * XCode
 
-## Authors
+## Author
 
 <!-- Contributors table START -->
 | [![Meili Vanegas](https://avatars.githubusercontent.com/mvanegas10?s=100)<br /><sub>Meili Vanegas</sub>](https://github.com/mvanegas10)<br /> |
