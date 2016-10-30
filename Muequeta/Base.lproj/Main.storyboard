@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="V1A-82-OX9">
-                                <rect key="frame" x="40" y="50" width="520" height="298"/>
+                                <rect key="frame" x="40" y="50" width="520" height="378"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fa2-es-Kkc">
                                         <rect key="frame" x="0.0" y="0.0" width="520" height="40"/>
@@ -32,8 +32,15 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v29-jZ-Xwm">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5K1-Xl-kgk">
                                         <rect key="frame" x="0.0" y="268" width="520" height="30"/>
+                                        <state key="normal" title="Ver lugares cercanos a ti"/>
+                                        <connections>
+                                            <segue destination="RNd-cy-5eY" kind="show" identifier="encontrarLugaresCercanos" id="Jfd-JQ-FoD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v29-jZ-Xwm">
+                                        <rect key="frame" x="0.0" y="348" width="520" height="30"/>
                                         <state key="normal" title="Escanear un código QR"/>
                                         <connections>
                                             <segue destination="Qdr-Z1-3FS" kind="show" id="i6t-kV-vxS"/>
@@ -55,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="82" y="292"/>
+            <point key="canvasLocation" x="82" y="262"/>
         </scene>
         <!--Scanner View Controller-->
         <scene sceneID="kgq-0T-JhW">
@@ -167,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISA-j6-BVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="658"/>
+            <point key="canvasLocation" x="299" y="-1021"/>
         </scene>
         <!--Hecho Detail View Controller-->
         <scene sceneID="Zuo-kj-ulQ">
@@ -247,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcm-Is-vj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="1239"/>
+            <point key="canvasLocation" x="867" y="1415"/>
         </scene>
         <!--Images Collection View Controller-->
         <scene sceneID="p5u-iA-8oK">
@@ -273,10 +280,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ro7-k9-KiZ">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ro7-k9-KiZ">
                                 <rect key="frame" x="20" y="80" width="560" height="510"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hYO-Rg-l36">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hYO-Rg-l36">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="510"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="yVh-en-hy4">
@@ -358,11 +365,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="R90-it-yun">
-                                <rect key="frame" x="20" y="244" width="560" height="302"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="R90-it-yun">
+                                <rect key="frame" x="20" y="244" width="560" height="258"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k1G-GG-UxZ">
-                                        <rect key="frame" x="280" y="0.0" width="0.0" height="302"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k1G-GG-UxZ">
+                                        <rect key="frame" x="255" y="0.0" width="50" height="258"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -472,13 +479,70 @@
             </objects>
             <point key="canvasLocation" x="82" y="1121"/>
         </scene>
+        <!--Lugares cercanos a ti-->
+        <scene sceneID="Qqd-CQ-pXb">
+            <objects>
+                <tableViewController id="Wlc-WH-8Kp" customClass="RestController" customModule="Muequeta" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GBy-9c-qAP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LugaresCercanosCell" id="FOK-cH-04b" customClass="LugaresCell" customModule="Muequeta" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FOK-cH-04b" id="g59-ru-TTF">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOa-Xn-vWD">
+                                            <rect key="frame" x="28" y="11" width="564" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nombreLugarLabel" destination="pOa-Xn-vWD" id="peB-ha-oKA"/>
+                                    <segue destination="xtG-S7-aMG" kind="show" identifier="verLugarCercano" id="C1O-2B-GBc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Wlc-WH-8Kp" id="p0r-lv-cZ1"/>
+                            <outlet property="delegate" destination="Wlc-WH-8Kp" id="taw-T0-GF0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lugares cercanos a ti" id="81y-ft-kqr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYg-h1-L7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-484" y="-1021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9r6-KU-HFY">
+            <objects>
+                <navigationController id="RNd-cy-5eY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OdZ-H4-Bgt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wlc-WH-8Kp" kind="relationship" relationship="rootViewController" id="RmJ-cV-uXr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZR-jw-XVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1304" y="-1021"/>
+        </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="85" height="78"/>
         <image name="logotipo" width="191" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="MFs-y4-ASI"/>
         <segue reference="pCC-5j-589"/>
-        <segue reference="vnk-hF-uus"/>
     </inferredMetricsTieBreakers>
 </document>

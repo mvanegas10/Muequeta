@@ -25,14 +25,33 @@ class MuequetaSingleton: NSObject {
     let lugaresTotales = 10
     var hechosSeleccionados = [Hecho]()
     var lugarSeleccionado: Lugar?
+    var lugaresCercanos = [Lugar]()
     var horaDia: String?
     var viendoHechos: Bool = false
+    var latitud: Double?
+    var longitud: Double?
     
     // MARK: Initialization
     
     override init() {
         lugares = [Lugar]()
         super.init()
+    }
+    
+    func asignarLatitud(latitud:Double) {
+        self.latitud = latitud
+    }
+    
+    func asignarLongitud(longitud:Double) {
+        self.longitud = longitud
+    }
+    
+    func darLatitud() -> Double {
+        return latitud!
+    }
+    
+    func darLongitud() -> Double {
+        return longitud!
     }
     
     func estaViendoHechos() -> Bool {
@@ -59,6 +78,10 @@ class MuequetaSingleton: NSObject {
         return lugarSeleccionado!
     }
     
+    func darLugaresCercanos() -> [Lugar] {
+        return lugaresCercanos
+    }
+    
     func darHechosSeleccionados() -> [Hecho] {
         return hechosSeleccionados
     }
@@ -76,6 +99,16 @@ class MuequetaSingleton: NSObject {
         var encontrado: Lugar!
         for lugar in lugares{
             if String(lugar.id) == id{
+                encontrado = lugar
+            }
+        }
+        return encontrado
+    }
+    
+    func buscarLugarPorNombre(nombre:String) -> Lugar {
+        var encontrado: Lugar!
+        for lugar in lugares{
+            if String(lugar.nombre) == nombre{
                 encontrado = lugar
             }
         }
@@ -136,6 +169,47 @@ class MuequetaSingleton: NSObject {
             let lugar = buscarLugar(String(i))
             lugar.rating = rating!
             print("Se cargó el rating " + String(rating!.rating) + " del lugar" + lugar.nombre + " exitosamente")
+        }
+    }
+    
+    // MARK: Dar lugares cercanos
+    
+    func encontrarLugaresCerca(latitud: Double, longitud: Double) {
+        // prepare json data
+        
+        let json = [ "latitud":latitud, "longitud":longitud ]
+        do {
+            let jsonData = try NSJSONSerialization.dataWithJSONObject(json, options: .PrettyPrinted)
+            
+            // create post request
+            let url = NSURL(string: "http://192.168.0.24:8080/lugaresCerca")!
+            let request = NSMutableURLRequest(URL: url)
+            request.HTTPMethod = "POST"
+            
+            // insert json data to the request
+            request.HTTPBody = jsonData
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            let task = NSURLSession.sharedSession().dataTaskWithRequest(request){ data,response,error in
+                if error != nil{
+                    print(error!.localizedDescription)
+                    return
+                }
+                do {
+                    if let responseJSON = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? [String:AnyObject] {
+                        for lugar in (responseJSON["lugares"] as? NSArray)! {
+                            let actual = lugar as? NSArray
+                            let lugarActual = MuequetaSingleton.sharedInstance.buscarLugarPorNombre(actual![1] as! String)
+                            self.lugaresCercanos.append(lugarActual)
+                        }
+                    }
+                } catch let error as NSError {
+                    print(error.localizedDescription)
+                }
+            }
+            task.resume()
+        } catch let error as NSError {
+            print(error.localizedDescription)
         }
     }
 }

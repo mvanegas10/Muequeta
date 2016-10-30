@@ -20,6 +20,7 @@
 		A93A5DF31D8E15FB00163168 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93A5DF21D8E15FB00163168 /* DetailViewController.swift */; };
 		A93A5DF71D8E176800163168 /* FotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93A5DF61D8E176800163168 /* FotoCell.swift */; };
 		A93A5DFB1D8E17EF00163168 /* FotosHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93A5DFA1D8E17EF00163168 /* FotosHeaderView.swift */; };
+		A944CFFA1DC4EBCC004B8A2C /* LugaresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A944CFF91DC4EBCC004B8A2C /* LugaresCell.swift */; };
 		A94E9DA41D8A0ADE0043B155 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DA31D8A0ADE0043B155 /* ScannerViewController.swift */; };
 		A94E9DA61D8A0EB10043B155 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DA51D8A0EB10043B155 /* MainViewController.swift */; };
 		A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DAC1D8A141E0043B155 /* Lugar.swift */; };
@@ -28,6 +29,8 @@
 		A9A7B4AB1D8F32DE00FF755A /* HechoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4AA1D8F32DE00FF755A /* HechoDetailViewController.swift */; };
 		A9A7B4AF1D8F5A0300FF755A /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4AE1D8F5A0300FF755A /* RatingControl.swift */; };
 		A9A7B4B11D8F65BC00FF755A /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4B01D8F65BC00FF755A /* Rating.swift */; };
+		A9D61B291DC42412005C012A /* RestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D61B281DC42412005C012A /* RestController.swift */; };
+		A9F1385A1DC53E4B00C31EB6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F138591DC53E4B00C31EB6 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,7 @@
 		A93A5DF21D8E15FB00163168 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A93A5DF61D8E176800163168 /* FotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotoCell.swift; sourceTree = "<group>"; };
 		A93A5DFA1D8E17EF00163168 /* FotosHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotosHeaderView.swift; sourceTree = "<group>"; };
+		A944CFF91DC4EBCC004B8A2C /* LugaresCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugaresCell.swift; sourceTree = "<group>"; };
 		A94E9DA31D8A0ADE0043B155 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		A94E9DA51D8A0EB10043B155 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A94E9DAC1D8A141E0043B155 /* Lugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 		A9A7B4AA1D8F32DE00FF755A /* HechoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HechoDetailViewController.swift; sourceTree = "<group>"; };
 		A9A7B4AE1D8F5A0300FF755A /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		A9A7B4B01D8F65BC00FF755A /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		A9D61B281DC42412005C012A /* RestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestController.swift; sourceTree = "<group>"; };
+		A9F138591DC53E4B00C31EB6 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,7 @@
 				A9A7B4AE1D8F5A0300FF755A /* RatingControl.swift */,
 				A93A5DF61D8E176800163168 /* FotoCell.swift */,
 				A93A5DFA1D8E17EF00163168 /* FotosHeaderView.swift */,
+				A944CFF91DC4EBCC004B8A2C /* LugaresCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -157,6 +164,8 @@
 				A93A5DF21D8E15FB00163168 /* DetailViewController.swift */,
 				A9A7B4AA1D8F32DE00FF755A /* HechoDetailViewController.swift */,
 				A90BDE6A1D9C3E1B00A66294 /* PhotoImageViewController.swift */,
+				A9D61B281DC42412005C012A /* RestController.swift */,
+				A9F138591DC53E4B00C31EB6 /* File.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -280,14 +289,17 @@
 				A94E9DA41D8A0ADE0043B155 /* ScannerViewController.swift in Sources */,
 				A93A5DF71D8E176800163168 /* FotoCell.swift in Sources */,
 				A93A5DEB1D8DA02800163168 /* LugarDetailViewController.swift in Sources */,
+				A9F1385A1DC53E4B00C31EB6 /* File.swift in Sources */,
 				A93A5DED1D8E128100163168 /* ImagesCollectionViewController.swift in Sources */,
 				A93A5DF11D8E153100163168 /* Foto.swift in Sources */,
 				A90BDE6B1D9C3E1B00A66294 /* PhotoImageViewController.swift in Sources */,
 				A9A7B4A91D8EFB0C00FF755A /* Hecho.swift in Sources */,
 				A91694BB1D80914D00A8B64B /* AppDelegate.swift in Sources */,
 				A93A5DF31D8E15FB00163168 /* DetailViewController.swift in Sources */,
+				A944CFFA1DC4EBCC004B8A2C /* LugaresCell.swift in Sources */,
 				A93A5DEF1D8E141E00163168 /* DataSource.swift in Sources */,
 				A9A7B4AB1D8F32DE00FF755A /* HechoDetailViewController.swift in Sources */,
+				A9D61B291DC42412005C012A /* RestController.swift in Sources */,
 				A9A7B4B11D8F65BC00FF755A /* Rating.swift in Sources */,
 				A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */,
 				A9A7B4AF1D8F5A0300FF755A /* RatingControl.swift in Sources */,

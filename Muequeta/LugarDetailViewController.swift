@@ -26,7 +26,7 @@ class LugarDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("En el detalle es: " + MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre)
         ratingControl.rating = MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating.rating
         tituloLugarText.title = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
         descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion
