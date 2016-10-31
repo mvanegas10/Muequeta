@@ -26,9 +26,10 @@
 		A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DAC1D8A141E0043B155 /* Lugar.swift */; };
 		A94E9DB21D8A2FBA0043B155 /* MuequetaSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DB11D8A2FBA0043B155 /* MuequetaSingleton.swift */; };
 		A97106B01DC6B5CE00930D59 /* AgregarLugarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97106AF1DC6B5CE00930D59 /* AgregarLugarController.swift */; };
-		A97106B21DC6BE2500930D59 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97106B11DC6BE2500930D59 /* TabBarController.swift */; };
 		A97106B41DC6CF9600930D59 /* LugarQRDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97106B31DC6CF9600930D59 /* LugarQRDetailController.swift */; };
 		A97106B61DC6EF8200930D59 /* HechosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97106B51DC6EF8200930D59 /* HechosController.swift */; };
+		A98E3A301DC6F79200670EC6 /* HechoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E3A2F1DC6F79200670EC6 /* HechoController.swift */; };
+		A98E3A321DC7030B00670EC6 /* ImagenesHechoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E3A311DC7030B00670EC6 /* ImagenesHechoController.swift */; };
 		A9A693831DC655A6001DC07D /* ImagenesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A693821DC655A6001DC07D /* ImagenesController.swift */; };
 		A9A693851DC69EA8001DC07D /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A693841DC69EA8001DC07D /* ImageController.swift */; };
 		A9A7B4A91D8EFB0C00FF755A /* Hecho.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4A81D8EFB0C00FF755A /* Hecho.swift */; };
@@ -36,7 +37,6 @@
 		A9A7B4AF1D8F5A0300FF755A /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4AE1D8F5A0300FF755A /* RatingControl.swift */; };
 		A9A7B4B11D8F65BC00FF755A /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4B01D8F65BC00FF755A /* Rating.swift */; };
 		A9D61B291DC42412005C012A /* RestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D61B281DC42412005C012A /* RestController.swift */; };
-		A9F1385A1DC53E4B00C31EB6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F138591DC53E4B00C31EB6 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,9 +73,10 @@
 		A94E9DAC1D8A141E0043B155 /* Lugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
 		A94E9DB11D8A2FBA0043B155 /* MuequetaSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuequetaSingleton.swift; sourceTree = "<group>"; };
 		A97106AF1DC6B5CE00930D59 /* AgregarLugarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgregarLugarController.swift; sourceTree = "<group>"; };
-		A97106B11DC6BE2500930D59 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A97106B31DC6CF9600930D59 /* LugarQRDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugarQRDetailController.swift; sourceTree = "<group>"; };
 		A97106B51DC6EF8200930D59 /* HechosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HechosController.swift; sourceTree = "<group>"; };
+		A98E3A2F1DC6F79200670EC6 /* HechoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HechoController.swift; sourceTree = "<group>"; };
+		A98E3A311DC7030B00670EC6 /* ImagenesHechoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagenesHechoController.swift; sourceTree = "<group>"; };
 		A9A693821DC655A6001DC07D /* ImagenesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagenesController.swift; sourceTree = "<group>"; };
 		A9A693841DC69EA8001DC07D /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 		A9A7B4A81D8EFB0C00FF755A /* Hecho.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hecho.swift; sourceTree = "<group>"; };
@@ -83,7 +84,6 @@
 		A9A7B4AE1D8F5A0300FF755A /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		A9A7B4B01D8F65BC00FF755A /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		A9D61B281DC42412005C012A /* RestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestController.swift; sourceTree = "<group>"; };
-		A9F138591DC53E4B00C31EB6 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,12 +178,12 @@
 				A90BDE6A1D9C3E1B00A66294 /* PhotoImageViewController.swift */,
 				A9D61B281DC42412005C012A /* RestController.swift */,
 				A9A693821DC655A6001DC07D /* ImagenesController.swift */,
-				A9F138591DC53E4B00C31EB6 /* File.swift */,
 				A9A693841DC69EA8001DC07D /* ImageController.swift */,
 				A97106AF1DC6B5CE00930D59 /* AgregarLugarController.swift */,
-				A97106B11DC6BE2500930D59 /* TabBarController.swift */,
 				A97106B31DC6CF9600930D59 /* LugarQRDetailController.swift */,
 				A97106B51DC6EF8200930D59 /* HechosController.swift */,
+				A98E3A2F1DC6F79200670EC6 /* HechoController.swift */,
+				A98E3A311DC7030B00670EC6 /* ImagenesHechoController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -308,11 +308,11 @@
 				A94E9DA41D8A0ADE0043B155 /* ScannerViewController.swift in Sources */,
 				A93A5DF71D8E176800163168 /* FotoCell.swift in Sources */,
 				A93A5DEB1D8DA02800163168 /* LugarDetailViewController.swift in Sources */,
-				A9F1385A1DC53E4B00C31EB6 /* File.swift in Sources */,
 				A93A5DED1D8E128100163168 /* ImagesCollectionViewController.swift in Sources */,
 				A93A5DF11D8E153100163168 /* Foto.swift in Sources */,
+				A98E3A301DC6F79200670EC6 /* HechoController.swift in Sources */,
 				A90BDE6B1D9C3E1B00A66294 /* PhotoImageViewController.swift in Sources */,
-				A97106B21DC6BE2500930D59 /* TabBarController.swift in Sources */,
+				A98E3A321DC7030B00670EC6 /* ImagenesHechoController.swift in Sources */,
 				A9A693831DC655A6001DC07D /* ImagenesController.swift in Sources */,
 				A9A7B4A91D8EFB0C00FF755A /* Hecho.swift in Sources */,
 				A91694BB1D80914D00A8B64B /* AppDelegate.swift in Sources */,

@@ -12,9 +12,9 @@ class LugarDetailViewController: UIViewController {
     
     // MARK: Properties
     
+    @IBOutlet weak var tituloLugarNav: UINavigationItem!
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var lugarLabel: UILabel!
-    @IBOutlet weak var tituloLugarNav: UINavigationItem!
     @IBOutlet weak var descripcionLugarLabel: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -29,8 +29,8 @@ class LugarDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.contentSize.height = 600
-        print("En el detalle es: " + MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre)
         lugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
+
         ratingControl.rating = MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating.rating
         tituloLugarNav.title = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
         descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion

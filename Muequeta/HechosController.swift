@@ -37,22 +37,10 @@ class HechosController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell : LugaresCell = tableView.dequeueReusableCellWithIdentifier("LugaresCercanosCell", forIndexPath: indexPath) as! LugaresCell
+        let cell : LugaresCell = tableView.dequeueReusableCellWithIdentifier("HechosCercanosCell", forIndexPath: indexPath) as! LugaresCell
         let row = indexPath.row
         cell.nombreLugarLabel.text = self.hechos[row].nombre
-        print( self.hechos[row].nombre)
         return cell
     }
-    
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "verLugarCercano" {
-//            if let indexPath = self.tableView.indexPathForSelectedRow{
-//                print(lugaresCercanos[indexPath.row].nombre)
-//                MuequetaSingleton.sharedInstance.seleccionarLugar(lugaresCercanos[indexPath.row])
-//                print("El seleccionado es: " + MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre)
-//            }
-//        }
-//        
-//    }
 }
 
