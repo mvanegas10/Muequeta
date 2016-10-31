@@ -102,7 +102,18 @@
                             <outlet property="delegate" destination="wSS-Yc-Xsl" id="nTs-iC-Q89"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Imágenes" id="E2J-5W-4ie"/>
+                    <navigationItem key="navigationItem" title="Imágenes" id="E2J-5W-4ie">
+                        <barButtonItem key="leftBarButtonItem" title="Atras" id="Bft-nt-Cuf">
+                            <connections>
+                                <segue destination="MRC-4W-T2a" kind="show" id="qZp-05-gJW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SJK-58-ezm">
+                            <connections>
+                                <segue destination="01c-Sv-c3M" kind="show" id="Az0-fk-uzK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2pg-Fv-f8W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -207,79 +218,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1mV-8y-15A">
-                                <rect key="frame" x="20" y="30" width="560" height="418"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Atm-Fm-Gnh">
+                                <rect key="frame" x="-1" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYW-eh-bOw">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
-                                        <items>
-                                            <navigationItem title="Titulo lugar" id="PWF-2l-b27">
-                                                <barButtonItem key="leftBarButtonItem" title="Regresar" id="uXW-vE-Sxu">
-                                                    <connections>
-                                                        <segue destination="BYZ-38-t0r" kind="show" id="ngm-6p-m5f"/>
-                                                    </connections>
-                                                </barButtonItem>
-                                            </navigationItem>
-                                        </items>
-                                    </navigationBar>
-                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="H51-tJ-1Yf" customClass="RatingControl" customModule="Muequeta" customModuleProvider="target">
-                                        <rect key="frame" x="160" y="54" width="240" height="44"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="jI4-t2-Ktk">
-                                        <rect key="frame" x="0.0" y="108" width="560" height="150"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCE-PG-GHp">
-                                        <rect key="frame" x="234" y="268" width="93" height="30"/>
-                                        <state key="normal" title="Ver imágenes"/>
-                                        <connections>
-                                            <segue destination="aXG-NL-tZb" kind="show" identifier="verImagenesLugar" id="pCC-5j-589"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rk-F0-l5h">
-                                        <rect key="frame" x="244" y="308" width="72" height="30"/>
-                                        <state key="normal" title="Ver videos"/>
-                                        <connections>
-                                            <action selector="verVideosButton:" destination="xtG-S7-aMG" eventType="touchUpInside" id="l6V-I5-Tka"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLU-HU-eUH">
-                                        <rect key="frame" x="218" y="348" width="125" height="30"/>
-                                        <state key="normal" title="Agregar imágenes"/>
-                                        <connections>
-                                            <segue destination="kPc-n6-RjE" kind="show" id="NL2-Jn-zK3"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cps-Qe-wrh">
-                                        <rect key="frame" x="154" y="388" width="252" height="30"/>
-                                        <state key="normal" title="¿Qué pasó aquí mismo en esta hora?"/>
-                                        <connections>
-                                            <segue destination="cdK-ZZ-gbD" kind="show" identifier="verHechos" id="ejS-vY-aip"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1mV-8y-15A">
+                                        <rect key="frame" x="20" y="94" width="560" height="420"/>
+                                        <subviews>
+                                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dYW-eh-bOw">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
+                                                <items>
+                                                    <navigationItem title="Titulo lugar" id="PWF-2l-b27">
+                                                        <barButtonItem key="leftBarButtonItem" title="Regresar" id="uXW-vE-Sxu">
+                                                            <connections>
+                                                                <segue destination="BYZ-38-t0r" kind="show" id="ngm-6p-m5f"/>
+                                                            </connections>
+                                                        </barButtonItem>
+                                                    </navigationItem>
+                                                </items>
+                                            </navigationBar>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="H51-tJ-1Yf" customClass="RatingControl" customModule="Muequeta" customModuleProvider="target">
+                                                <rect key="frame" x="160" y="54" width="240" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="jI4-t2-Ktk">
+                                                <rect key="frame" x="0.0" y="108" width="560" height="152"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCE-PG-GHp">
+                                                <rect key="frame" x="234" y="270" width="93" height="30"/>
+                                                <state key="normal" title="Ver imágenes"/>
+                                                <connections>
+                                                    <segue destination="aXG-NL-tZb" kind="show" identifier="verImagenesLugar" id="pCC-5j-589"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rk-F0-l5h">
+                                                <rect key="frame" x="244" y="310" width="72" height="30"/>
+                                                <state key="normal" title="Ver videos"/>
+                                                <connections>
+                                                    <action selector="verVideosButton:" destination="xtG-S7-aMG" eventType="touchUpInside" id="l6V-I5-Tka"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLU-HU-eUH">
+                                                <rect key="frame" x="218" y="350" width="125" height="30"/>
+                                                <state key="normal" title="Agregar imágenes"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cps-Qe-wrh">
+                                                <rect key="frame" x="154" y="390" width="252" height="30"/>
+                                                <state key="normal" title="¿Qué pasó aquí mismo en esta hora?"/>
+                                                <connections>
+                                                    <segue destination="cdK-ZZ-gbD" kind="show" identifier="verHechos" id="ejS-vY-aip"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dYW-eh-bOw" firstAttribute="leading" secondItem="1mV-8y-15A" secondAttribute="leading" id="Kna-6g-qPB"/>
+                                            <constraint firstAttribute="trailing" secondItem="dYW-eh-bOw" secondAttribute="trailing" id="Loc-7H-07d"/>
+                                            <constraint firstItem="dYW-eh-bOw" firstAttribute="top" secondItem="1mV-8y-15A" secondAttribute="top" id="eXJ-Ld-BhL"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="dYW-eh-bOw" firstAttribute="leading" secondItem="1mV-8y-15A" secondAttribute="leading" id="Kna-6g-qPB"/>
-                                    <constraint firstAttribute="trailing" secondItem="dYW-eh-bOw" secondAttribute="trailing" id="Loc-7H-07d"/>
-                                    <constraint firstItem="dYW-eh-bOw" firstAttribute="top" secondItem="1mV-8y-15A" secondAttribute="top" id="eXJ-Ld-BhL"/>
-                                </constraints>
-                            </stackView>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1mV-8y-15A" firstAttribute="leading" secondItem="1zI-aM-C2u" secondAttribute="leadingMargin" id="DqL-Qk-5Hs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1mV-8y-15A" secondAttribute="trailing" id="UW1-2G-KMT"/>
-                            <constraint firstItem="1mV-8y-15A" firstAttribute="top" secondItem="ogU-nH-fnL" secondAttribute="bottom" constant="10" id="liB-50-fAk"/>
+                            <constraint firstItem="Atm-Fm-Gnh" firstAttribute="centerY" secondItem="1zI-aM-C2u" secondAttribute="centerY" id="Bcb-gg-ZcT"/>
+                            <constraint firstItem="Atm-Fm-Gnh" firstAttribute="height" secondItem="1zI-aM-C2u" secondAttribute="height" id="V4E-eB-fuQ"/>
+                            <constraint firstItem="Atm-Fm-Gnh" firstAttribute="width" secondItem="1zI-aM-C2u" secondAttribute="width" id="mNs-o1-G7p"/>
+                            <constraint firstItem="Atm-Fm-Gnh" firstAttribute="centerX" secondItem="1zI-aM-C2u" secondAttribute="centerX" id="uYk-Uf-EFS"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="descripcionLugarLabel" destination="jI4-t2-Ktk" id="Fjw-pA-7RV"/>
                         <outlet property="ratingControl" destination="H51-tJ-1Yf" id="TL0-c8-CZA"/>
-                        <outlet property="tituloLugarText" destination="PWF-2l-b27" id="oEX-aQ-LXi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISA-j6-BVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -531,64 +544,6 @@
             </objects>
             <point key="canvasLocation" x="-804" y="142"/>
         </scene>
-        <!--Foto View Controller-->
-        <scene sceneID="D1g-g8-5W0">
-            <objects>
-                <viewController id="kPc-n6-RjE" customClass="FotoViewController" customModule="Muequeta" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6Pt-7f-YHS"/>
-                        <viewControllerLayoutGuide type="bottom" id="pWZ-Fe-Q8U"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rhq-4j-syw">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Chh-4m-RFZ">
-                                <rect key="frame" x="20" y="80" width="560" height="395"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSO-KS-e3A">
-                                        <rect key="frame" x="263" y="0.0" width="35" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="DW9-8m-NF5">
-                                        <rect key="frame" x="120" y="33" width="320" height="320"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="Op1-IW-Vd5" appends="YES" id="pt9-WP-pjF"/>
-                                        </connections>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWA-Mw-5Kv">
-                                        <rect key="frame" x="243" y="365" width="75" height="30"/>
-                                        <state key="normal" title="Tomar foto"/>
-                                        <connections>
-                                            <action selector="tomarFoto:" destination="kPc-n6-RjE" eventType="touchUpInside" id="kt7-c8-Iot"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Chh-4m-RFZ" secondAttribute="trailing" id="0fa-qA-dc7"/>
-                            <constraint firstItem="Chh-4m-RFZ" firstAttribute="leading" secondItem="rhq-4j-syw" secondAttribute="leadingMargin" id="1e0-d1-tNt"/>
-                            <constraint firstItem="Chh-4m-RFZ" firstAttribute="top" secondItem="6Pt-7f-YHS" secondAttribute="bottom" constant="60" id="qTS-FG-WR3"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="photoImageView" destination="DW9-8m-NF5" id="A7T-cR-23C"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SSt-EB-jDf" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Op1-IW-Vd5">
-                    <connections>
-                        <action selector="selectImageFromPhotoLibrary:" destination="kPc-n6-RjE" id="ohk-Qt-Lid"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="-2398" y="941"/>
-        </scene>
         <!--Lugares cercanos a ti-->
         <scene sceneID="Qqd-CQ-pXb">
             <objects>
@@ -669,6 +624,144 @@
             </objects>
             <point key="canvasLocation" x="-3212" y="-825"/>
         </scene>
+        <!--Añadir imagen-->
+        <scene sceneID="h7H-1M-xvC">
+            <objects>
+                <viewController id="01c-Sv-c3M" customClass="FotoViewController" customModule="Muequeta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2mf-Xx-pz9"/>
+                        <viewControllerLayoutGuide type="bottom" id="t3B-k7-9eZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PS9-bY-aiV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="X8f-o6-5Ju">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iHC-Gr-Icq">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="434"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Igu-Rp-FYl">
+                                        <rect key="frame" x="0.0" y="434" width="600" height="122"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rUA-UL-FE1">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWB-jO-V5k">
+                                                <rect key="frame" x="246" y="86" width="108" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Abrir galería"/>
+                                                <connections>
+                                                    <action selector="abrirGaleria:" destination="01c-Sv-c3M" eventType="touchUpInside" id="J2b-Rj-F0V"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="rUA-UL-FE1" firstAttribute="width" secondItem="Igu-Rp-FYl" secondAttribute="width" id="Aac-Bu-gSj"/>
+                                        </constraints>
+                                    </stackView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QN5-eZ-nDI">
+                                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                        <items>
+                                            <barButtonItem systemItem="camera" id="Hm3-Jh-AXE">
+                                                <connections>
+                                                    <action selector="tomarFoto:" destination="01c-Sv-c3M" id="znK-g7-1Ot"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="AoU-vo-12W"/>
+                                            <barButtonItem title="Item" systemItem="save" id="5vH-3F-Gyz">
+                                                <connections>
+                                                    <action selector="guardar:" destination="01c-Sv-c3M" id="vjz-h8-i54"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Igu-Rp-FYl" firstAttribute="width" secondItem="X8f-o6-5Ju" secondAttribute="width" id="ISf-J2-AAg"/>
+                                    <constraint firstItem="QN5-eZ-nDI" firstAttribute="width" secondItem="X8f-o6-5Ju" secondAttribute="width" id="jvQ-9f-Zru"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X8f-o6-5Ju" firstAttribute="centerY" secondItem="PS9-bY-aiV" secondAttribute="centerY" id="Mdh-xn-kbc"/>
+                            <constraint firstItem="X8f-o6-5Ju" firstAttribute="width" secondItem="PS9-bY-aiV" secondAttribute="width" id="OK6-Jp-Ki8"/>
+                            <constraint firstItem="X8f-o6-5Ju" firstAttribute="height" secondItem="PS9-bY-aiV" secondAttribute="height" id="QsM-gg-WQC"/>
+                            <constraint firstItem="X8f-o6-5Ju" firstAttribute="centerX" secondItem="PS9-bY-aiV" secondAttribute="centerX" id="lTh-sn-XOs"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Añadir imagen" id="J1u-eT-dO2"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="descripcionText" destination="rUA-UL-FE1" id="smE-Hl-wz8"/>
+                        <outlet property="imagePicked" destination="iHC-Gr-Icq" id="wlH-Ar-Vgi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mdq-eh-DjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1428" y="-2319"/>
+        </scene>
+        <!--Hechos ocurridos acá-->
+        <scene sceneID="hp0-iM-crB">
+            <objects>
+                <tableViewController id="9h1-J7-9jA" customClass="HechosController" customModule="Muequeta" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EXB-9g-I6L">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LugaresCercanosCell" id="q36-Wp-kwy" customClass="LugaresCell" customModule="Muequeta" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q36-Wp-kwy" id="Ghw-QU-ooa">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4t5-Qf-Ty4">
+                                            <rect key="frame" x="28" y="11" width="564" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nombreLugarLabel" destination="4t5-Qf-Ty4" id="F9S-uq-5aw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9h1-J7-9jA" id="uBh-Bs-Xsx"/>
+                            <outlet property="delegate" destination="9h1-J7-9jA" id="l0R-rW-nj4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Hechos ocurridos acá" id="Wfu-Y7-5tW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6jt-1o-ybm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2638" y="-2407"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OdO-Wd-pOy">
+            <objects>
+                <navigationController id="jYw-fl-MXp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uYQ-QB-iV1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9h1-J7-9jA" kind="relationship" relationship="rootViewController" id="Qdb-IZ-mkf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KAZ-VS-JFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3458" y="-2407"/>
+        </scene>
         <!--Lugar Detail View Controller-->
         <scene sceneID="M5h-qz-UYw">
             <objects>
@@ -685,46 +778,45 @@
                                 <rect key="frame" x="-1" y="64" width="600" height="536"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pyR-tX-eVY">
-                                        <rect key="frame" x="20" y="54" width="300" height="395"/>
+                                        <rect key="frame" x="20" y="54" width="300" height="358"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGF-lh-XLu">
-                                                <rect key="frame" x="129" y="0.0" width="42" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGF-lh-XLu">
+                                                <rect key="frame" x="126" y="0.0" width="49" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="2zV-9b-vyj" customClass="RatingControl" customModule="Muequeta" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="31" width="240" height="44"/>
+                                                <rect key="frame" x="30" y="34" width="240" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="8my-2l-uPW">
-                                                <rect key="frame" x="0.0" y="85" width="300" height="150"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8my-2l-uPW">
+                                                <rect key="frame" x="0.0" y="88" width="300" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZy-BI-yCA">
-                                                <rect key="frame" x="104" y="245" width="93" height="30"/>
+                                                <rect key="frame" x="104" y="248" width="93" height="30"/>
                                                 <state key="normal" title="Ver imágenes"/>
                                                 <connections>
                                                     <segue destination="lGv-sD-ISI" kind="show" identifier="verImagenesCercanos" id="VXV-qI-Qww"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdy-pn-xvA">
-                                                <rect key="frame" x="114" y="285" width="72" height="30"/>
+                                                <rect key="frame" x="114" y="288" width="72" height="30"/>
                                                 <state key="normal" title="Ver videos"/>
                                                 <connections>
                                                     <action selector="verVideosButton:" destination="MRC-4W-T2a" eventType="touchUpInside" id="G0O-qy-RaG"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go9-5C-VE5">
-                                                <rect key="frame" x="88" y="325" width="125" height="30"/>
-                                                <state key="normal" title="Agregar imágenes"/>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDk-1a-6Et">
-                                                <rect key="frame" x="24" y="365" width="252" height="30"/>
+                                                <rect key="frame" x="24" y="328" width="252" height="30"/>
                                                 <state key="normal" title="¿Qué pasó aquí mismo en esta hora?"/>
+                                                <connections>
+                                                    <segue destination="jYw-fl-MXp" kind="show" id="gex-Iv-JbD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -867,12 +959,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="defaultPhoto" width="85" height="78"/>
         <image name="logotipo" width="191" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MFs-y4-ASI"/>
-        <segue reference="mbN-RL-Jis"/>
+        <segue reference="rJ8-hg-7y3"/>
+        <segue reference="yV4-N8-M5n"/>
         <segue reference="ngm-6p-m5f"/>
+        <segue reference="K4p-Hf-AwE"/>
     </inferredMetricsTieBreakers>
 </document>

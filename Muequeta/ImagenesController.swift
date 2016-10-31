@@ -46,7 +46,7 @@ class ImagenesController: UITableViewController {
         let row = indexPath.row
         cell.nombreLugarLabel.text = self.imagenes[row].descripcion
         cell.imagenView.contentMode = UIViewContentMode.ScaleAspectFit
-        cell.clipsToBounds = true;
+        cell.imagenView.clipsToBounds = true;
         cell.imagenView.image = UIImage(named: self.imagenes[row].name)
         print( self.imagenes[row].name)
         return cell

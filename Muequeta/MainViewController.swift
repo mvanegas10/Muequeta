@@ -29,10 +29,10 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
         if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse ||
             CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedAlways){
             currentLocation = locationManager.location
-//            MuequetaSingleton.sharedInstance.asignarLatitud(currentLocation!.coordinate.latitude)
-//            MuequetaSingleton.sharedInstance.asignarLongitud(currentLocation!.coordinate.longitude)
-            MuequetaSingleton.sharedInstance.asignarLatitud(4.5971322)
-            MuequetaSingleton.sharedInstance.asignarLongitud(-74.071869)
+            MuequetaSingleton.sharedInstance.asignarLatitud(currentLocation!.coordinate.latitude)
+            MuequetaSingleton.sharedInstance.asignarLongitud(currentLocation!.coordinate.longitude)
+//            MuequetaSingleton.sharedInstance.asignarLatitud(4.5971322)
+//            MuequetaSingleton.sharedInstance.asignarLongitud(-74.071869)
         }
         
         do {

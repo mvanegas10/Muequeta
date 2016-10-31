@@ -27,6 +27,8 @@
 		A94E9DB21D8A2FBA0043B155 /* MuequetaSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E9DB11D8A2FBA0043B155 /* MuequetaSingleton.swift */; };
 		A97106B01DC6B5CE00930D59 /* AgregarLugarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97106AF1DC6B5CE00930D59 /* AgregarLugarController.swift */; };
 		A97106B21DC6BE2500930D59 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97106B11DC6BE2500930D59 /* TabBarController.swift */; };
+		A97106B41DC6CF9600930D59 /* LugarQRDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97106B31DC6CF9600930D59 /* LugarQRDetailController.swift */; };
+		A97106B61DC6EF8200930D59 /* HechosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97106B51DC6EF8200930D59 /* HechosController.swift */; };
 		A9A693831DC655A6001DC07D /* ImagenesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A693821DC655A6001DC07D /* ImagenesController.swift */; };
 		A9A693851DC69EA8001DC07D /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A693841DC69EA8001DC07D /* ImageController.swift */; };
 		A9A7B4A91D8EFB0C00FF755A /* Hecho.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4A81D8EFB0C00FF755A /* Hecho.swift */; };
@@ -72,6 +74,8 @@
 		A94E9DB11D8A2FBA0043B155 /* MuequetaSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuequetaSingleton.swift; sourceTree = "<group>"; };
 		A97106AF1DC6B5CE00930D59 /* AgregarLugarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgregarLugarController.swift; sourceTree = "<group>"; };
 		A97106B11DC6BE2500930D59 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A97106B31DC6CF9600930D59 /* LugarQRDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugarQRDetailController.swift; sourceTree = "<group>"; };
+		A97106B51DC6EF8200930D59 /* HechosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HechosController.swift; sourceTree = "<group>"; };
 		A9A693821DC655A6001DC07D /* ImagenesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagenesController.swift; sourceTree = "<group>"; };
 		A9A693841DC69EA8001DC07D /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 		A9A7B4A81D8EFB0C00FF755A /* Hecho.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hecho.swift; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 				A9A693841DC69EA8001DC07D /* ImageController.swift */,
 				A97106AF1DC6B5CE00930D59 /* AgregarLugarController.swift */,
 				A97106B11DC6BE2500930D59 /* TabBarController.swift */,
+				A97106B31DC6CF9600930D59 /* LugarQRDetailController.swift */,
+				A97106B51DC6EF8200930D59 /* HechosController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A94E9DB21D8A2FBA0043B155 /* MuequetaSingleton.swift in Sources */,
+				A97106B61DC6EF8200930D59 /* HechosController.swift in Sources */,
 				A94E9DA61D8A0EB10043B155 /* MainViewController.swift in Sources */,
 				A94E9DA41D8A0ADE0043B155 /* ScannerViewController.swift in Sources */,
 				A93A5DF71D8E176800163168 /* FotoCell.swift in Sources */,
@@ -318,6 +325,7 @@
 				A9A693851DC69EA8001DC07D /* ImageController.swift in Sources */,
 				A9A7B4B11D8F65BC00FF755A /* Rating.swift in Sources */,
 				A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */,
+				A97106B41DC6CF9600930D59 /* LugarQRDetailController.swift in Sources */,
 				A9A7B4AF1D8F5A0300FF755A /* RatingControl.swift in Sources */,
 				A93A5DFB1D8E17EF00163168 /* FotosHeaderView.swift in Sources */,
 			);
