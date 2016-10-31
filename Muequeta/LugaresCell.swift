@@ -10,4 +10,5 @@ import UIKit
 
 class LugaresCell: UITableViewCell {
     @IBOutlet weak var nombreLugarLabel: UILabel!
+    @IBOutlet weak var imagenView: UIImageView!
 }

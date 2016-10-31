@@ -29,8 +29,10 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
         if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse ||
             CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedAlways){
             currentLocation = locationManager.location
-            MuequetaSingleton.sharedInstance.asignarLatitud(currentLocation!.coordinate.latitude)
-            MuequetaSingleton.sharedInstance.asignarLongitud(currentLocation!.coordinate.longitude)
+//            MuequetaSingleton.sharedInstance.asignarLatitud(currentLocation!.coordinate.latitude)
+//            MuequetaSingleton.sharedInstance.asignarLongitud(currentLocation!.coordinate.longitude)
+            MuequetaSingleton.sharedInstance.asignarLatitud(4.5971322)
+            MuequetaSingleton.sharedInstance.asignarLongitud(-74.071869)
         }
         
         do {
@@ -51,8 +53,14 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
                             let nom = (actual![1] as! String)
                             let desc = (actual![2] as! String)
                             let coorFinales = (0.0, 0.0)
-                            var fot = [Foto]()
-                            var vid = [String]()
+                            let fot = [Foto]()
+                            let vid = [String]()
+                            
+                            // MARK: Adds each place
+                            
+                            let rating = Rating(rating:0)
+                            let lugar = Lugar(nombre: nom, descripcion: desc, id: idL,fotos: fot, videos: vid,coordenadas: coorFinales,rating: rating)
+                            MuequetaSingleton.sharedInstance.agregarLugar(lugar)
                             
                             // MARK: Get images for each place
                             
@@ -74,7 +82,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
                                                 let direccion = (actual2![0] as! String)
                                                 let descripcion = (actual2![1] as! String)
                                                 let foto = Foto(name: direccion, group:nom,descripcion: descripcion)
-                                                fot.append(foto)
+                                                lugar.fotos.append(foto)
                                             }
                                         }
                                     } catch let error2 as NSError {
@@ -103,7 +111,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
                                         if let responseJSON3 = try NSJSONSerialization.JSONObjectWithData(data3!, options: []) as? [String:AnyObject] {
                                             for video in (responseJSON3["videos"] as? NSArray)! {
                                                 let actual3 = video as? NSArray
-                                                vid.append((actual3![0] as! String))
+                                                lugar.videos.append((actual3![0] as! String))
                                             }
                                         }
                                     } catch let error3 as NSError {
@@ -114,11 +122,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
                             } catch let error3 as NSError {
                                 print(error3.localizedDescription)
                             }
-                            
-                            print(nom)
-                            let rating = Rating(rating:0)
-                            let lugar = Lugar(nombre: nom, descripcion: desc, id: idL,fotos: fot, videos: vid,coordenadas: coorFinales,rating: rating)
-                            MuequetaSingleton.sharedInstance.agregarLugar(lugar)
                         }
                     }
                 } catch let error as NSError {

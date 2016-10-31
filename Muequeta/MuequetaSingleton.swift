@@ -26,6 +26,7 @@ class MuequetaSingleton: NSObject {
     var hechosSeleccionados = [Hecho]()
     var lugarSeleccionado: Lugar?
     var lugaresCercanos = [Lugar]()
+    var imagenSeleccionada: Foto?
     var horaDia: String?
     var viendoHechos: Bool = false
     var latitud: Double?
@@ -36,6 +37,14 @@ class MuequetaSingleton: NSObject {
     override init() {
         lugares = [Lugar]()
         super.init()
+    }
+    
+    func seleccionarImagen(nombre: Foto) {
+        self.imagenSeleccionada = nombre
+    }
+    
+    func darImagenSeleccionada() -> Foto {
+        return self.imagenSeleccionada!
     }
     
     func asignarLatitud(latitud:Double) {
