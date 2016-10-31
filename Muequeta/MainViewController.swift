@@ -197,7 +197,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "encontrarLugaresCercanos" {
-            MuequetaSingleton.sharedInstance.encontrarLugaresCerca(4.602968, longitud: -74.0672007)
+            MuequetaSingleton.sharedInstance.encontrarLugaresCerca(MuequetaSingleton.sharedInstance.darLatitud(), longitud: MuequetaSingleton.sharedInstance.darLongitud())
         }
         
     }

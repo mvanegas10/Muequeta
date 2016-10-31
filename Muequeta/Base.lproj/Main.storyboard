@@ -541,7 +541,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HechosCercanosCell" id="q36-Wp-kwy" customClass="LugaresCell" customModule="Muequeta" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q36-Wp-kwy" id="Ghw-QU-ooa">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -662,10 +662,11 @@
             </objects>
             <point key="canvasLocation" x="-2082" y="-2407"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="OdO-Wd-pOy">
             <objects>
                 <navigationController id="jYw-fl-MXp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="tkX-5W-ZTb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uYQ-QB-iV1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -878,10 +879,10 @@
         <image name="logotipo" width="191" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="VXV-qI-Qww"/>
+        <segue reference="qZp-05-gJW"/>
+        <segue reference="dEd-aX-sfm"/>
         <segue reference="vMf-uV-RNI"/>
         <segue reference="jch-c2-WLW"/>
-        <segue reference="qZp-05-gJW"/>
-        <segue reference="VXV-qI-Qww"/>
-        <segue reference="dEd-aX-sfm"/>
     </inferredMetricsTieBreakers>
 </document>

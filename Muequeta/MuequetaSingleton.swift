@@ -21,7 +21,7 @@ class MuequetaSingleton: NSObject {
     
     // MARK: Properties
     
-    let URL: String = "http://192.168.0.15:8080"
+    let URL: String = "http://157.253.207.236:8080"
     
     var lugares = [Lugar]()
     let lugaresTotales = 10
