@@ -199,7 +199,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-20"/>
                     </tabBarItem>
                     <connections>
-                        <segue destination="xtG-S7-aMG" kind="show" identifier="detalleLugar" id="vnk-hF-uus"/>
+                        <segue destination="xtG-S7-aMG" kind="showDetail" identifier="detalleLugar" action="showViewController:sender:" id="vnk-hF-uus"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6C-Cg-TVX" sceneMemberID="firstResponder"/>
@@ -284,6 +284,8 @@
                             <constraint firstItem="Atm-Fm-Gnh" firstAttribute="centerX" secondItem="1zI-aM-C2u" secondAttribute="centerX" id="uYk-Uf-EFS"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="descripcionLugarLabel" destination="FSW-Xr-BOs" id="DXy-Pw-vLd"/>
                         <outlet property="ratingControl" destination="oIH-nN-VGE" id="xIx-Co-481"/>
@@ -878,8 +880,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="vMf-uV-RNI"/>
         <segue reference="jch-c2-WLW"/>
-        <segue reference="WBw-qZ-sqa"/>
-        <segue reference="xCI-fe-TDS"/>
         <segue reference="qZp-05-gJW"/>
+        <segue reference="VXV-qI-Qww"/>
+        <segue reference="dEd-aX-sfm"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -30,7 +30,7 @@ class LugarQRDetailViewController: UIViewController {
         print("En el detalle es: " + MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre)        
         ratingControl.rating = MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating.rating
         tituloLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
-        descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion
+        descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion 
     }
     
     // MARK: Will appear
