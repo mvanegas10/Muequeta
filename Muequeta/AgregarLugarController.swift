@@ -38,7 +38,7 @@ class AgregarLugarController: UIViewController {
                 let jsonData = try NSJSONSerialization.dataWithJSONObject(json, options: .PrettyPrinted)
                 
                 // create post request
-                let url = NSURL(string: "http://192.168.0.24:8080/agregarLugar")!
+                let url = NSURL(string: MuequetaSingleton.sharedInstance.URL + "/agregarLugar")!
                 let request = NSMutableURLRequest(URL: url)
                 request.HTTPMethod = "POST"
                 

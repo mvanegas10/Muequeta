@@ -50,10 +50,10 @@ class RestController: UITableViewController {
             if let indexPath = self.tableView.indexPathForSelectedRow{
                 let lugar = lugaresCercanos[indexPath.row]
                 MuequetaSingleton.sharedInstance.seleccionarLugar(lugar)
-                let hour = 18
-                let min = 00
-//                let hour = NSCalendar.currentCalendar().component(.Hour, fromDate: NSDate())
-//                let min = NSCalendar.currentCalendar().component(.Minute, fromDate: NSDate())
+//                let hour = 18
+//                let min = 00
+                let hour = NSCalendar.currentCalendar().component(.Hour, fromDate: NSDate())
+                let min = NSCalendar.currentCalendar().component(.Minute, fromDate: NSDate())
                 MuequetaSingleton.sharedInstance.seleccionarHechos(Int(String(hour) + String(min))!)
                 print("El seleccionado es: " + MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre)
             }

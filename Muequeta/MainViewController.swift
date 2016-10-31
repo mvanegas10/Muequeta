@@ -36,7 +36,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
         }
         
         do {
-            let url = NSURL(string: "http://192.168.0.24:8080/lugares")!
+            let url = NSURL(string: MuequetaSingleton.sharedInstance.URL + "/lugares")!
             let request = NSMutableURLRequest(URL: url)
             request.HTTPMethod = "GET"
             
@@ -66,7 +66,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
                             
                             do {
                                 // create get request
-                                let url2 = NSURL(string: "http://192.168.0.24:8080/lugares/" + String(idL) + "/imagenes")!
+                                let url2 = NSURL(string: MuequetaSingleton.sharedInstance.URL + "/lugares/" + String(idL) + "/imagenes")!
                                 let request2 = NSMutableURLRequest(URL: url2)
                                 request2.HTTPMethod = "GET"
                                 
@@ -98,7 +98,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
                             
                             do {
                                 // create get request
-                                let url3 = NSURL(string: "http://192.168.0.24:8080/lugares/" + String(idL) + "/videos")!
+                                let url3 = NSURL(string: MuequetaSingleton.sharedInstance.URL + "/lugares/" + String(idL) + "/videos")!
                                 let request3 = NSMutableURLRequest(URL: url3)
                                 request3.HTTPMethod = "GET"
                                 

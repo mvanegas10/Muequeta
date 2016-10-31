@@ -21,6 +21,8 @@ class MuequetaSingleton: NSObject {
     
     // MARK: Properties
     
+    let URL: String = "http://192.168.0.15:8080"
+    
     var lugares = [Lugar]()
     let lugaresTotales = 10
     var hechosSeleccionados = [Hecho]()
@@ -191,7 +193,7 @@ class MuequetaSingleton: NSObject {
             let jsonData = try NSJSONSerialization.dataWithJSONObject(json, options: .PrettyPrinted)
             
             // create post request
-            let url = NSURL(string: "http://192.168.0.24:8080/lugaresCerca")!
+            let url = NSURL(string: URL + "/lugaresCerca")!
             let request = NSMutableURLRequest(URL: url)
             request.HTTPMethod = "POST"
             
