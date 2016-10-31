@@ -11,16 +11,14 @@ import UIKit
 class LugarQRDetailViewController: UIViewController {
     
     // MARK: Properties
-    
+    @IBOutlet weak var tituloLugarLabel: UILabel!
     @IBOutlet weak var ratingControl: RatingControl!
-    @IBOutlet weak var lugarLabel: UILabel!
-    @IBOutlet weak var tituloLugarNav: UINavigationItem!
     @IBOutlet weak var descripcionLugarLabel: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     
     // MARK: Actions
     
-    @IBAction func verVideosButton(sender: UIButton) {
+    @IBAction func verVideos(sender: UIButton) {
         mostrarAlerta("¡Oops! No hay videos asociados a este lugar, deberías ayudarnos y agregar unos tú")
     }
     
@@ -29,10 +27,9 @@ class LugarQRDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.contentSize.height = 600
-        print("En el detalle es: " + MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre)
-        lugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
+        print("En el detalle es: " + MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre)        
         ratingControl.rating = MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating.rating
-        tituloLugarNav.title = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
+        tituloLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
         descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion
     }
     

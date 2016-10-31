@@ -206,10 +206,10 @@
             </objects>
             <point key="canvasLocation" x="-3099" y="130"/>
         </scene>
-        <!--Lugar Detail View Controller-->
+        <!--LugarQR Detail View Controller-->
         <scene sceneID="qeu-51-pbo">
             <objects>
-                <viewController storyboardIdentifier="LugarDetail" id="xtG-S7-aMG" customClass="LugarDetailViewController" customModule="Muequeta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LugarDetail" id="xtG-S7-aMG" customClass="LugarQRDetailViewController" customModule="Muequeta" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ogU-nH-fnL"/>
                         <viewControllerLayoutGuide type="bottom" id="zX6-Fi-CUR"/>
@@ -221,65 +221,59 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Atm-Fm-Gnh">
                                 <rect key="frame" x="-1" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1mV-8y-15A">
-                                        <rect key="frame" x="20" y="94" width="560" height="420"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jmo-gG-QmH">
+                                        <rect key="frame" x="148" y="121" width="303" height="358"/>
                                         <subviews>
-                                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dYW-eh-bOw">
-                                                <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
-                                                <items>
-                                                    <navigationItem title="Titulo lugar" id="PWF-2l-b27">
-                                                        <barButtonItem key="leftBarButtonItem" title="Regresar" id="uXW-vE-Sxu">
-                                                            <connections>
-                                                                <segue destination="BYZ-38-t0r" kind="show" id="ngm-6p-m5f"/>
-                                                            </connections>
-                                                        </barButtonItem>
-                                                    </navigationItem>
-                                                </items>
-                                            </navigationBar>
-                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="H51-tJ-1Yf" customClass="RatingControl" customModule="Muequeta" customModuleProvider="target">
-                                                <rect key="frame" x="160" y="54" width="240" height="44"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9y-34-wKz">
+                                                <rect key="frame" x="127" y="0.0" width="49" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="oIH-nN-VGE" customClass="RatingControl" customModule="Muequeta" customModuleProvider="target">
+                                                <rect key="frame" x="32" y="34" width="240" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="jI4-t2-Ktk">
-                                                <rect key="frame" x="0.0" y="108" width="560" height="152"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSW-Xr-BOs">
+                                                <rect key="frame" x="0.0" y="88" width="303" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCE-PG-GHp">
-                                                <rect key="frame" x="234" y="270" width="93" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNE-1M-oJ5">
+                                                <rect key="frame" x="105" y="248" width="93" height="30"/>
                                                 <state key="normal" title="Ver imágenes"/>
                                                 <connections>
-                                                    <segue destination="aXG-NL-tZb" kind="show" identifier="verImagenesLugar" id="pCC-5j-589"/>
+                                                    <segue destination="lGv-sD-ISI" kind="show" id="xCI-fe-TDS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rk-F0-l5h">
-                                                <rect key="frame" x="244" y="310" width="72" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXF-bi-Qoq">
+                                                <rect key="frame" x="116" y="288" width="72" height="30"/>
                                                 <state key="normal" title="Ver videos"/>
                                                 <connections>
-                                                    <action selector="verVideosButton:" destination="xtG-S7-aMG" eventType="touchUpInside" id="l6V-I5-Tka"/>
+                                                    <action selector="verVideos:" destination="xtG-S7-aMG" eventType="touchUpInside" id="fDU-dc-edH"/>
+                                                    <action selector="verVideosButton:" destination="MRC-4W-T2a" eventType="touchUpInside" id="FK8-DX-bG4"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLU-HU-eUH">
-                                                <rect key="frame" x="218" y="350" width="125" height="30"/>
-                                                <state key="normal" title="Agregar imágenes"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cps-Qe-wrh">
-                                                <rect key="frame" x="154" y="390" width="252" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5K-2S-8tr">
+                                                <rect key="frame" x="26" y="328" width="252" height="30"/>
                                                 <state key="normal" title="¿Qué pasó aquí mismo en esta hora?"/>
                                                 <connections>
-                                                    <segue destination="cdK-ZZ-gbD" kind="show" identifier="verHechos" id="ejS-vY-aip"/>
+                                                    <segue destination="jYw-fl-MXp" kind="show" id="WBw-qZ-sqa"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="dYW-eh-bOw" firstAttribute="leading" secondItem="1mV-8y-15A" secondAttribute="leading" id="Kna-6g-qPB"/>
-                                            <constraint firstAttribute="trailing" secondItem="dYW-eh-bOw" secondAttribute="trailing" id="Loc-7H-07d"/>
-                                            <constraint firstItem="dYW-eh-bOw" firstAttribute="top" secondItem="1mV-8y-15A" secondAttribute="top" id="eXJ-Ld-BhL"/>
+                                            <constraint firstItem="oIH-nN-VGE" firstAttribute="centerX" secondItem="jmo-gG-QmH" secondAttribute="centerX" id="R0c-4T-jIJ"/>
+                                            <constraint firstItem="FSW-Xr-BOs" firstAttribute="centerX" secondItem="jmo-gG-QmH" secondAttribute="centerX" id="egs-K4-KoJ"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="jmo-gG-QmH" firstAttribute="centerY" secondItem="Atm-Fm-Gnh" secondAttribute="centerY" id="Xjm-DZ-R6K"/>
+                                    <constraint firstItem="jmo-gG-QmH" firstAttribute="centerX" secondItem="Atm-Fm-Gnh" secondAttribute="centerX" id="xin-rp-u9m"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -291,258 +285,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="descripcionLugarLabel" destination="jI4-t2-Ktk" id="Fjw-pA-7RV"/>
-                        <outlet property="ratingControl" destination="H51-tJ-1Yf" id="TL0-c8-CZA"/>
+                        <outlet property="descripcionLugarLabel" destination="FSW-Xr-BOs" id="DXy-Pw-vLd"/>
+                        <outlet property="ratingControl" destination="oIH-nN-VGE" id="xIx-Co-481"/>
+                        <outlet property="scrollView" destination="Atm-Fm-Gnh" id="vCp-Au-9vx"/>
+                        <outlet property="tituloLugarLabel" destination="h9y-34-wKz" id="Rlg-9U-dWG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISA-j6-BVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2375" y="130"/>
-        </scene>
-        <!--Hecho Detail View Controller-->
-        <scene sceneID="Zuo-kj-ulQ">
-            <objects>
-                <viewController storyboardIdentifier="HechoDetail" id="cdK-ZZ-gbD" customClass="HechoDetailViewController" customModule="Muequeta" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9jg-XV-HgG"/>
-                        <viewControllerLayoutGuide type="bottom" id="DFf-oJ-7iW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uIb-fy-3vf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oX2-VN-luH">
-                                <rect key="frame" x="20" y="30" width="560" height="434"/>
-                                <subviews>
-                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kq-dL-fgh">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
-                                        <items>
-                                            <navigationItem title="Titulo lugar" id="ylK-mK-A2M">
-                                                <barButtonItem key="leftBarButtonItem" title="Regresar" id="UgB-9i-7p8">
-                                                    <connections>
-                                                        <segue destination="xtG-S7-aMG" kind="show" identifier="volverALugar" id="yV4-N8-M5n"/>
-                                                    </connections>
-                                                </barButtonItem>
-                                            </navigationItem>
-                                        </items>
-                                    </navigationBar>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E27-RM-Vt3">
-                                        <rect key="frame" x="259" y="54" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="oft-qR-Asi">
-                                        <rect key="frame" x="0.0" y="85" width="560" height="269"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwq-vV-uGE">
-                                        <rect key="frame" x="234" y="364" width="93" height="30"/>
-                                        <state key="normal" title="Ver imágenes"/>
-                                        <connections>
-                                            <segue destination="aXG-NL-tZb" kind="show" identifier="verImagenesHecho" id="rJ8-hg-7y3"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvG-Jd-7vh">
-                                        <rect key="frame" x="244" y="404" width="72" height="30"/>
-                                        <state key="normal" title="Ver videos"/>
-                                        <connections>
-                                            <action selector="verVideosButton:" destination="xtG-S7-aMG" eventType="touchUpInside" id="AX5-LX-bST"/>
-                                            <action selector="verVideosButton:" destination="cdK-ZZ-gbD" eventType="touchUpInside" id="n9m-QG-ezb"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="1kq-dL-fgh" firstAttribute="top" secondItem="oX2-VN-luH" secondAttribute="top" id="PdI-LH-b7Z"/>
-                                    <constraint firstItem="1kq-dL-fgh" firstAttribute="leading" secondItem="oX2-VN-luH" secondAttribute="leading" id="cdT-p1-Qn7"/>
-                                    <constraint firstAttribute="trailing" secondItem="1kq-dL-fgh" secondAttribute="trailing" id="qQR-EQ-MIk"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="oX2-VN-luH" firstAttribute="top" secondItem="uIb-fy-3vf" secondAttribute="topMargin" constant="30" id="aBo-AY-nEt"/>
-                            <constraint firstItem="oX2-VN-luH" firstAttribute="trailing" secondItem="uIb-fy-3vf" secondAttribute="trailingMargin" id="c9y-5g-26I"/>
-                            <constraint firstItem="oX2-VN-luH" firstAttribute="leading" secondItem="uIb-fy-3vf" secondAttribute="leadingMargin" id="k3z-Dn-WOm"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="descripcionHechoLabel" destination="oft-qR-Asi" id="WkX-DM-GCm"/>
-                        <outlet property="horaDiaLabel" destination="E27-RM-Vt3" id="1aI-hJ-UqY"/>
-                        <outlet property="tituloLugarText" destination="ylK-mK-A2M" id="GT8-1S-2NN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xcm-Is-vj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1517" y="941"/>
-        </scene>
-        <!--Images Collection View Controller-->
-        <scene sceneID="p5u-iA-8oK">
-            <objects>
-                <viewController id="aXG-NL-tZb" customClass="ImagesCollectionViewController" customModule="Muequeta" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hLl-ok-9dc"/>
-                        <viewControllerLayoutGuide type="bottom" id="PWQ-ms-px2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RAJ-Zc-pC8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hyq-a0-yVM">
-                                <rect key="frame" x="20" y="20" width="560" height="44"/>
-                                <items>
-                                    <navigationItem title="Imágenes" id="q0H-ap-lca">
-                                        <barButtonItem key="leftBarButtonItem" title="Regresar" id="Yp9-8T-HKp">
-                                            <connections>
-                                                <segue destination="xtG-S7-aMG" kind="show" identifier="" id="MFs-y4-ASI"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ro7-k9-KiZ">
-                                <rect key="frame" x="20" y="80" width="560" height="510"/>
-                                <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hYO-Rg-l36">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="510"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="yVh-en-hy4">
-                                            <size key="itemSize" width="180" height="182"/>
-                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        </collectionViewFlowLayout>
-                                        <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellIdentifier" id="I1O-Vf-7X5" customClass="FotoCell" customModule="Muequeta" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="140" height="142"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="142"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tt7-y1-dod">
-                                                            <rect key="frame" x="0.0" y="0.0" width="155" height="122"/>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="s8b-I5-gp9">
-                                                            <rect key="frame" x="8" y="121" width="125" height="21"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </view>
-                                                <size key="customSize" width="140" height="142"/>
-                                                <connections>
-                                                    <outlet property="caption" destination="s8b-I5-gp9" id="HlN-vA-Gmj"/>
-                                                    <outlet property="imageView" destination="Tt7-y1-dod" id="TT2-rK-5gW"/>
-                                                    <segue destination="yCx-iz-Q1t" kind="show" id="8el-oD-2NS"/>
-                                                </connections>
-                                            </collectionViewCell>
-                                        </cells>
-                                    </collectionView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Ro7-k9-KiZ" firstAttribute="trailing" secondItem="RAJ-Zc-pC8" secondAttribute="trailingMargin" id="5Z0-Mz-RLZ"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Ro7-k9-KiZ" secondAttribute="bottom" constant="10" id="DLB-ZB-i0U"/>
-                            <constraint firstItem="Hyq-a0-yVM" firstAttribute="leading" secondItem="RAJ-Zc-pC8" secondAttribute="leadingMargin" id="EzU-RJ-xdv"/>
-                            <constraint firstItem="Hyq-a0-yVM" firstAttribute="trailing" secondItem="RAJ-Zc-pC8" secondAttribute="trailingMargin" id="HTu-ex-gEi"/>
-                            <constraint firstItem="Ro7-k9-KiZ" firstAttribute="top" secondItem="hLl-ok-9dc" secondAttribute="bottom" constant="60" id="WjN-gb-DM3"/>
-                            <constraint firstItem="Ro7-k9-KiZ" firstAttribute="leading" secondItem="RAJ-Zc-pC8" secondAttribute="leadingMargin" id="dAD-zr-4Me"/>
-                            <constraint firstItem="Hyq-a0-yVM" firstAttribute="top" secondItem="hLl-ok-9dc" secondAttribute="bottom" id="fZP-Ke-7WH"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="FDf-w0-EC2">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yQM-09-RL7">
-                            <connections>
-                                <action selector="addNewItem:" destination="aXG-NL-tZb" id="BKF-4S-HqM"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="collectionView" destination="hYO-Rg-l36" id="ak3-Ws-J0O"/>
-                        <outlet property="tituloLabel" destination="q0H-ap-lca" id="tfg-yV-bt2"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cSA-PN-NmX" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1572" y="142"/>
-        </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="ofq-OP-2eI">
-            <objects>
-                <viewController id="yCx-iz-Q1t" customClass="DetailViewController" customModule="Muequeta" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6nT-qt-Cl5"/>
-                        <viewControllerLayoutGuide type="bottom" id="nXW-KB-yuw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BcW-jD-bnF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="R90-it-yun">
-                                <rect key="frame" x="20" y="244" width="560" height="258"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k1G-GG-UxZ">
-                                        <rect key="frame" x="255" y="0.0" width="50" height="258"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahM-GY-0bY">
-                                <rect key="frame" x="20" y="20" width="560" height="44"/>
-                                <items>
-                                    <navigationItem title="Foto" id="SD9-wW-wvb">
-                                        <barButtonItem key="leftBarButtonItem" title="Regresar" id="9NV-MM-Lr6">
-                                            <connections>
-                                                <segue destination="aXG-NL-tZb" kind="show" identifier="devolverseALugar" id="mbN-RL-Jis"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="wKn-DH-WGb">
-                                <rect key="frame" x="20" y="80" width="560" height="156"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ahM-GY-0bY" firstAttribute="trailing" secondItem="BcW-jD-bnF" secondAttribute="trailingMargin" id="0VZ-Wz-IGp"/>
-                            <constraint firstItem="R90-it-yun" firstAttribute="trailing" secondItem="BcW-jD-bnF" secondAttribute="trailingMargin" id="9U2-RP-Aav"/>
-                            <constraint firstItem="R90-it-yun" firstAttribute="top" secondItem="ahM-GY-0bY" secondAttribute="bottom" constant="180" id="AAL-Za-PWK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wKn-DH-WGb" secondAttribute="trailing" id="BDm-kZ-N9J"/>
-                            <constraint firstItem="ahM-GY-0bY" firstAttribute="leading" secondItem="BcW-jD-bnF" secondAttribute="leadingMargin" id="T1A-ST-rHf"/>
-                            <constraint firstItem="ahM-GY-0bY" firstAttribute="top" secondItem="6nT-qt-Cl5" secondAttribute="bottom" id="UAA-xc-nDT"/>
-                            <constraint firstItem="wKn-DH-WGb" firstAttribute="leading" secondItem="BcW-jD-bnF" secondAttribute="leadingMargin" id="Ypq-RM-V89"/>
-                            <constraint firstItem="wKn-DH-WGb" firstAttribute="top" secondItem="6nT-qt-Cl5" secondAttribute="bottom" constant="60" id="bRH-t1-IlM"/>
-                            <constraint firstItem="nXW-KB-yuw" firstAttribute="top" secondItem="wKn-DH-WGb" secondAttribute="bottom" constant="320" id="ng8-oO-SjF"/>
-                            <constraint firstItem="R90-it-yun" firstAttribute="leading" secondItem="BcW-jD-bnF" secondAttribute="leadingMargin" id="s4N-le-Hc3"/>
-                            <constraint firstItem="nXW-KB-yuw" firstAttribute="top" secondItem="R90-it-yun" secondAttribute="bottom" constant="10" id="x2F-53-Oxs"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="k5E-AO-0cd"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="descripcionTextView" destination="wKn-DH-WGb" id="f7q-ZO-rNN"/>
-                        <outlet property="imageView" destination="k1G-GG-UxZ" id="h7q-si-xhf"/>
-                        <outlet property="tituloLabel" destination="SD9-wW-wvb" id="9zb-m4-SGo"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nXf-I5-6kB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-804" y="142"/>
+            <point key="canvasLocation" x="-2427" y="-850"/>
         </scene>
         <!--Lugares cercanos a ti-->
         <scene sceneID="Qqd-CQ-pXb">
@@ -1125,11 +876,10 @@
         <image name="logotipo" width="191" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qZp-05-gJW"/>
-        <segue reference="pCC-5j-589"/>
-        <segue reference="yV4-N8-M5n"/>
-        <segue reference="ngm-6p-m5f"/>
         <segue reference="vMf-uV-RNI"/>
         <segue reference="jch-c2-WLW"/>
+        <segue reference="WBw-qZ-sqa"/>
+        <segue reference="xCI-fe-TDS"/>
+        <segue reference="qZp-05-gJW"/>
     </inferredMetricsTieBreakers>
 </document>
