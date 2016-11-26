@@ -37,6 +37,7 @@
 		A9A7B4AB1D8F32DE00FF755A /* HechoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4AA1D8F32DE00FF755A /* HechoDetailViewController.swift */; };
 		A9A7B4AF1D8F5A0300FF755A /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4AE1D8F5A0300FF755A /* RatingControl.swift */; };
 		A9A7B4B11D8F65BC00FF755A /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B4B01D8F65BC00FF755A /* Rating.swift */; };
+		A9D5EE581DE9DAE300B07273 /* BrujulaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5EE571DE9DAE300B07273 /* BrujulaController.swift */; };
 		A9D61B291DC42412005C012A /* RestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D61B281DC42412005C012A /* RestController.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		A9A7B4AA1D8F32DE00FF755A /* HechoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HechoDetailViewController.swift; sourceTree = "<group>"; };
 		A9A7B4AE1D8F5A0300FF755A /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		A9A7B4B01D8F65BC00FF755A /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		A9D5EE571DE9DAE300B07273 /* BrujulaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrujulaController.swift; sourceTree = "<group>"; };
 		A9D61B281DC42412005C012A /* RestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,6 +189,7 @@
 				A98E3A2F1DC6F79200670EC6 /* HechoController.swift */,
 				A98E3A311DC7030B00670EC6 /* ImagenesHechoController.swift */,
 				A9030FD31DE90664005EE664 /* MapController.swift */,
+				A9D5EE571DE9DAE300B07273 /* BrujulaController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				A944CFFA1DC4EBCC004B8A2C /* LugaresCell.swift in Sources */,
 				A93A5DEF1D8E141E00163168 /* DataSource.swift in Sources */,
 				A9A7B4AB1D8F32DE00FF755A /* HechoDetailViewController.swift in Sources */,
+				A9D5EE581DE9DAE300B07273 /* BrujulaController.swift in Sources */,
 				A9D61B291DC42412005C012A /* RestController.swift in Sources */,
 				A9A693851DC69EA8001DC07D /* ImageController.swift in Sources */,
 				A9A7B4B11D8F65BC00FF755A /* Rating.swift in Sources */,

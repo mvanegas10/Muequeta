@@ -12,7 +12,6 @@ class LugarDetailViewController: UIViewController {
     
     // MARK: Properties
     
-    @IBOutlet weak var tituloLugarNav: UINavigationItem!
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var lugarLabel: UILabel!
     @IBOutlet weak var descripcionLugarLabel: UITextView!
@@ -32,7 +31,7 @@ class LugarDetailViewController: UIViewController {
         lugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
 
         ratingControl.rating = MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating.rating
-        tituloLugarNav.title = MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre
+        
         descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion
     }
     
