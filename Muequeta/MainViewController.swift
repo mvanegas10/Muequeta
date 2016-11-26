@@ -29,10 +29,10 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
         if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse ||
             CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedAlways){
             currentLocation = locationManager.location
-//            MuequetaSingleton.sharedInstance.asignarLatitud(currentLocation!.coordinate.latitude)
-//            MuequetaSingleton.sharedInstance.asignarLongitud(currentLocation!.coordinate.longitude)
-            MuequetaSingleton.sharedInstance.asignarLatitud(4.5971322)
-            MuequetaSingleton.sharedInstance.asignarLongitud(-74.071869)
+            MuequetaSingleton.sharedInstance.asignarLatitud(currentLocation!.coordinate.latitude)
+            MuequetaSingleton.sharedInstance.asignarLongitud(currentLocation!.coordinate.longitude)
+//            MuequetaSingleton.sharedInstance.asignarLatitud(4.5971322)
+//            MuequetaSingleton.sharedInstance.asignarLongitud(-74.071869)
         }
         
         do {
@@ -60,6 +60,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
                             
                             let rating = Rating(rating:0)
                             let lugar = Lugar(nombre: nom, descripcion: desc, id: idL,fotos: fot, videos: vid,coordenadas: coorFinales,rating: rating)
+                            print(lugar.nombre)
                             MuequetaSingleton.sharedInstance.agregarLugar(lugar)
                             
                             // MARK: Get images for each place
@@ -140,7 +141,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.performSelector(#selector(self.darLugaresSeleccion(_:)), withObject: NSNumber(double: 4.0), afterDelay: 4.0)
+        self.performSelector(#selector(self.darLugaresSeleccion(_:)), withObject: NSNumber(double: 20.0), afterDelay: 20.0)
     }
     
     func darLugaresSeleccion(executionTime: NSNumber) {

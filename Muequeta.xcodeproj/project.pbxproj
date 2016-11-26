@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9030FD41DE90664005EE664 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9030FD31DE90664005EE664 /* MapController.swift */; };
 		A90BDE6B1D9C3E1B00A66294 /* PhotoImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90BDE6A1D9C3E1B00A66294 /* PhotoImageViewController.swift */; };
 		A91694BB1D80914D00A8B64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91694BA1D80914D00A8B64B /* AppDelegate.swift */; };
 		A91694C01D80914D00A8B64B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91694BE1D80914D00A8B64B /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A9030FD31DE90664005EE664 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		A90BDE6A1D9C3E1B00A66294 /* PhotoImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoImageViewController.swift; sourceTree = "<group>"; };
 		A91694B71D80914D00A8B64B /* Muequeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muequeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91694BA1D80914D00A8B64B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				A97106B51DC6EF8200930D59 /* HechosController.swift */,
 				A98E3A2F1DC6F79200670EC6 /* HechoController.swift */,
 				A98E3A311DC7030B00670EC6 /* ImagenesHechoController.swift */,
+				A9030FD31DE90664005EE664 /* MapController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				A94E9DAD1D8A141E0043B155 /* Lugar.swift in Sources */,
 				A97106B41DC6CF9600930D59 /* LugarQRDetailController.swift in Sources */,
 				A9A7B4AF1D8F5A0300FF755A /* RatingControl.swift in Sources */,
+				A9030FD41DE90664005EE664 /* MapController.swift in Sources */,
 				A93A5DFB1D8E17EF00163168 /* FotosHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +453,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -479,6 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mvanegas10.Muequeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Release;
 		};
