@@ -17,11 +17,12 @@ class ImageController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize.height = 1000
+        scrollView.contentSize.height = 600
         imagenView.contentMode = UIViewContentMode.ScaleAspectFit
         imagenView.clipsToBounds = true;
         imagenView.image = UIImage(named: MuequetaSingleton.sharedInstance.darImagenSeleccionada().name)
         text.text = MuequetaSingleton.sharedInstance.darImagenSeleccionada().descripcion
+        text.textAlignment =  NSTextAlignment.Justified
     }
 }
 

@@ -1,370 +1,404 @@
-{
-  "hechos": [
-    {
-      "id": 1,
-      "horas": [
-    {
-      "inicio": "0:00",
-      "final": "11:28"
-    }
-  ],
-      "nombre":"Antecedentes de la toma",
-      "descripcion": "Durante el gobierno de Betancurt las repetidas violaciones por parte de la policía y el ejercito a los acuerdo de Corinto motivo a los guerrilleros del M-19 a realizar el atentado, después declarado como holocausto por el CIDH.",
-      "imagenes": [
-        {
-          "direccion": "hechoPalacio1",
-          "descripcion": "El cese al fuego había sido también firmado por el Ejército Popular de Liberación EPL y Las Fuerzas Armadas Revolucionarias de Colombia, FARC-EP. El Gobierno adelantaba conversaciones de paz con cada grupo por separado. Pero desde su inicio los militares sabotearon dicho proceso tomando por asalto un campamento del EPL y atacando simultáneamente las bases de las FARC y del M-19 en el Caquetá y Cauca respectivamente. Fue en ese contexto entonces que el M-19 realizó la toma del Palacio de Justicia."
-        },
-        {
-          "direccion": "hechoPalacio2",
-          "descripcion": "El presidente de la Corte Suprema, Alfonso Reyes Echandía, ordinariamente no iba a la Corte los miércoles porque trabajaba desde su residencia, pero el 6 de noviembre asistió para coordinar con su magistrado auxiliar, Emiro Sandoval, lo que éste debía hacer en su ausencia y para que su secretaria le transcribiera un discurso que pronunciaría en un colegio."
-        },
-        {
-          "direccion": "hechoPalacio3",
-          "descripcion": "El general Rafael Samudio(en la imagen) acudió con una escolta reforzada, llegó a la Plaza de Bolívar, frente a la Catedral y se sorprendió, según sus palabras, por ver \"tanto despliegue de tropas\" y ordenó que desplazaran a los miembros de la Policía Militar que se encontraban allí y despejaran la zona porque él iba a ingresar al Palacio. Llegó a la Secretaría de la Sección Tercera, que quedaba al lado izquierdo en el primer piso."
-        },
-        {
-          "direccion": "hechoPalacio4",
-          "descripcion": "Carlos Betancur (en la imagen), presidente del Consejo de Estado, bajó a la cafetería con el también magistrado Gaspar Caballero, quien le comentó que no había vigilancia, a lo que aquél repuso que “ya los podían matar tranquilos. Cuando regresaban a su oficina empezó el tiroteo."
-        },
-        {
-          "direccion": "hechoPalacio5",
-          "descripcion": "Aprovechando la escasa vigilancia del Palacio de Justicia, el 6 de noviembre, entre las 10:30 y las 11:00 de la mañana ingresaron a sus instalaciones un total de siete personas armadas, vestidas de civil, quienes pertenecían al M-19. La actividad de inteligencia previa en el Palacio venía desarrollándose por parte de este grupo desde el junio de 1985, cuando el mando central presidido, por Álvaro Fayad (en la imágen), tomó la decisión del asalto."
-        }
-      ],
-      "videos": []
-    },
-    {
-      "id": 1,
-      "horas": [
-    {
-      "inicio": "11:28",
-      "final": "12:00"
-    }
-  ],
-      "nombre": "Toma del palacio de justicia",
-      "descripcion": "También llamada Operación Antonio Nariño: el día 6 de noviembre de 1985, a las 11:28 minutos de la mañana sonaron las primeras ráfagas de armas automáticas cuando el comando \"Iván Marino Ospina\", del Movimiento 19 de Abril, M-19, tomó por asalto el Palacio de Justicia en el corazón de la capital colombiana.",
-      "imagenes": [
-        {
-          "direccion": "hechoPalacio6",
-          "descripcion": "Periódico El Tiempo. 9 de noviembre de 1985."
-        },
-        {
-          "direccion": "hechoPalacio7",
-          "descripcion": "Edición extra Periódico El Tiempo. 7 de noviembre de 1985."
-        }
-      ],
-      "videos": [
-        {
-          "direccion": "hechoPalacio8",
-          "descripcion": "Impactantes imágenes de la recuperación el palacio."
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "horas": [
-    {
-      "inicio": "12:00",
-      "final": "12:30"
-    }
-  ],
-      "nombre": "Toma del palacio por parte del M-19",
-      "descripcion": "Los guerrilleros del M-19 toman el control total del edificio y toman como rehenes a los magistrados de la Corte Suprema de Justicia, el Consejo de Estado, empleados y visitantes. Mientras tanto a las afueras del Palacio de Justicia personal del Ejército y la Policía rodearon el edificio. El presidente Belisario Betancur fue informado de la toma.",
-      "imagenes": [
-        {
-          "direccion": "hechoPalacio9",
-          "descripcion": "Fuerzas militares en la plaza de Bolívar."
-        },
-        {
-          "direccion": "hechoPalacio10",
-          "descripcion": "Fuerzas militares en la plaza de Bolívar."
-        }
-      ],
-      "videos": []
-    },
-    {
-      "id": 1,
-      "horas": [
-    {
-      "inicio": "13:30",
-      "final": "16:00"
-    }
-  ],
-      "nombre": "Inicio de la recuperación del palacio",
-      "descripcion": "Comienza un intento de retoma, tres tanques ingresan por el sótano,Dos tanques más ingresan por la puerta principal y obligan a los guerrilleros hacia los pisos altos, junto con los rehenes. Se produce un incendio en el frente del edificio.",
-      "imagenes": [
-        {
-          "direccion": "hechoPalacio11",
-          "descripcion": "Fuerzas militares en la plaza de Bolívar."
-        },
-        {
-          "direccion": "hechoPalacio12",
-          "descripcion": "Fuerzas militares en la plaza de Bolívar."
-        },
-        {
-          "direccion": "hechoPalacio13",
-          "descripcion": "Fuerzas militares en la plaza de Bolívar."
-        },
-        {
-          "direccion": "hechoPalacio14",
-          "descripcion": "Palacio de justicia en llamas"
-        }
-      ],
-      "videos": [
-        {
-          "direccion": "hechoPalacio15",
-          "descripcion": "Fuerzas militares recuperando el palacio."
-        }
-      ]
-    },
-    {
-      "id": 1,
-     "horas": [
-    {
-      "inicio": "16:00",
-      "final": "18:00"
-    }
-  ],
-      "nombre": "Uso de rehenes",
-      "descripcion": "Medios de comunicación transmitieron la voz del presidente de la Corte Suprema de Justicia, Alfonso Reyes Echandía, pidiendo, desde el cuarto piso del edificio que se detuviera el operativo de retoma del Palacio de Justicia por parte del Ejército.",
-      "imagenes": [
-        {
-          "direccion": "hechoPalacio16",
-          "descripcion": "Alfonso Reyes"
-        }
-      ],
-      "videos": [
-        {
-          "direccion": "hechoPalacio17",
-          "descripcion": "Ultimas palabras de Alfonso Reyes, presidente de la Corte Suprema de Justicia."
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "horas": [
-    {
-      "inicio": "18:00",
-      "final": "20:00"
-    }
-  ],
-      "nombre": "Atrincheramiento del M-19",
-      "descripcion": "El incendio se propagó a otras zonas del edificio y bomberos intentan apagarlo en medio del fuego cruzado. Sin embargo, el Ejército sigue en el tercer piso, sin poder avanzar hacia el cuarto piso donde los guerrilleros del M-19 se atrincheraron en los baños junto a un número importante de rehenes, incluyendo al presidente de la Corte Suprema de Justicia Reyes Echandía.",
-      "imagenes": [
-        {
-          "direccion": "hechoPalacio18",
-          "descripcion": "Palacio de justicia en llamas."
-        },
-        {
-          "direccion": "hechoPalacio19",
-          "descripcion": "Palacio de justicia en llamas."
-        }
-      ],
-      "videos": []
-    },
-    {
-      "id": 1,
-      "horas": [
-    {
-      "inicio": "20:00",
-      "final": "24:00"
-    }
-	],
-      "nombre": "Retoma del palacio",
-      "descripcion": "26 horas después de la toma por parte del M-19, el ministro de defensa Miguel Vega Uribe confirma el 7 de noviembre a as 2:00 de la tarde que la toma termina.",
-      "imagenes": [
-        {
-          "direccion": "hechoPalacio20",
-          "descripcion": "A las 7:00am del 7 de noviembre el presidente Belisario Betancur aceptó dialogar con el comando de guerrilleros del M-19 y encomendó al director del Socorro Nacional, Carlos Martínez Sáenz, llevar un mensaje a los asaltantes del edificio."
-        },
-        {
-          "direccion": "hechoPalacio21",
-          "descripcion": "A las 8:30am del 7 de noviembre el Consejero de Estado Reynaldo Arciniégas fue liberado por los guerrilleros del M-19, para llevar un mensaje al presidente Betancur y permita el ingreso de la Cruz Roja y se comience a negociar."
-        },
-        {
-          "direccion": "hechoPalacio22",
-          "descripcion": "A las 2:00pm del 7 de noviembre una explosión estremece el interior del Palacio de Justicia."
-        },
-        {
-          "direccion": "hechoPalacio23",
-          "descripcion": "A las 2:20pm del 7 de noviembre el ministro de Defensa, Miguel Vega Uribe, anuncia que la Toma al Palacio de Justicia terminó."
-        },
-        {
-          "direccion": "hechoPalacio24",
-          "descripcion": "Periódico El Tiempo. 10 de noviembre de 1985."
-        },
-        {
-          "direccion": "hechoPalacio25",
-          "descripcion": "Periódico El Colombiano. 8 de noviembre de 1985."
-        }
-      ],
-      "videos": [
-        {
-          "direccion": "hechoPalacio26",
-          "descripcion": "Miguel Vega Uribe declarando a RCN medidas tras el final del holocausto."
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "horas": [
-    {
-      "inicio": "0:00",
-      "final": "08:00"
-    }
-  ],
-      "nombre": "Época colonial",
-      "descripcion": "En 1681 se cambió por otra fuente de mayor perfección y ornato, la cual fue conocida entre sus habitantes como el \"mono de la pila\" y que actualmente se encuentra en el Museo de Arte Colonial. La única construcción alrededor de la plaza que se conserva desde la época colonial es la Capilla del Sagrario.",
-      "imagenes": [
-        {
-          "direccion": "hechoPlaza1",
-          "descripcion": "El mono de la pila."
-        }
-      ],
-      "videos": []
-    },
-    {
-      "id": 9,
-      "horas": [
-    {
-      "inicio": "08:00",
-      "final": "12:00"
-    }
-  ],
-      "nombre": "Siglo XIX",
-      "descripcion": "Después de la independencia, se comenzó a denominar Plaza de la Constitución, nombre oficial desde 1821, aunque algunas referencias históricas indican que el nombre de Plaza Mayor siguió siendo de uso cotidiano entre sus habitantes.",
-      "imagenes": [
-        {
-          "direccion": "hechoPlaza2",
-          "descripcion": "Capilla del Sagrario."
-        },
-        {
-          "direccion": "hechoPlaza3",
-          "descripcion": "El 20 de julio de 1846, el Congreso de la República dispuso la ubicación en el centro de la plaza de una estatua de bronce del general Simón Bolívar donada por José Ignacio París, quien encargó su diseño y fundición al escultor genovés Pietro Tenerani."
-        }
-      ],
-      "videos": []
-    },
-    {
-      "id": 9,
-      "horas": [
-    {
-      "inicio": "12:00",
-      "final": "24:00"
-    }
-  ],
-      "nombre": "Actualidad",
-      "descripcion": "Sobre la cara norte de la plaza se encuentra el Palacio de Justicia, un enorme edificio moderno donde se radica la Corte Suprema. La historia del Palacio de Justicia es bastante trágica y quizá simbólica de los problemas de la nación.",
-      "imagenes": [
-        {
-          "direccion": "hechoPlaza4",
-          "descripcion": "En la actualidad la plaza de Bolívar es escenario de vandalismo y protestas."
-        },
-        {
-          "direccion": "hechoPlaza5",
-          "descripcion": "Plaza de Bolívar."
-        }
-      ],
-      "videos": [
-        {
-          "direccion": "hechoPlaza6",
-          "descripcion": "Vídeo de aficionado en la plaza de Bolívar"
-        },
-        {
-          "direccion": "hechoPlaza7",
-          "descripcion": "Vídeo de aficionado en la plaza de Bolívar"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "horas": [
-    {
-      "inicio": "0:00",
-      "final": "12:00"
-    }
-  ],
-      "nombre": "Primera ciclovía organizada",
-      "descripcion": "El 15 de diciembre de 1974 se realizó el primer ensayo de lo que conocemos hoy como Ciclovía fue la primera vez que los Bogotanos se lanzaron a las calles para apropiarse de un espacio exclusivo para los vehículos automotores.",
-      "imagenes": [
-        {
-          "direccion": "hechoSeptima1",
-          "descripcion": "Bogotanos en la carrera séptima"
-        },
-        {
-          "direccion": "hechoSeptima2",
-          "descripcion": "El domingo 26 de septiembre de 1982 el Departamento administrativo de Tránsito y Transporte puso a disposición de la ciudadanía durante 6 horas, la vía de la Circunvalar o Paseo del Libertador entre el parque Nacional y la estación Funicular y la calzada occidental de la carrera 7 desde la calle 39 hasta la calle 72."
-        }
-      ],
-      "videos": [
-        {
-          "direccion": "hechoSeptima3",
-          "descripcion": "Vídeo de aficionado en la ciclovía"
-        },
-        {
-          "direccion": "hechoSeptima4",
-          "descripcion": "Vídeo de aficionado en la ciclovía."
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "horas": [
-    {
-      "inicio": "12:00",
-      "final": "13:00"
-    }
-  ],
-      "nombre": "Un millón de voces contra las FARC",
-      "descripcion": "Un millón de voces contra las FARC también llamada la marcha del 4 de febrero fueron varias movilizaciones cívicas en distintos lugares del mundo bajo el eslogan Colombia soy yo que sucedieron el 4 de febrero del 2008, en las que se protestó contra las acciones de las FARC.  Estas movilizaciones surgieron en enero de 2008 desde la red social Facebook, como reacción a la situación de los secuestrados evidenciada en las pruebas de supervivencia entregadas por el grupo guerrillero en diciembre de 2007 y al fracaso de la Operación Emmanuel. Este grupo virtual, tuvo un crecimiento exponencial en las primeras semanas de 2008 dado que fue el único que para ese momento se refería a esos hechos generadores de fuertes sentimientos de rechazo en el país.",
-      "imagenes": [
-        {
-          "direccion": "hechoSeptima5",
-          "descripcion": "Imagen utilizada en las marchas Un millón de voces contra las FARC del 4 de febrero de 2008."
-        }
-      ],
-      "videos": [
-        {
-          "direccion": "hechoSeptima6",
-          "descripcion": "Descripción del evento por parte de los organizadores."
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "horas": [
-    {
-      "inicio": "13:00",
-      "final": "24:00"
-    }
-  ],
-      "nombre": "Desarrollo de la marcha un millón de voces contra las FARC",
-      "descripcion": "Un millón de voces contra las FARC también llamada la marcha del 4 de febrero fueron varias movilizaciones cívicas en distintos lugares del mundo bajo el eslogan Colombia soy yo que sucedieron el 4 de febrero del 2008, en las que se protestó contra las acciones de las FARC.  Estas movilizaciones surgieron en enero de 2008 desde la red social Facebook, como reacción a la situación de los secuestrados evidenciada en las pruebas de supervivencia entregadas por el grupo guerrillero en diciembre de 2007 y al fracaso de la Operación Emmanuel. Este grupo virtual, tuvo un crecimiento exponencial en las primeras semanas de 2008 dado que fue el único que para ese momento se refería a esos hechos generadores de fuertes sentimientos de rechazo en el país.",
-      "imagenes": [
-        {
-          "direccion": "hechoSeptima7",
-          "descripcion": "Colombianos marchando por la carrera séptima con pancartas en protesta a las FARC."
-        },
-        {
-          "direccion": "hechoSeptima8",
-          "descripcion": "Miles de ciudadanos se movilizan en una marcha que inunda las calles."
-        },
-        {
-          "direccion": "hechoSeptima9",
-          "descripcion": "Miles de ciudadanos se movilizan en una marcha por la paz que inunda las calles."
-        },
-        {
-          "direccion": "hechoSeptima10",
-          "descripcion": "Culminación de la marcha en la plaza de Bolívar."
-        }
-      ],
-      "videos": [
-        {
-          "direccion": "hechoSeptima11",
-          "descripcion": "Campaña para recordar las victimas de las FARC."
-        }
-      ]
-    }
-  ]
-}
+	{
+			"hechos": [
+			{
+							"id": 1,
+							"horas": [
+					{
+							"inicio": "0:00",
+							"final": "11:28"
+					}
+			],
+							"nombre":"Antecedentes de la toma",
+							"descripcion": "Durante el gobierno de Betancurt las repetidas violaciones por parte de la policía y el ejercito a los acuerdo de Corinto motivo a los guerrilleros del M-19 a realizar el atentado, después declarado como holocausto por el CIDH.",
+							"imagenes": [
+									{
+											"direccion": "hechoPalacio1",
+											"descripcion": "El cese al fuego había sido también firmado por el Ejército Popular de Liberación EPL y Las Fuerzas Armadas Revolucionarias de Colombia, FARC-EP. El Gobierno adelantaba conversaciones de paz con cada grupo por separado. Pero desde su inicio los militares sabotearon dicho proceso tomando por asalto un campamento del EPL y atacando simultáneamente las bases de las FARC y del M-19 en el Caquetá y Cauca respectivamente. Fue en ese contexto entonces que el M-19 realizó la toma del Palacio de Justicia."
+									},
+									{
+											"direccion": "hechoPalacio2",
+											"descripcion": "El presidente de la Corte Suprema, Alfonso Reyes Echandía, ordinariamente no iba a la Corte los miércoles porque trabajaba desde su residencia, pero el 6 de noviembre asistió para coordinar con su magistrado auxiliar, Emiro Sandoval, lo que éste debía hacer en su ausencia y para que su secretaria le transcribiera un discurso que pronunciaría en un colegio."
+									},
+									{
+											"direccion": "hechoPalacio3",
+											"descripcion": "El general Rafael Samudio(en la imagen) acudió con una escolta reforzada, llegó a la Plaza de Bolívar, frente a la Catedral y se sorprendió, según sus palabras, por ver \"tanto despliegue de tropas\" y ordenó que desplazaran a los miembros de la Policía Militar que se encontraban allí y despejaran la zona porque él iba a ingresar al Palacio. Llegó a la Secretaría de la Sección Tercera, que quedaba al lado izquierdo en el primer piso."
+									},
+									{
+											"direccion": "hechoPalacio4",
+											"descripcion": "Carlos Betancur (en la imagen), presidente del Consejo de Estado, bajó a la cafetería con el también magistrado Gaspar Caballero, quien le comentó que no había vigilancia, a lo que aquél repuso que “ya los podían matar tranquilos. Cuando regresaban a su oficina empezó el tiroteo."
+									},
+									{
+											"direccion": "hechoPalacio5",
+											"descripcion": "Aprovechando la escasa vigilancia del Palacio de Justicia, el 6 de noviembre, entre las 10:30 y las 11:00 de la mañana ingresaron a sus instalaciones un total de siete personas armadas, vestidas de civil, quienes pertenecían al M-19. La actividad de inteligencia previa en el Palacio venía desarrollándose por parte de este grupo desde el junio de 1985, cuando el mando central presidido, por Álvaro Fayad (en la imágen), tomó la decisión del asalto."
+									}
+							],
+							"videos": []
+					},
+					{
+							"id": 1,
+							"horas": [
+					{
+							"inicio": "11:28",
+							"final": "12:00"
+					}
+			],
+							"nombre": "Toma del palacio de justicia",
+							"descripcion": "También llamada Operación Antonio Nariño: el día 6 de noviembre de 1985, a las 11:28 minutos de la mañana sonaron las primeras ráfagas de armas automáticas cuando el comando \"Iván Marino Ospina\", del Movimiento 19 de Abril, M-19, tomó por asalto el Palacio de Justicia en el corazón de la capital colombiana.",
+							"imagenes": [
+									{
+											"direccion": "hechoPalacio6",
+											"descripcion": "Periódico El Tiempo. 9 de noviembre de 1985."
+									},
+									{
+											"direccion": "hechoPalacio7",
+											"descripcion": "Edición extra Periódico El Tiempo. 7 de noviembre de 1985."
+									}
+							],
+							"videos": [
+									{
+											"direccion": "hechoPalacio8",
+											"descripcion": "Impactantes imágenes de la recuperación el palacio."
+									}
+							]
+					},
+					{
+							"id": 1,
+							"horas": [
+					{
+							"inicio": "12:00",
+							"final": "12:30"
+					}
+			],
+							"nombre": "Toma del palacio por parte del M-19",
+							"descripcion": "Los guerrilleros del M-19 toman el control total del edificio y toman como rehenes a los magistrados de la Corte Suprema de Justicia, el Consejo de Estado, empleados y visitantes. Mientras tanto a las afueras del Palacio de Justicia personal del Ejército y la Policía rodearon el edificio. El presidente Belisario Betancur fue informado de la toma.",
+							"imagenes": [
+									{
+											"direccion": "hechoPalacio9",
+											"descripcion": "Fuerzas militares en la plaza de Bolívar."
+									},
+									{
+											"direccion": "hechoPalacio10",
+											"descripcion": "Fuerzas militares en la plaza de Bolívar."
+									}
+							],
+							"videos": []
+					},
+					{
+							"id": 1,
+							"horas": [
+					{
+							"inicio": "13:30",
+							"final": "16:00"
+					}
+			],
+							"nombre": "Inicio de la recuperación del palacio",
+							"descripcion": "Comienza un intento de retoma, tres tanques ingresan por el sótano,Dos tanques más ingresan por la puerta principal y obligan a los guerrilleros hacia los pisos altos, junto con los rehenes. Se produce un incendio en el frente del edificio.",
+							"imagenes": [
+									{
+											"direccion": "hechoPalacio11",
+											"descripcion": "Fuerzas militares en la plaza de Bolívar."
+									},
+									{
+											"direccion": "hechoPalacio12",
+											"descripcion": "Fuerzas militares en la plaza de Bolívar."
+									},
+									{
+											"direccion": "hechoPalacio13",
+											"descripcion": "Fuerzas militares en la plaza de Bolívar."
+									},
+									{
+											"direccion": "hechoPalacio14",
+											"descripcion": "Palacio de justicia en llamas"
+									}
+							],
+							"videos": [
+									{
+											"direccion": "hechoPalacio15",
+											"descripcion": "Fuerzas militares recuperando el palacio."
+									}
+							]
+					},
+					{
+							"id": 1,
+						"horas": [
+					{
+							"inicio": "16:00",
+							"final": "18:00"
+					}
+			],
+							"nombre": "Uso de rehenes",
+							"descripcion": "Medios de comunicación transmitieron la voz del presidente de la Corte Suprema de Justicia, Alfonso Reyes Echandía, pidiendo, desde el cuarto piso del edificio que se detuviera el operativo de retoma del Palacio de Justicia por parte del Ejército.",
+							"imagenes": [
+									{
+											"direccion": "hechoPalacio16",
+											"descripcion": "Alfonso Reyes"
+									}
+							],
+							"videos": [
+									{
+											"direccion": "hechoPalacio17",
+											"descripcion": "Ultimas palabras de Alfonso Reyes, presidente de la Corte Suprema de Justicia."
+									}
+							]
+					},
+					{
+							"id": 1,
+							"horas": [
+					{
+							"inicio": "18:00",
+							"final": "20:00"
+					}
+			],
+							"nombre": "Atrincheramiento del M-19",
+							"descripcion": "El incendio se propagó a otras zonas del edificio y bomberos intentan apagarlo en medio del fuego cruzado. Sin embargo, el Ejército sigue en el tercer piso, sin poder avanzar hacia el cuarto piso donde los guerrilleros del M-19 se atrincheraron en los baños junto a un número importante de rehenes, incluyendo al presidente de la Corte Suprema de Justicia Reyes Echandía.",
+							"imagenes": [
+									{
+											"direccion": "hechoPalacio18",
+											"descripcion": "Palacio de justicia en llamas."
+									},
+									{
+											"direccion": "hechoPalacio19",
+											"descripcion": "Palacio de justicia en llamas."
+									}
+							],
+							"videos": []
+					},
+					{
+							"id": 1,
+							"horas": [
+					{
+							"inicio": "20:00",
+							"final": "24:00"
+					}
+		],
+							"nombre": "Retoma del palacio",
+							"descripcion": "26 horas después de la toma por parte del M-19, el ministro de defensa Miguel Vega Uribe confirma el 7 de noviembre a as 2:00 de la tarde que la toma termina.",
+							"imagenes": [
+									{
+											"direccion": "hechoPalacio20",
+											"descripcion": "A las 7:00am del 7 de noviembre el presidente Belisario Betancur aceptó dialogar con el comando de guerrilleros del M-19 y encomendó al director del Socorro Nacional, Carlos Martínez Sáenz, llevar un mensaje a los asaltantes del edificio."
+									},
+									{
+											"direccion": "hechoPalacio21",
+											"descripcion": "A las 8:30am del 7 de noviembre el Consejero de Estado Reynaldo Arciniégas fue liberado por los guerrilleros del M-19, para llevar un mensaje al presidente Betancur y permita el ingreso de la Cruz Roja y se comience a negociar."
+									},
+									{
+											"direccion": "hechoPalacio22",
+											"descripcion": "A las 2:00pm del 7 de noviembre una explosión estremece el interior del Palacio de Justicia."
+									},
+									{
+											"direccion": "hechoPalacio23",
+											"descripcion": "A las 2:20pm del 7 de noviembre el ministro de Defensa, Miguel Vega Uribe, anuncia que la Toma al Palacio de Justicia terminó."
+									},
+									{
+											"direccion": "hechoPalacio24",
+											"descripcion": "Periódico El Tiempo. 10 de noviembre de 1985."
+									},
+									{
+											"direccion": "hechoPalacio25",
+											"descripcion": "Periódico El Colombiano. 8 de noviembre de 1985."
+									}
+							],
+							"videos": [
+									{
+											"direccion": "hechoPalacio26",
+											"descripcion": "Miguel Vega Uribe declarando a RCN medidas tras el final del holocausto."
+									}
+							]
+					},
+					{
+							"id": 9,
+							"horas": [
+					{
+							"inicio": "0:00",
+							"final": "08:00"
+					}
+			],
+							"nombre": "Época colonial",
+							"descripcion": "En 1681 se cambió por otra fuente de mayor perfección y ornato, la cual fue conocida entre sus habitantes como el \"mono de la pila\" y que actualmente se encuentra en el Museo de Arte Colonial. La única construcción alrededor de la plaza que se conserva desde la época colonial es la Capilla del Sagrario.",
+							"imagenes": [
+									{
+											"direccion": "hechoPlaza1",
+											"descripcion": "El mono de la pila."
+									}
+							],
+							"videos": []
+					},
+					{
+							"id": 9,
+							"horas": [
+					{
+							"inicio": "08:00",
+							"final": "12:00"
+					}
+			],
+							"nombre": "Siglo XIX",
+							"descripcion": "Después de la independencia, se comenzó a denominar Plaza de la Constitución, nombre oficial desde 1821, aunque algunas referencias históricas indican que el nombre de Plaza Mayor siguió siendo de uso cotidiano entre sus habitantes.",
+							"imagenes": [
+									{
+											"direccion": "hechoPlaza2",
+											"descripcion": "Capilla del Sagrario."
+									},
+									{
+											"direccion": "hechoPlaza3",
+											"descripcion": "El 20 de julio de 1846, el Congreso de la República dispuso la ubicación en el centro de la plaza de una estatua de bronce del general Simón Bolívar donada por José Ignacio París, quien encargó su diseño y fundición al escultor genovés Pietro Tenerani."
+									}
+							],
+							"videos": []
+					},
+					{
+							"id": 9,
+							"horas": [
+					{
+							"inicio": "12:00",
+							"final": "24:00"
+					}
+			],
+							"nombre": "Actualidad",
+							"descripcion": "Sobre la cara norte de la plaza se encuentra el Palacio de Justicia, un enorme edificio moderno donde se radica la Corte Suprema. La historia del Palacio de Justicia es bastante trágica y quizá simbólica de los problemas de la nación.",
+							"imagenes": [
+									{
+											"direccion": "hechoPlaza4",
+											"descripcion": "En la actualidad la plaza de Bolívar es escenario de vandalismo y protestas."
+									},
+									{
+											"direccion": "hechoPlaza5",
+											"descripcion": "Plaza de Bolívar."
+									}
+							],
+							"videos": [
+									{
+											"direccion": "hechoPlaza6",
+											"descripcion": "Vídeo de aficionado en la plaza de Bolívar"
+									},
+									{
+											"direccion": "hechoPlaza7",
+											"descripcion": "Vídeo de aficionado en la plaza de Bolívar"
+									}
+							]
+					},
+					{
+							"id": 10,
+							"horas": [
+					{
+							"inicio": "0:00",
+							"final": "12:00"
+					}
+			],
+							"nombre": "Primera ciclovía organizada",
+							"descripcion": "El 15 de diciembre de 1974 se realizó el primer ensayo de lo que conocemos hoy como Ciclovía fue la primera vez que los Bogotanos se lanzaron a las calles para apropiarse de un espacio exclusivo para los vehículos automotores.",
+							"imagenes": [
+									{
+											"direccion": "hechoSeptima1",
+											"descripcion": "Bogotanos en la carrera séptima"
+									},
+									{
+											"direccion": "hechoSeptima2",
+											"descripcion": "El domingo 26 de septiembre de 1982 el Departamento administrativo de Tránsito y Transporte puso a disposición de la ciudadanía durante 6 horas, la vía de la Circunvalar o Paseo del Libertador entre el parque Nacional y la estación Funicular y la calzada occidental de la carrera 7 desde la calle 39 hasta la calle 72."
+									}
+							],
+							"videos": [
+									{
+											"direccion": "hechoSeptima3",
+											"descripcion": "Vídeo de aficionado en la ciclovía"
+									},
+									{
+											"direccion": "hechoSeptima4",
+											"descripcion": "Vídeo de aficionado en la ciclovía."
+									}
+							]
+					},
+					{
+							"id": 10,
+							"horas": [
+					{
+							"inicio": "12:00",
+							"final": "13:00"
+					}
+			],
+							"nombre": "Un millón de voces contra las FARC",
+							"descripcion": "Un millón de voces contra las FARC también llamada la marcha del 4 de febrero fueron varias movilizaciones cívicas en distintos lugares del mundo bajo el eslogan Colombia soy yo que sucedieron el 4 de febrero del 2008, en las que se protestó contra las acciones de las FARC.  Estas movilizaciones surgieron en enero de 2008 desde la red social Facebook, como reacción a la situación de los secuestrados evidenciada en las pruebas de supervivencia entregadas por el grupo guerrillero en diciembre de 2007 y al fracaso de la Operación Emmanuel. Este grupo virtual, tuvo un crecimiento exponencial en las primeras semanas de 2008 dado que fue el único que para ese momento se refería a esos hechos generadores de fuertes sentimientos de rechazo en el país.",
+							"imagenes": [
+									{
+											"direccion": "hechoSeptima5",
+											"descripcion": "Imagen utilizada en las marchas Un millón de voces contra las FARC del 4 de febrero de 2008."
+									}
+							],
+							"videos": [
+									{
+											"direccion": "hechoSeptima6",
+											"descripcion": "Descripción del evento por parte de los organizadores."
+									}
+							]
+					},
+					{
+							"id": 10,
+							"horas": [
+					{
+							"inicio": "13:00",
+							"final": "24:00"
+					}
+			],
+							"nombre": "Desarrollo de la marcha un millón de voces contra las FARC",
+							"descripcion": "Un millón de voces contra las FARC también llamada la marcha del 4 de febrero fueron varias movilizaciones cívicas en distintos lugares del mundo bajo el eslogan Colombia soy yo que sucedieron el 4 de febrero del 2008, en las que se protestó contra las acciones de las FARC.  Estas movilizaciones surgieron en enero de 2008 desde la red social Facebook, como reacción a la situación de los secuestrados evidenciada en las pruebas de supervivencia entregadas por el grupo guerrillero en diciembre de 2007 y al fracaso de la Operación Emmanuel. Este grupo virtual, tuvo un crecimiento exponencial en las primeras semanas de 2008 dado que fue el único que para ese momento se refería a esos hechos generadores de fuertes sentimientos de rechazo en el país.",
+							"imagenes": [
+									{
+											"direccion": "hechoSeptima7",
+											"descripcion": "Colombianos marchando por la carrera séptima con pancartas en protesta a las FARC."
+									},
+									{
+											"direccion": "hechoSeptima8",
+											"descripcion": "Miles de ciudadanos se movilizan en una marcha que inunda las calles."
+									},
+									{
+											"direccion": "hechoSeptima9",
+											"descripcion": "Miles de ciudadanos se movilizan en una marcha por la paz que inunda las calles."
+									},
+									{
+											"direccion": "hechoSeptima10",
+											"descripcion": "Culminación de la marcha en la plaza de Bolívar."
+									}
+							],
+							"videos": [
+									{
+											"direccion": "hechoSeptima11",
+											"descripcion": "Campaña para recordar las victimas de las FARC."
+									}
+							]
+					},
+					{
+							"id": 11,
+							"horas": [
+					{
+							"inicio": "0:00",
+							"final": "11:28"
+					}
+			],
+							"nombre":"Antecedentes de la toma",
+							"descripcion": "Durante el gobierno de Betancurt las repetidas violaciones por parte de la policía y el ejercito a los acuerdo de Corinto motivo a los guerrilleros del M-19 a realizar el atentado, después declarado como holocausto por el CIDH.",
+							"imagenes": [
+									{
+											"direccion": "hechoPalacio1",
+											"descripcion": "El cese al fuego había sido también firmado por el Ejército Popular de Liberación EPL y Las Fuerzas Armadas Revolucionarias de Colombia, FARC-EP. El Gobierno adelantaba conversaciones de paz con cada grupo por separado. Pero desde su inicio los militares sabotearon dicho proceso tomando por asalto un campamento del EPL y atacando simultáneamente las bases de las FARC y del M-19 en el Caquetá y Cauca respectivamente. Fue en ese contexto entonces que el M-19 realizó la toma del Palacio de Justicia."
+									},
+									{
+											"direccion": "hechoPalacio2",
+											"descripcion": "El presidente de la Corte Suprema, Alfonso Reyes Echandía, ordinariamente no iba a la Corte los miércoles porque trabajaba desde su residencia, pero el 6 de noviembre asistió para coordinar con su magistrado auxiliar, Emiro Sandoval, lo que éste debía hacer en su ausencia y para que su secretaria le transcribiera un discurso que pronunciaría en un colegio."
+									},
+									{
+											"direccion": "hechoPalacio3",
+											"descripcion": "El general Rafael Samudio(en la imagen) acudió con una escolta reforzada, llegó a la Plaza de Bolívar, frente a la Catedral y se sorprendió, según sus palabras, por ver \"tanto despliegue de tropas\" y ordenó que desplazaran a los miembros de la Policía Militar que se encontraban allí y despejaran la zona porque él iba a ingresar al Palacio. Llegó a la Secretaría de la Sección Tercera, que quedaba al lado izquierdo en el primer piso."
+									},
+									{
+											"direccion": "hechoPalacio4",
+											"descripcion": "Carlos Betancur (en la imagen), presidente del Consejo de Estado, bajó a la cafetería con el también magistrado Gaspar Caballero, quien le comentó que no había vigilancia, a lo que aquél repuso que “ya los podían matar tranquilos. Cuando regresaban a su oficina empezó el tiroteo."
+									},
+									{
+											"direccion": "hechoPalacio5",
+											"descripcion": "Aprovechando la escasa vigilancia del Palacio de Justicia, el 6 de noviembre, entre las 10:30 y las 11:00 de la mañana ingresaron a sus instalaciones un total de siete personas armadas, vestidas de civil, quienes pertenecían al M-19. La actividad de inteligencia previa en el Palacio venía desarrollándose por parte de este grupo desde el junio de 1985, cuando el mando central presidido, por Álvaro Fayad (en la imágen), tomó la decisión del asalto."
+									}
+							],
+							"videos": []
+					},
+			]
+	}
