@@ -33,6 +33,7 @@ class LugarDetailViewController: UIViewController {
         ratingControl.rating = MuequetaSingleton.sharedInstance.darLugarSeleccionado().rating.rating
         
         descripcionLugarLabel.text = MuequetaSingleton.sharedInstance.darLugarSeleccionado().descripcion
+        descripcionLugarLabel.textAlignment = NSTextAlignment.Justified
     }
     
     // MARK: Will appear
