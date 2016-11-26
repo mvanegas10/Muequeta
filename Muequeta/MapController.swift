@@ -22,6 +22,8 @@ class MapController: UIViewController, CLLocationManagerDelegate, UIGestureRecog
                                                                       regionRadius * 2.0, regionRadius * 2.0)
             mapView.setRegion(coordinateRegion, animated: true)
         }
+        let theLocation: MKUserLocation = mapView.userLocation
+        theLocation.title = "Estás aquí"
         centerMapOnLocation(initialLocation)
         mapView.showsUserLocation = true
         mapView.scrollEnabled = false
