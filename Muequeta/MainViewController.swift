@@ -52,7 +52,9 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
                             let idL = (actual![0] as! Int)
                             let nom = (actual![1] as! String)
                             let desc = (actual![2] as! String)
-                            let coorFinales = (0.0, 0.0)
+                            let lat = (actual![4] as! Double)
+                            let lon = (actual![5] as! Double)
+                            let coorFinales = (lat, lon)
                             let fot = [Foto]()
                             let vid = [String]()
                             
