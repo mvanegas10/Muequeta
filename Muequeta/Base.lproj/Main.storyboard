@@ -462,15 +462,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="78"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUE-kP-PYH">
+                                            <rect key="frame" x="0.0" y="-2" width="80" height="81"/>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g89-qv-Jgv">
-                                            <rect key="frame" x="0.0" y="11" width="494" height="59"/>
+                                            <rect key="frame" x="0.0" y="8" width="494" height="59"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUE-kP-PYH">
-                                            <rect key="frame" x="0.0" y="-2" width="80" height="81"/>
-                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="XUE-kP-PYH" firstAttribute="centerY" secondItem="9gZ-r0-efI" secondAttribute="centerY" id="e2g-yq-A9O"/>

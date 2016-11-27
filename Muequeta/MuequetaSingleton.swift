@@ -147,8 +147,6 @@ class MuequetaSingleton: NSObject {
             }
         }
         if (hora <= 1200) {
-            print(hora)
-            print("menos a 1200")
             horaDia = "mañana"
         }
         else if (hora <= 1900) {
@@ -157,6 +155,7 @@ class MuequetaSingleton: NSObject {
         else if (hora > 1900) {
             horaDia = "noche"
         }
+        print(horaDia)
         return hechosSeleccionados
     }
     

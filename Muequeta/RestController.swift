@@ -52,9 +52,12 @@ class RestController: UITableViewController {
                 MuequetaSingleton.sharedInstance.seleccionarLugar(lugar)
 //                let hour = 18
 //                let min = 00
-                let hour = NSCalendar.currentCalendar().component(.Hour, fromDate: NSDate())
-                let min = NSCalendar.currentCalendar().component(.Minute, fromDate: NSDate())
-                MuequetaSingleton.sharedInstance.seleccionarHechos(Int(String(hour) + String(min))!)
+                let hour = String(NSCalendar.currentCalendar().component(.Hour, fromDate: NSDate()))
+                var min = String(NSCalendar.currentCalendar().component(.Minute, fromDate: NSDate()))
+                if (min.characters.count <= 1) {
+                    min = "00"
+                }
+                MuequetaSingleton.sharedInstance.seleccionarHechos(Int(hour + min)!)
                 print("El seleccionado es: " + MuequetaSingleton.sharedInstance.darLugarSeleccionado().nombre)
             }
         }
