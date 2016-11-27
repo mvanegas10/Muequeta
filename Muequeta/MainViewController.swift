@@ -62,7 +62,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate{
                             
                             let rating = Rating(rating:0)
                             let lugar = Lugar(nombre: nom, descripcion: desc, id: idL,fotos: fot, videos: vid,coordenadas: coorFinales,rating: rating)
-                            print(lugar.nombre)
                             MuequetaSingleton.sharedInstance.agregarLugar(lugar)
                             
                             // MARK: Get images for each place
