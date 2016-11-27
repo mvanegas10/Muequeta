@@ -330,7 +330,7 @@
                                     <constraint firstItem="fkl-TT-XXB" firstAttribute="height" relation="lessThanOrEqual" secondItem="PNC-BD-goY" secondAttribute="height" constant="-100" id="z1v-f6-8ze"/>
                                 </constraints>
                             </stackView>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K0a-b0-efw">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0a-b0-efw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Vista 360º" id="bDg-pP-Z1P">
@@ -355,6 +355,8 @@
                             <constraint firstItem="PNC-BD-goY" firstAttribute="centerX" secondItem="4W0-vn-zYz" secondAttribute="centerX" id="lLD-sF-qIR"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="fkl-TT-XXB" id="RL6-pt-z9c"/>
                     </connections>
@@ -460,20 +462,20 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="78"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUE-kP-PYH">
-                                            <rect key="frame" x="0.0" y="4" width="70" height="70"/>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g89-qv-Jgv">
-                                            <rect key="frame" x="0.0" y="9" width="494" height="59"/>
+                                            <rect key="frame" x="0.0" y="11" width="494" height="59"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUE-kP-PYH">
+                                            <rect key="frame" x="0.0" y="-2" width="80" height="81"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="XUE-kP-PYH" firstAttribute="height" secondItem="9gZ-r0-efI" secondAttribute="height" id="Di7-BD-nOy"/>
                                         <constraint firstItem="XUE-kP-PYH" firstAttribute="centerY" secondItem="9gZ-r0-efI" secondAttribute="centerY" id="e2g-yq-A9O"/>
                                         <constraint firstItem="g89-qv-Jgv" firstAttribute="width" secondItem="9gZ-r0-efI" secondAttribute="width" id="ngr-us-jEY"/>
+                                        <constraint firstItem="XUE-kP-PYH" firstAttribute="width" secondItem="9gZ-r0-efI" secondAttribute="width" id="xAx-bN-VfJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -1005,11 +1007,11 @@
         <image name="logotipo" width="191" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kwX-2K-FpB"/>
-        <segue reference="vMf-uV-RNI"/>
-        <segue reference="jch-c2-WLW"/>
+        <segue reference="fzq-M4-zCw"/>
+        <segue reference="R3j-wI-abI"/>
         <segue reference="dEd-aX-sfm"/>
         <segue reference="VXV-qI-Qww"/>
-        <segue reference="R3j-wI-abI"/>
+        <segue reference="vMf-uV-RNI"/>
+        <segue reference="jch-c2-WLW"/>
     </inferredMetricsTieBreakers>
 </document>

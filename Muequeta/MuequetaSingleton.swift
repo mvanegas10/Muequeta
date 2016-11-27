@@ -138,6 +138,7 @@ class MuequetaSingleton: NSObject {
     
     func seleccionarHechos (hora:Int) -> [Hecho] {
         hechosSeleccionados = [Hecho]()
+        print (lugarSeleccionado?.hechos)
         if (lugarSeleccionado != nil) {
             for hecho in (lugarSeleccionado?.hechos)! {
                 if (hecho.horaInicio <= hora && hecho.horaFinal >= hora) {
@@ -146,6 +147,7 @@ class MuequetaSingleton: NSObject {
             }
         }
         if (hora <= 1200) {
+            print(hora)
             print("menos a 1200")
             horaDia = "mañana"
         }

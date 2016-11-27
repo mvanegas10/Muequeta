@@ -104,11 +104,11 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
     
     func foundCode(code: String) {
-        let hour = NSCalendar.currentCalendar().component(.Hour, fromDate: NSDate())
-        let min = NSCalendar.currentCalendar().component(.Minute, fromDate: NSDate())
         var data = code.componentsSeparatedByString(",")
         let lugar = MuequetaSingleton.sharedInstance.buscarLugar(data[0])
         MuequetaSingleton.sharedInstance.seleccionarLugar(lugar)
+        let hour = NSCalendar.currentCalendar().component(.Hour, fromDate: NSDate())
+        let min = NSCalendar.currentCalendar().component(.Minute, fromDate: NSDate())
         MuequetaSingleton.sharedInstance.seleccionarHechos(Int(String(hour) + String(min))!)
         for hecho in MuequetaSingleton.sharedInstance.darHechosSeleccionados() {
             print (hecho.nombre)
