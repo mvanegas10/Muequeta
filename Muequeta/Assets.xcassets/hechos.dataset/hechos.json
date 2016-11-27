@@ -371,11 +371,33 @@
 							"horas": [
 					{
 							"inicio": "0:00",
-							"final": "24:00"
+							"final": "12:00"
+					}
+			],
+							"nombre":"",
+							"descripcion": "El Chorro de Quevedo es la perfecta combinación de un ambiente histórico y bohemio, con espacios de relajación de jóvenes y extranjeros que llegan allí con el objetivo de disfrutar de las artesanías, el teatro, los malabares, y la venta de chicha de colores. Este colorido hace parte de la rutina universitaria de los externadistas y día tras día, de sus vidas.",
+							"imagenes": [
+									{
+											"direccion": "hechoChorro6",
+											"descripcion": "En este sector, la plaza del Chorro de Quevedo es el principal punto de encuentro de universitarios, artesanos, poetas, cuenteros, escritores, músicos, malabaristas, teatreros y de extranjeros."
+									},
+									{
+											"direccion": "hechoChorro7",
+											"descripcion": "Uno de los principales atractivos es el arte callejero y los murales, los cuales están presentes en cada una de las calles de la Candelaria."
+									}
+							],
+							"videos": []
+					},
+					{
+							"id": 11,
+							"horas": [
+					{
+							"inicio": "12:01",
+							"final": "18:00"
 					}
 			],
 							"nombre":"Arte en el Chorro de Quevedo",
-							"descripcion": "Una de las principales actividades en el Chorro de Quevedo es la congregación de artistas, cuenteros, músicos y malabaristas. Inclusive, muchas de las actividades cuentan con el apollo del Ministerio de Cultura, Recreación y Deporte.",
+							"descripcion": "Una de las principales actividades diurnas en el Chorro de Quevedo es la congregación de artistas, cuenteros, músicos y malabaristas. Inclusive, muchas de las actividades cuentan con el apollo del Ministerio de Cultura, Recreación y Deporte.",
 							"imagenes": [
 									{
 											"direccion": "hechoChorro1",
@@ -388,6 +410,28 @@
 									{
 											"direccion": "hechoChorro3",
 											"descripcion": "El atrio de la iglesia, los escalones adoquinados y la antigua fuente de piedra son los sitios más concurridos de la plaza. Allí se tiran al ruedo los cuenteros y los poetas que después recogen monedas en sombreros."
+									}
+							],
+							"videos": []
+					},
+					{
+							"id": 11,
+							"horas": [
+					{
+							"inicio": "18:01",
+							"final": "24:00"
+					}
+			],
+							"nombre":"Vida nocturna en el Chorro",
+							"descripcion": "En las noches, en el Chorro de Quevedo se pueden encontrar restaurantes y bares, cafés con estilos muy diferentes y menús variados. Todo lo que rodea esta plaza es de tipo rustico y bohemio. Sin embargo, las actividades culturales siempre están presentes.",
+							"imagenes": [
+									{
+											"direccion": "hechoChorro4",
+											"descripcion": "La Calle del Embudo no tiene más de 3 metros de ancho. Es una calle peatonal en la que se encuentran múltiples restaurantes, hotales y ventas de artesanías. Es el sitio perfecto para encontrar una buena chicha tradicional."
+									},
+									{
+											"direccion": "hechoChorro5",
+											"descripcion": "Las actividades culturales se presentan hasta altas horas de la noche, los fines de semana es común ver gente de todas las edades e intereses."
 									}
 							],
 							"videos": []
