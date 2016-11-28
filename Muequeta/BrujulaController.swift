@@ -28,17 +28,26 @@ class BrujulaController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager!, didUpdateHeading newHeading: CLHeading!) {
         let magValue = newHeading.magneticHeading
-        if (magValue > 315 || magValue <= 45) {
-            imageView.image = UIImage(named: "lugarChorroNorte")
+        if (magValue > 315) {
+            imageView.image = UIImage(named: "lugarArquitecturaNorte")
+        }
+        else if (magValue > 0 && magValue <= 45) {
+            imageView.image = UIImage(named: "lugarArquitecturaNorOccidente")
         }
         else if (magValue > 45 && magValue <= 135) {
-            imageView.image = UIImage(named: "lugarChorroOccidente")
+            imageView.image = UIImage(named: "lugarArquitecturaOccidente")
         }
-        else if (magValue > 135 && magValue <= 225) {
-            imageView.image = UIImage(named: "lugarChorroSur")
+        else if (magValue > 135 && magValue <= 215) {
+            imageView.image = UIImage(named: "lugarArquitecturaSur")
         }
-        else if (magValue > 225 && magValue <= 315) {
-            imageView.image = UIImage(named: "lugarChorroOriente")
+        else if (magValue > 215 && magValue <= 260) {
+            imageView.image = UIImage(named: "lugarArquitecturaSurOriente")
+        }
+        else if (magValue > 260 && magValue <= 305) {
+            imageView.image = UIImage(named: "lugarArquitecturaOriente")
+        }
+        else if (magValue > 305 && magValue <= 315) {
+            imageView.image = UIImage(named: "lugarArquitecturaNorOriente")
         }
     }
 }
